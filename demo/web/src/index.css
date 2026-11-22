@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html, body { background: #050506; }
+body { font-feature-settings: "ss01", "cv11"; }
+::selection { background: rgba(139, 92, 246, .35); }
+* { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.15) transparent; }
+.tabular { font-variant-numeric: tabular-nums; }

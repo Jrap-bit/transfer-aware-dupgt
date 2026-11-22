@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Books to Movies Demo</title>
+<style>
+:root{
+  --bg:#f6f4ef; --panel:#ffffff; --ink:#1c1b19; --muted:#6b675f; --line:#e4e0d7; --soft:#f1eee7;
+  --book:#b45309; --book-soft:#fdf0e1; --movie:#3f3cbb; --movie-soft:#ecebfb;
+  --up:#15803d; --up-soft:#dcf3e3; --down:#b91c1c; --down-soft:#fbe2e2; --focus:#3f3cbb;
+  --radius:12px; --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 14px rgba(0,0,0,.05);
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+button,input,select{font:inherit;color:inherit}
+header{display:flex;align-items:center;gap:20px;padding:14px 28px;background:var(--panel);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+header h1{font-size:20px;margin:0;letter-spacing:-.01em;white-space:nowrap}
+header h1 .b{color:var(--book)} header h1 .m{color:var(--movie)}
+nav{display:flex;gap:6px;margin-left:12px}
+nav button{border:1px solid transparent;background:none;padding:8px 14px;border-radius:999px;cursor:pointer;color:var(--muted);font-weight:600;white-space:nowrap}
+nav button.on{background:var(--ink);color:#fff}
+nav button:not(.on):hover{background:var(--soft)}
+.status{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.pill{font-size:12.5px;padding:4px 10px;border-radius:999px;background:var(--soft);color:var(--muted);white-space:nowrap}
+.pill.ok{background:var(--up-soft);color:var(--up)} .pill.warn{background:#fff4d6;color:#8a5a00}
+main{padding:22px 28px 60px;max-width:1680px;margin:0 auto}
+.tab{display:none} .tab.on{display:block}
+.grid{display:grid;grid-template-columns:380px 1fr;gap:22px;align-items:start}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px}
+.panel h2{font-size:17px;margin:0 0 4px} .panel .sub{color:var(--muted);font-size:14px;margin:0 0 14px}
+.sticky{position:sticky;top:78px}
+h3.section{font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:26px 0 10px}
+h3.section:first-child{margin-top:0}
+/* personas */
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.chip{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:6px 11px;font-size:13.5px;cursor:pointer}
+.chip:hover{border-color:var(--book);color:var(--book)} .chip.on{background:var(--book);border-color:var(--book);color:#fff}
+.row{display:flex;gap:8px;align-items:center}
+.btn{border:1px solid var(--line);background:var(--panel);border-radius:9px;padding:8px 12px;cursor:pointer;font-weight:600;font-size:14px}
+.btn:hover{background:var(--soft)} .btn.primary{background:var(--movie);border-color:var(--movie);color:#fff} .btn.primary:hover{filter:brightness(1.08)}
+.btn:disabled{opacity:.5;cursor:default}
+/* search */
+.search{position:relative;margin:4px 0 12px}
+.search input{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--soft)}
+.search input:focus{outline:2px solid var(--focus);background:#fff}
+.results{position:absolute;left:0;right:0;top:46px;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);max-height:360px;overflow:auto;z-index:4;display:none}
+.results div{padding:8px 12px;cursor:pointer;border-bottom:1px solid var(--soft)} .results div:hover{background:var(--book-soft)}
+.results small{display:block;color:var(--muted);font-size:12px}
+/* shelf */
+.shelf{display:flex;flex-direction:column;gap:6px;max-height:52vh;overflow:auto;padding-right:2px}
+.book{display:grid;grid-template-columns:1fr auto auto;gap:8px;align-items:center;padding:7px 10px;border-radius:9px;background:var(--soft);border-left:4px solid var(--book)}
+.book.low{border-left-color:#8b8478;background:#f1efeb}
+.book .t{font-size:14px;line-height:1.25;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.stars{display:flex}
+.stars button{border:none;background:none;padding:0 1px;cursor:pointer;font-size:17px;color:#d6d0c4;line-height:1}
+.stars button.on{color:var(--book)}
+.book.low .stars button.on{color:#6b675f}
+.x{border:none;background:none;color:var(--muted);cursor:pointer;font-size:18px;padding:0 4px}
+.branchnote{font-size:12.5px;color:var(--muted);margin-top:10px}
+.empty{color:var(--muted);font-size:14px;padding:18px;text-align:center;border:1px dashed var(--line);border-radius:10px}
+/* model cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 14px 12px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px}
+.card h4{margin:0;font-size:15px}
+.card .about{font-size:12.5px;color:var(--muted);min-height:52px}
+.big{font-size:30px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.delta{font-size:13.5px;font-weight:600;font-variant-numeric:tabular-nums}
+.delta.up{color:var(--up)} .delta.down{color:var(--down)} .delta.flat{color:var(--muted)}
+.meter{font-size:12px;color:var(--muted)}
+.bar{height:9px;border-radius:5px;background:#d9d4ca;overflow:hidden;display:flex;margin-top:3px}
+.bar i{display:block;height:100%}
+.bar .liked{background:var(--book)} .bar .trust{background:var(--movie)}
+.legend{display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted);margin-top:2px}
+/* tables */
+.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+th,td{padding:8px 10px;border-bottom:1px solid var(--soft);text-align:center;white-space:nowrap}
+th{position:sticky;top:0;background:#faf9f6;font-size:12.5px;color:var(--muted);font-weight:700;z-index:1}
+td.title,th.title{text-align:left;white-space:normal;min-width:220px}
+td.title small{color:var(--muted)}
+td.cell{font-weight:600}
+td.best{outline:2px solid var(--movie);outline-offset:-3px;border-radius:6px}
+tr.foot td{font-weight:700;background:#faf9f6}
+/* top lists */
+.toolbar{display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:#fff}
+.seg button{border:none;background:none;padding:7px 12px;cursor:pointer;font-size:13.5px;font-weight:600;color:var(--muted)}
+.seg button.on{background:var(--movie);color:#fff}
+.tops{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.top{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;box-shadow:var(--shadow)}
+.top h4{margin:0 0 8px;font-size:14.5px;display:flex;justify-content:space-between;gap:6px}
+.top h4 span{font-weight:500;color:var(--muted);font-size:12px}
+.top ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:7px}
+.top li{font-size:13.5px;line-height:1.3}
+.top li b{font-weight:600}
+.top li .meta{display:block;font-size:12px;color:var(--muted)}
+.top li .because{display:block;font-size:12px;color:var(--book)}
+/* llm */
+.llm{display:grid;grid-template-columns:1fr;gap:12px}
+.timer{font-variant-numeric:tabular-nums;color:var(--muted);font-size:14px}
+.choice{display:inline-block;min-width:26px;padding:2px 7px;border-radius:6px;font-weight:700;font-size:12.5px}
+.choice.A{background:var(--book-soft);color:var(--book)} .choice.B{background:var(--movie-soft);color:var(--movie)} .choice.tie,.choice.insufficient_evidence{background:var(--soft);color:var(--muted)}
+.agree{color:var(--up);font-weight:700} .disagree{color:var(--down);font-weight:700}
+details{margin-top:10px} summary{cursor:pointer;color:var(--muted);font-size:13.5px}
+pre{white-space:pre-wrap;font-size:12px;background:var(--soft);padding:10px;border-radius:8px;max-height:260px;overflow:auto}
+/* replay */
+.replaybar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.ubooks{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 2px}
+.ubook{font-size:13px;padding:4px 9px;border-radius:8px;background:var(--book-soft);color:#7a3a06}
+.ubook.low{background:#eeeae3;color:#5a554c}
+.mae{display:grid;grid-template-columns:200px 1fr 64px;gap:8px;align-items:center;font-size:14px;margin:5px 0}
+.mae .track{height:14px;background:var(--soft);border-radius:7px;overflow:hidden}
+.mae .track i{display:block;height:100%;background:var(--movie);border-radius:7px}
+.mae .track i.base{background:#a8a296}
+.mae b{font-variant-numeric:tabular-nums;text-align:right}
+.note{font-size:13.5px;color:var(--muted)}
+.callout{background:var(--movie-soft);border-radius:10px;padding:12px 14px;font-size:14px;margin:10px 0}
+.facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.fact{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.fact .k{font-size:28px;font-weight:700;letter-spacing:-.02em}
+.fact p{margin:4px 0 0;font-size:14px;color:var(--muted)}
+#cards,#probe,#tops{transition:opacity .15s}
+.loading #cards,.loading #probe,.loading #tops{opacity:.45}
+.spin{display:inline-block;width:14px;height:14px;border:2px solid var(--line);border-top-color:var(--movie);border-radius:50%;animation:s 0.8s linear infinite;vertical-align:-2px}
+@keyframes s{to{transform:rotate(360deg)}}
+@media (max-width:1100px){.grid{grid-template-columns:1fr}.sticky{position:static}}
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="b">Books</span> → <span class="m">Movies</span> · cold-start demo</h1>
+  <nav>
+    <button data-tab="live" class="on">1 · Try it live</button>
+    <button data-tab="replay">2 · Real test users</button>
+    <button data-tab="about">3 · Why trust this</button>
+  </nav>
+  <div class="status" id="status"><span class="pill">loading models…</span></div>
+</header>
+
+<main>
+<!-- =============== TAB 1 =============== -->
+<section class="tab on" id="tab-live">
+ <div class="grid">
+  <aside class="panel sticky">
+    <h2>Your bookshelf</h2>
+    <p class="sub">A brand-new person: no movie ratings at all. Pick books and give them stars.</p>
+    <div class="chips" id="personas"></div>
+    <div class="search">
+      <input id="q" placeholder="Search 478k books, e.g. Harry Potter, Gone Girl…" autocomplete="off">
+      <div class="results" id="results"></div>
+    </div>
+    <div class="shelf" id="shelf"></div>
+    <div class="row" style="margin-top:12px;flex-wrap:wrap">
+      <button class="btn" id="harsh" title="Lower every star by 2 (minimum 1)">Make me a harsh rater</button>
+      <button class="btn" id="generous" title="Raise every star by 2 (maximum 5)">Make me generous</button>
+      <button class="btn" id="clear">Clear</button>
+    </div>
+    <p class="branchnote">4–5★ books feed the <b style="color:var(--book)">liked</b> branch; 1–3★ feed the <b>disliked</b> branch, exactly as in training.</p>
+  </aside>
+
+  <div>
+    <h3 class="section">What each model concluded about you</h3>
+    <div class="cards" id="cards"><div class="empty">Pick a persona or add a few books to see every model react.</div></div>
+
+    <h3 class="section">Predicted stars for well-known movies</h3>
+    <p class="note" style="margin:-4px 0 10px">Cells are this person's predicted stars; colour shows the change from the movie's average rating (green higher, red lower).</p>
+    <div class="tablewrap" id="probe"><div class="empty" style="margin:12px">Waiting for books…</div></div>
+
+    <h3 class="section">Each model's top 5 for you</h3>
+    <div class="toolbar">
+      <div class="seg" id="rank">
+        <button data-rank="rating" class="on">Highest predicted stars</button>
+        <button data-rank="boost">Biggest boost over the average</button>
+      </div>
+      <span class="note">Only movies with at least 100 ratings are recommended.</span>
+    </div>
+    <div class="tops" id="tops"></div>
+
+    <h3 class="section">Ask the LLM teacher (live, on this laptop)</h3>
+    <div class="panel llm">
+      <div class="row" style="flex-wrap:wrap">
+        <button class="btn primary" id="askllm">Ask Qwen3.5-9B which movie fits</button>
+        <span class="timer" id="llmtimer"></span>
+      </div>
+      <p class="note" style="margin:0">Same prompt and JSON schema as the real teacher run. In training, these A/B choices were only weak hints. The models above don't call the LLM at all.</p>
+      <div id="llmout"></div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- =============== TAB 2 =============== -->
+<section class="tab" id="tab-replay">
+  <div class="panel" style="margin-bottom:18px">
+    <h2>Real held-out test users</h2>
+    <p class="sub">Their movie ratings were hidden during training. These are the <b>original saved predictions</b> from the reported runs (10% overlap, seed 2020), compared with what they really rated.</p>
+    <div class="replaybar">
+      <div class="seg" id="bucket">
+        <button data-b="all" class="on">All</button>
+        <button data-b="helped">DUPGT helped</button>
+        <button data-b="neutral">About the same</button>
+        <button data-b="harmed">DUPGT hurt (negative transfer)</button>
+      </div>
+      <button class="btn primary" id="nextuser">Next user →</button>
+      <span class="note" id="usercount"></span>
+    </div>
+    <div id="replayuser"></div>
+  </div>
+  <div class="tablewrap" id="replaytable"></div>
+  <div class="panel" style="margin-top:18px">
+    <h2>Across all 433,618 held-out ratings in this run</h2>
+    <p class="sub">Mean absolute error (lower is better), from the same saved prediction files.</p>
+    <div id="overall"></div>
+  </div>
+</section>
+
+<!-- =============== TAB 3 =============== -->
+<section class="tab" id="tab-about">
+  <div class="facts" id="facts"></div>
+  <div class="panel" style="margin-top:18px">
+    <h2>How a brand-new person is scored</h2>
+    <ol class="note" style="font-size:15px;color:var(--ink);line-height:1.6">
+      <li><b>Book taste vector.</b> The book factors are frozen. We solve a small ridge regression, <code>u = argmin Σ(stars − vᵢ·u)² + 0.3‖u‖²</code>, so u is the 10-number taste that best explains the stars you gave.</li>
+      <li><b>Two histories.</b> 4–5★ books form the liked branch and 1–3★ books the disliked branch. Each branch builds a personal 10×10 bridge.</li>
+      <li><b>Gate.</b> α decides how much of each bridge to use for each movie. The semantic gate adds Jina text similarity between your books and that movie.</li>
+      <li><b>Fallbacks.</b> The probabilistic bridge and the uncertainty blend pull towards the movie's average when they're unsure about you. Their trust weight is w.</li>
+    </ol>
+  </div>
+</section>
+</main>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const api = async (path, body) => {
+  const r = await fetch(path, body ? {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body)} : {});
+  const j = await r.json(); if (!r.ok) throw new Error(j.error || r.statusText); return j;
+};
+let picks = [], rank = "rating", personas = [], last = null;
+
+/* ---------- tabs ---------- */
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("nav button").forEach(x => x.classList.toggle("on", x === b));
+  document.querySelectorAll(".tab").forEach(t => t.classList.toggle("on", t.id === "tab-" + b.dataset.tab));
+  if (b.dataset.tab === "replay" && !replay) loadReplay();
+});
+
+/* ---------- status ---------- */
+async function refreshStatus() {
+  try {
+    const s = await api("/api/status");
+    const llm = s.llm.model_loaded ? '<span class="pill ok">LLM ready</span>'
+      : s.llm.server ? '<span class="pill warn">LM Studio on, model not loaded</span>' : '<span class="pill">LLM offline (optional)</span>';
+    $("#status").innerHTML = `<span class="pill ok">${s.loaded.length} models loaded</span>` +
+      (s.missing.length ? `<span class="pill warn">still training: ${s.missing.length}</span>` : "") + llm;
+  } catch (e) { $("#status").innerHTML = '<span class="pill warn">server not reachable</span>'; }
+}
+
+/* ---------- personas & shelf ---------- */
+async function loadPersonas() {
+  personas = await api("/api/personas");
+  $("#personas").innerHTML = personas.map((p, i) => `<button class="chip" data-i="${i}">${esc(p.name)}</button>`).join("");
+  document.querySelectorAll("#personas .chip").forEach(c => c.onclick = () => {
+    document.querySelectorAll("#personas .chip").forEach(x => x.classList.toggle("on", x === c));
+    picks = personas[+c.dataset.i].picks.map(p => ({...p})); renderShelf(); update();
+  });
+}
+function renderShelf() {
+  if (!picks.length) { $("#shelf").innerHTML = '<div class="empty">No books yet.</div>'; return; }
+  $("#shelf").innerHTML = picks.map((p, i) => `
+    <div class="book ${p.stars < 4 ? "low" : ""}">
+      <span class="t" title="${esc(p.title)}">${esc(p.title)}</span>
+      <span class="stars">${[1,2,3,4,5].map(s => `<button data-i="${i}" data-s="${s}" class="${s <= p.stars ? "on" : ""}" aria-label="${s} stars">★</button>`).join("")}</span>
+      <button class="x" data-del="${i}" aria-label="remove">×</button>
+    </div>`).join("");
+  document.querySelectorAll("#shelf .stars button").forEach(b => b.onclick = () => { picks[+b.dataset.i].stars = +b.dataset.s; renderShelf(); update(); });
+  document.querySelectorAll("#shelf .x").forEach(b => b.onclick = () => { picks.splice(+b.dataset.del, 1); renderShelf(); update(); });
+}
+const shift = d => { picks.forEach(p => p.stars = Math.max(1, Math.min(5, p.stars + d))); renderShelf(); update(); };
+$("#harsh").onclick = () => shift(-2); $("#generous").onclick = () => shift(2);
+$("#clear").onclick = () => { picks = []; document.querySelectorAll("#personas .chip").forEach(x => x.classList.remove("on")); renderShelf(); update(); };
+
+let searchTimer;
+$("#q").oninput = () => { clearTimeout(searchTimer); searchTimer = setTimeout(doSearch, 160); };
+$("#q").onfocus = () => { if ($("#results").innerHTML) $("#results").style.display = "block"; };
+document.addEventListener("click", e => { if (!e.target.closest(".search")) $("#results").style.display = "none"; });
+async function doSearch() {
+  const q = $("#q").value; if (q.trim().length < 2) { $("#results").style.display = "none"; return; }
+  const hits = await api("/api/search?q=" + encodeURIComponent(q));
+  $("#results").innerHTML = hits.length ? hits.map(h => `<div data-item="${h.item}" data-title="${esc(h.title)}">${esc(h.title)}<small>${esc(h.category || "Books")} · ${h.n_ratings.toLocaleString()} ratings</small></div>`).join("")
+    : '<div style="color:var(--muted);cursor:default">No match</div>';
+  $("#results").style.display = "block";
+  document.querySelectorAll("#results [data-item]").forEach(d => d.onclick = () => {
+    if (!picks.some(p => p.item == d.dataset.item)) picks.push({item: +d.dataset.item, title: d.dataset.title, stars: 5});
+    $("#results").style.display = "none"; $("#q").value = ""; renderShelf(); update();
+  });
+}
+
+/* ---------- live results ---------- */
+let pending = 0;
+async function update() {
+  if (!picks.length) { $("#cards").innerHTML = '<div class="empty">Pick a persona or add a few books to see every model react.</div>'; $("#probe").innerHTML = ""; $("#tops").innerHTML = ""; return; }
+  const ticket = ++pending;
+  document.body.classList.add("loading");
+  try {
+    const r = await api("/api/recommend", {picks, rank});
+    if (ticket !== pending) return;
+    last = r; renderCards(r); renderProbe(r); renderTops(r);
+  } catch (e) { $("#cards").innerHTML = `<div class="empty">Error: ${esc(e.message)}</div>`; }
+  finally { if (ticket === pending) document.body.classList.remove("loading"); }
+}
+const fmtDelta = d => { const c = d > 0.02 ? "up" : d < -0.02 ? "down" : "flat"; return `<span class="delta ${c}">${d > 0 ? "+" : ""}${d.toFixed(2)}★ vs movie average</span>`; };
+function renderCards(r) {
+  $("#cards").innerHTML = r.columns.map(c => {
+    const s = c.summary, base = c.model === "Movie average";
+    const gate = s.mean_alpha_high == null ? "" : `<div class="meter">Gate: liked ${Math.round(100*s.mean_alpha_high)}% · disliked ${Math.round(100*(1-s.mean_alpha_high))}%
+      <div class="bar"><i class="liked" style="width:${100*s.mean_alpha_high}%"></i></div></div>`;
+    const trust = s.mean_trust == null ? "" : `<div class="meter">Trust in your bridge, w = ${s.mean_trust.toFixed(2)}
+      <div class="bar"><i class="trust" style="width:${100*s.mean_trust}%"></i></div>
+      <div class="legend"><span>movie average</span><span>personal</span></div></div>`;
+    return `<div class="card"><h4>${esc(c.model)}</h4><div class="about">${esc(c.about)}</div>
+      <div><div class="big">${s.mean_predicted.toFixed(2)}★</div>${base ? `<span class="delta flat">average over ${r.n_candidates.toLocaleString()} movies</span>` : fmtDelta(s.mean_shift)}</div>${gate}${trust}</div>`;
+  }).join("");
+}
+function cellColour(d) {
+  const a = Math.min(1, Math.abs(d) / 1.2);
+  return d >= 0 ? `rgba(21,128,61,${0.08 + 0.42*a})` : `rgba(185,28,28,${0.08 + 0.42*a})`;
+}
+function renderProbe(r) {
+  const models = r.columns.map(c => c.model);
+  const head = `<tr><th class="title">Movie</th>${models.map(m => `<th>${esc(m)}</th>`).join("")}</tr>`;
+  const rows = r.probe.map(p => `<tr><td class="title">${esc(p.title)}<br><small>${p.n.toLocaleString()} ratings</small></td>` +
+    models.map(m => { const v = p.predicted[m]; if (!v) return "<td>–</td>"; const d = v.stars - p.movie_avg;
+      return `<td class="cell" style="background:${m === "Movie average" ? "transparent" : cellColour(d)}" title="${m === "Movie average" ? "" : (d>0?"+":"") + d.toFixed(2)}">${v.stars.toFixed(2)}</td>`; }).join("") + "</tr>").join("");
+  $("#probe").innerHTML = `<table>${head}${rows}</table>`;
+}
+function renderTops(r) {
+  $("#tops").innerHTML = r.columns.map(c => `<div class="top"><h4>${esc(c.model)}<span>${c.model !== "Movie average" && r.agreement[c.model] != null ? `${r.agreement[c.model]}/5 shared` : ""}</span></h4><ol>` +
+    c.top.map(t => `<li><b>${esc(t.title)}</b><span class="meta">${t.predicted.toFixed(2)}★ predicted · average ${t.movie_avg.toFixed(2)} (${t.n.toLocaleString()} ratings)</span>` +
+      (t.because && t.because.similarity >= 0.6 && c.model !== "Movie average" ? `<span class="because">most similar liked book (text): ${esc(t.because.title)}</span>` : "") + "</li>").join("") + "</ol></div>").join("");
+}
+document.querySelectorAll("#rank button").forEach(b => b.onclick = () => {
+  rank = b.dataset.rank; document.querySelectorAll("#rank button").forEach(x => x.classList.toggle("on", x === b)); update();
+});
+
+/* ---------- LLM ---------- */
+$("#askllm").onclick = async () => {
+  if (!picks.length) { $("#llmout").innerHTML = '<p class="note">Add some books first.</p>'; return; }
+  const btn = $("#askllm"); btn.disabled = true; const t0 = performance.now();
+  const tick = setInterval(() => $("#llmtimer").innerHTML = `<span class="spin"></span> thinking… ${((performance.now()-t0)/1000).toFixed(1)} s`, 100);
+  $("#llmout").innerHTML = "";
+  try {
+    const r = await api("/api/llm", {picks});
+    if (!r.ok) { $("#llmout").innerHTML = `<div class="callout">${esc(r.error)}</div>`; return; }
+    $("#llmtimer").textContent = `answered in ${r.seconds} s · ${r.prompt_tokens} prompt tokens → ${r.completion_tokens} output tokens`;
+    const models = Object.keys(r.pairs[0]?.models || {}).filter(m => m !== "Movie average");
+    const head = `<tr><th class="title">Option A</th><th class="title">Option B</th><th>LLM says</th>${models.map(m => `<th>${esc(m)}</th>`).join("")}</tr>`;
+    const rows = r.pairs.map(p => `<tr><td class="title">${esc(p.a)}</td><td class="title">${esc(p.b)}</td><td><span class="choice ${p.llm}">${p.llm === "insufficient_evidence" ? "unsure" : p.llm}</span></td>` +
+      models.map(m => { const c = p.models[m]; const ok = (p.llm === "A" || p.llm === "B") ? (c === p.llm ? '<span class="agree">✓</span>' : '<span class="disagree">✗</span>') : ""; return `<td><span class="choice ${c}">${c}</span> ${ok}</td>`; }).join("") + "</tr>").join("");
+    $("#llmout").innerHTML = `<div class="tablewrap"><table>${head}${rows}</table></div>
+      <p class="note">✓ means the model predicts higher stars for the same movie the LLM picked. The LLM reads <i>content</i>; the models read <i>rating patterns</i>. That gap is why the teacher barely moved our error.</p>
+      <details><summary>Show the exact prompt and raw JSON answer</summary><pre>${esc(r.prompt_preview)}…</pre><pre>${esc(JSON.stringify(r.raw_json, null, 1))}</pre></details>`;
+  } catch (e) { $("#llmout").innerHTML = `<div class="callout">Error: ${esc(e.message)}</div>`; }
+  finally { clearInterval(tick); btn.disabled = false; if ($("#llmtimer").innerHTML.includes("thinking")) $("#llmtimer").textContent = ""; }
+};
+
+/* ---------- replay ---------- */
+let replay = null, bucket = "all", cursor = -1;
+async function loadReplay() {
+  replay = await api("/api/replay");
+  replay.users.forEach(u => { const d = u.mae["DUPGT"] - u.mae["Movie average"]; u.bucket = d < -0.3 ? "helped" : d > 0.3 ? "harmed" : "neutral"; });
+  renderOverall(); nextUser();
+}
+const pool = () => replay.users.filter(u => bucket === "all" || u.bucket === bucket);
+function nextUser() { const p = pool(); cursor = (cursor + 1) % p.length; renderUser(p[cursor]); $("#usercount").textContent = `user ${cursor + 1} of ${p.length}`; }
+$("#nextuser").onclick = nextUser;
+document.querySelectorAll("#bucket button").forEach(b => b.onclick = () => { bucket = b.dataset.b; cursor = -1; document.querySelectorAll("#bucket button").forEach(x => x.classList.toggle("on", x === b)); nextUser(); });
+function renderUser(u) {
+  const label = {helped: "DUPGT beat the movie average for this person", harmed: "Negative transfer: DUPGT was worse than the movie average", neutral: "DUPGT and the movie average were about equal"}[u.bucket];
+  $("#replayuser").innerHTML = `<div class="callout"><b>Test user …${esc(u.user)}</b> · ${u.n_books} book ratings, ${u.movies.length} hidden movie ratings · ${label}</div>
+    <div class="ubooks">${u.books.map(b => `<span class="ubook ${b.stars < 4 ? "low" : ""}">${"★".repeat(b.stars)} ${esc(b.title.slice(0, 60))}</span>`).join("")}</div>`;
+  const m = replay.methods;
+  const head = `<tr><th class="title">Hidden movie</th><th>Real rating</th>${m.map(x => `<th>${esc(x)}</th>`).join("")}<th>Gate (liked)</th><th>Blend trust w</th></tr>`;
+  const rows = u.movies.map(r => { const errs = m.map(x => Math.abs(r[x] - r.actual)); const best = Math.min(...errs);
+    return `<tr><td class="title">${esc(r.title)}</td><td class="cell">${"★".repeat(r.actual)}</td>` +
+      m.map((x, i) => `<td class="${errs[i] === best ? "best" : ""}">${r[x].toFixed(2)}</td>`).join("") +
+      `<td>${Math.round(100*r.alpha_high)}%</td><td>${r.trust_w.toFixed(2)}</td></tr>`; }).join("");
+  const bestMae = Math.min(...m.map(x => u.mae[x]));
+  const foot = `<tr class="foot"><td class="title">Error for this person (MAE)</td><td></td>${m.map(x => `<td class="${u.mae[x] === bestMae ? "best" : ""}">${u.mae[x].toFixed(2)}</td>`).join("")}<td></td><td></td></tr>`;
+  $("#replaytable").innerHTML = `<table>${head}${rows}${foot}</table>`;
+}
+function renderOverall() {
+  const o = replay.overall_mae, vals = Object.values(o), lo = Math.min(...vals) - 0.01, hi = Math.max(...vals);
+  $("#overall").innerHTML = Object.entries(o).map(([k, v]) => `<div class="mae"><span>${esc(k)}</span><span class="track"><i class="${k === "Movie average" ? "base" : ""}" style="width:${8 + 92*(v - lo)/(hi - lo)}%"></i></span><b>${v.toFixed(4)}</b></div>`).join("") +
+    `<p class="note">The bars are zoomed in on a narrow range: the differences are small but statistically significant (paired bootstrap, p < 0.001 for the fallback vs the movie average).</p>`;
+}
+
+/* ---------- about ---------- */
+async function loadFacts() {
+  const facts = [
+    ["Identical", "The demo's models were retrained from the kept factors with the same seeds. The DUPGT checkpoint's SHA-256 matches the reported run byte for byte."],
+    ["0.97", "Correlation between predictions from a taste vector rebuilt from book ratings alone and from the learned vector (3,000 real test users). MAE 0.761 vs 0.758."],
+    ["< 0.1 s", "Time to score all 5,598 candidate movies with every model on this laptop. No GPU, no internet."],
+    ["Content vs ratings", "The LLM teacher reads titles and descriptions; the bridge models read rating patterns. Compare them live in tab 1."],
+  ];
+  $("#facts").innerHTML = facts.map(([k, p]) => `<div class="fact"><div class="k">${k}</div><p>${p}</p></div>`).join("");
+}
+
+refreshStatus(); setInterval(refreshStatus, 15000);
+loadPersonas(); renderShelf(); loadFacts();
+</script>
+</body>
+</html>

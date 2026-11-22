@@ -1,0 +1,22 @@
+# Only the code goes to GitHub: ignore everything at the top level, then allow these.
+/*
+!/README.md
+!/pyproject.toml
+!/.python-version
+!/.gitignore
+!/src/
+!/tests/
+!/notebooks/
+!/demo/
+
+# inside demo/: no data bundle, no installed packages, no build output
+/demo/bundle/
+/demo/web/node_modules/
+/demo/web/dist/
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+.DS_Store
+.env
+.env.*
