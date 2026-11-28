@@ -1,0 +1,145 @@
+{
+  "purpose": "validation_teacher_audit_only",
+  "users": 8,
+  "prediction_lock_sha256": "f8527f9780cfea3dc6e20e918157038c0d96613841ab909631d0df4e6e4bccbd",
+  "results": [
+    {
+      "model": "dupgt-qwen35-9b",
+      "profile": "original",
+      "pairs": 22,
+      "valid_profiles": 8,
+      "answered_pairs": 0,
+      "correct_pairs": 0,
+      "coverage": 0.0,
+      "accuracy_when_answered": null,
+      "correct_fraction_of_all_pairs": 0.0,
+      "choices": {
+        "insufficient_evidence": 22
+      },
+      "median_seconds_per_profile": 9.16,
+      "valid_json_fraction": 1.0
+    },
+    {
+      "model": "dupgt-qwen35-9b",
+      "profile": "shuffled",
+      "pairs": 22,
+      "valid_profiles": 8,
+      "answered_pairs": 0,
+      "correct_pairs": 0,
+      "coverage": 0.0,
+      "accuracy_when_answered": null,
+      "correct_fraction_of_all_pairs": 0.0,
+      "choices": {
+        "insufficient_evidence": 22
+      },
+      "median_seconds_per_profile": 7.6915,
+      "valid_json_fraction": 1.0
+    },
+    {
+      "model": "dupgt-bonsai2-27b",
+      "profile": "original",
+      "pairs": 22,
+      "valid_profiles": 8,
+      "answered_pairs": 0,
+      "correct_pairs": 0,
+      "coverage": 0.0,
+      "accuracy_when_answered": null,
+      "correct_fraction_of_all_pairs": 0.0,
+      "choices": {
+        "insufficient_evidence": 22
+      },
+      "median_seconds_per_profile": 27.08,
+      "valid_json_fraction": 1.0
+    },
+    {
+      "model": "dupgt-bonsai2-27b",
+      "profile": "shuffled",
+      "pairs": 22,
+      "valid_profiles": 7,
+      "answered_pairs": 0,
+      "correct_pairs": 0,
+      "coverage": 0.0,
+      "accuracy_when_answered": null,
+      "correct_fraction_of_all_pairs": 0.0,
+      "choices": {
+        "insufficient_evidence": 19
+      },
+      "median_seconds_per_profile": 27.313,
+      "valid_json_fraction": 0.875
+    },
+    {
+      "model": "tfidf_text",
+      "profile": "original",
+      "pairs": 22,
+      "valid_profiles": 8,
+      "answered_pairs": 16,
+      "correct_pairs": 8,
+      "coverage": 0.7272727272727273,
+      "accuracy_when_answered": 0.5,
+      "correct_fraction_of_all_pairs": 0.36363636363636365,
+      "choices": {
+        "tie": 6,
+        "A": 8,
+        "B": 8
+      }
+    },
+    {
+      "model": "training_popularity",
+      "profile": "original",
+      "pairs": 22,
+      "valid_profiles": 8,
+      "answered_pairs": 22,
+      "correct_pairs": 7,
+      "coverage": 1.0,
+      "accuracy_when_answered": 0.3181818181818182,
+      "correct_fraction_of_all_pairs": 0.3181818181818182,
+      "choices": {
+        "B": 8,
+        "A": 14
+      }
+    }
+  ],
+  "common_decisive_support": {
+    "pairs": 0,
+    "models": {
+      "dupgt-qwen35-9b": {
+        "correct_pairs": 0,
+        "accuracy": null
+      },
+      "dupgt-bonsai2-27b": {
+        "correct_pairs": 0,
+        "accuracy": null
+      }
+    }
+  },
+  "profile_shuffle_control": {
+    "dupgt-qwen35-9b": {
+      "common_answered_pairs": 0,
+      "changed_choices": 0,
+      "original_accuracy": null,
+      "shuffled_accuracy": null
+    },
+    "dupgt-bonsai2-27b": {
+      "common_answered_pairs": 0,
+      "changed_choices": 0,
+      "original_accuracy": null,
+      "shuffled_accuracy": null
+    }
+  },
+  "label_balance": {
+    "A": 7,
+    "B": 15
+  },
+  "position_baselines": {
+    "always_A": 0.3181818181818182,
+    "always_B": 0.6818181818181818
+  },
+  "limitations": [
+    "Small development pilot; pairs within a user are correlated.",
+    "Pairs are conditioned on unequal observed ratings, not randomly sampled catalogue choices.",
+    "Candidates are Movies/TV products the validation user actually rated; this is not full-catalogue retrieval.",
+    "Prompt text is shortened identically for both models; no reasoning mode, one seed.",
+    "No test outcomes were used and no audit label may enter bridge training.",
+    "Teacher pair accuracy does not establish an improvement in DUPGT MAE/RMSE."
+  ]
+}

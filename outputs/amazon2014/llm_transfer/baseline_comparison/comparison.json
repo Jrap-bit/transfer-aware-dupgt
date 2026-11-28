@@ -1,0 +1,59 @@
+{
+  "axis": "overlap_fraction",
+  "split": "validation",
+  "rows": [
+    {
+      "run": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2014/llm_transfer/baseline_f001_s2020",
+      "teacher": "none",
+      "overlap_fraction": 0.01,
+      "real_users": 261,
+      "real_ratings": 6104,
+      "pseudo_weight": 0.0,
+      "mae": 0.8232450422226286,
+      "rmse": 1.0906096729347137,
+      "movie_mean_mae": 0.8132161095365166,
+      "movie_mean_rmse": 1.062266511407128,
+      "requested_pairs": 0,
+      "matched_pairs": 0,
+      "changed_label_fraction": null
+    },
+    {
+      "run": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2014/llm_transfer/baseline_f010_s2020",
+      "teacher": "none",
+      "overlap_fraction": 0.1,
+      "real_users": 2617,
+      "real_ratings": 55765,
+      "pseudo_weight": 0.0,
+      "mae": 0.7932055955352252,
+      "rmse": 1.0534663570355167,
+      "movie_mean_mae": 0.8132161095365166,
+      "movie_mean_rmse": 1.062266511407128,
+      "requested_pairs": 0,
+      "matched_pairs": 0,
+      "changed_label_fraction": null
+    },
+    {
+      "run": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2014/llm_transfer/baseline_f100_s2020",
+      "teacher": "none",
+      "overlap_fraction": 1.0,
+      "real_users": 26171,
+      "real_ratings": 541059,
+      "pseudo_weight": 0.0,
+      "mae": 0.7734695602769621,
+      "rmse": 1.024309305784702,
+      "movie_mean_mae": 0.8132161095365166,
+      "movie_mean_rmse": 1.062266511407128,
+      "requested_pairs": 0,
+      "matched_pairs": 0,
+      "changed_label_fraction": null
+    }
+  ],
+  "inputs": {
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2014/llm_transfer/baseline_f001_s2020": "7bfc3cc0c6953897aa21f609ffd6ce17425d653554443592d3855ec8efcbab06",
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2014/llm_transfer/baseline_f010_s2020": "23c3503d0a0b26c45622a53d0a18e0f6eb23014d7a67500c604b5db9ae15d3a5",
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2014/llm_transfer/baseline_f100_s2020": "ff158254d4225984026be5e3069a57fdc038ce338d1e3e5708d4dd36d034d178"
+  },
+  "dataset_sha256": "0c3d7ec4b68aff71642cd165603beb8a3b87d54341f25af600c620e6f6212a60",
+  "factor_sha256": "d1134a4e0371749bd579d4f20e5b188839a618ae855e153a4d7311398f4a78a1",
+  "comparison_sha256": "a388aa8a05013173376246d63f088d5d89d3353fbe4ca6f8ad38cc0c2f5402bd"
+}

@@ -1,0 +1,23 @@
+{
+  "selected_model": "dupgt-qwen35-9b",
+  "removed_model": "dupgt-bonsai2-27b",
+  "decision": "Operational preference only; neither teacher produced a decisive validation preference.",
+  "reason": [
+    "Both abstained on all 22 real-profile pairs, so preference accuracy is undefined.",
+    "Qwen completed 16/16 requests; Bonsai completed 15/16 with one HTTP 400 in the shuffled control.",
+    "Original-profile median latency: Qwen 9.16 seconds, Bonsai 27.08 seconds.",
+    "Qwen uses the smaller weight file and lower estimated model memory."
+  ],
+  "research_gate": "Failed: zero accepted preference pairs. Do not train the bridge with this audit or an empty teacher.",
+  "audit_comparison_sha256": "b4724f06e3013ccf22e1b37ee267bef5aef1055e9b7b3cc43048fc9bb5a90afc",
+  "selected_runtime_file": "outputs/amazon2014/llm_transfer/qwen35_runtime.json",
+  "removal_authorization": "User explicitly requested keeping the better model after the check and deleting the other model weights.",
+  "removed_weight_path": "/Users/parjanyapandey/.lmstudio/models/prism-ml/Ternary-Bonsai-2-27B-gguf/Ternary-Bonsai-2-27B-Q2_0.gguf",
+  "removed_weight_sha256": "4f99aed01b8a877e153f9aa6569a4440fe17c59701cc0953e36d7f460549e70e",
+  "removed_weight_bytes": 7626008928,
+  "audit_outputs_preserved": true,
+  "status": "removed",
+  "removed_at_utc": "2026-11-18T17:29:32.136236+00:00",
+  "weight_file_exists": false,
+  "disk_free_gib_after_removal": 15.87
+}

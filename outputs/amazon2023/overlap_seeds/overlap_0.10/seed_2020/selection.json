@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "locked_at_utc": "2026-11-19T23:32:19.598551+00:00",
+  "reason": "Predeclared limited-overlap study: every listed variant is reported. Each run's checkpoint was chosen by validation RMSE; test data was not used for training, weights or checkpoint choice. Same 2023 test split as earlier experiments, so these are follow-up results.",
+  "metric": "validation_rmse",
+  "runs": [
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/overlap_seeds/overlap_0.10/seed_2020/dupgt",
+      "artifact_manifest_sha256": "b304bfba2ab71fc97a83e402f633bf3fea6f7bf06ee856b15962f34a45261023",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0161960555528458
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/overlap_seeds/overlap_0.10/seed_2020/semantics",
+      "artifact_manifest_sha256": "98aa982f384923bc236594566abd5b226e388efb9a3e2e5079adddcf1ab9a95c",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0135928493384967
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/overlap_seeds/overlap_0.10/seed_2020/semantics_llm_w0.01",
+      "artifact_manifest_sha256": "a8964668df333e5e2538f9c2e3cabe75d53599ba29cd834b968c3a4ee041cedf",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0142534491690534
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/overlap_seeds/overlap_0.10/seed_2020/semantics_text_w0.01",
+      "artifact_manifest_sha256": "d33f912eed13699ad205cb03a7f5928fe591e8d151b790aaeaf082e4b7c373ac",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0141790007838678
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/overlap_seeds/overlap_0.10/seed_2020/semantics_shuffled_w0.01",
+      "artifact_manifest_sha256": "ce3796c7b35006339004881e038c5fd6431313b1bcda9d8b263a7aa3c77867c6",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0142819060332797
+    }
+  ]
+}

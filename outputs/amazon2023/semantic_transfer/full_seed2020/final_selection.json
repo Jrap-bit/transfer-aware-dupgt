@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "locked_at_utc": "2026-11-19T19:51:46.161923+00:00",
+  "reason": "Predeclared full-supervision variants and controls; fixed auxiliary weight; best checkpoints chosen by validation RMSE. Test scores are follow-up evidence.",
+  "metric": "validation_rmse",
+  "runs": [
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/semantic_transfer/full_seed2020/semantics",
+      "artifact_manifest_sha256": "b83bc3b5330ca2bcae28fe403b4c5d530b33c1096b343e6084bc8cc7018ed777",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 0.9931517559197122
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/semantic_transfer/full_seed2020/semantics_llm",
+      "artifact_manifest_sha256": "264fff5bb9dbc86ae042e82e6ac8c33e6c35dfe9002e9815c8ec7fa721f8ee68",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 0.9931912307016281
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/semantic_transfer/full_seed2020/dupgt",
+      "artifact_manifest_sha256": "fe5d77981717f99c57365f06ee9536f9250669d15d89e0d0d1baf5dfe0e55af9",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 0.9959286878686366
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/semantic_transfer/full_seed2020/semantics_text",
+      "artifact_manifest_sha256": "699c1d1c52d957db1270008117cce6b81c6cd3108098509bb9c915b2ed0df53b",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 0.9931357033684418
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/semantic_transfer/full_seed2020/semantics_shuffled",
+      "artifact_manifest_sha256": "cda981e7caec680bdab8c2b0891b8a41842024f05b8ebe3bcac4375d2ac39ba9",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 0.9932192080495921
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+model,profile,pairs,answered_pairs,correct_pairs,coverage,accuracy_when_answered,correct_fraction_of_all_pairs,median_seconds_per_profile,valid_json_fraction
+dupgt-qwen35-9b,original,56,6,3,0.10714285714285714,0.5,0.05357142857142857,10.139,1.0
+dupgt-qwen35-9b,shuffled,56,2,1,0.03571428571428571,0.5,0.017857142857142856,8.766,1.0
+tfidf_text,original,56,54,22,0.9642857142857143,0.4074074074074074,0.39285714285714285,,
+training_popularity,original,56,55,30,0.9821428571428571,0.5454545454545454,0.5357142857142857,,

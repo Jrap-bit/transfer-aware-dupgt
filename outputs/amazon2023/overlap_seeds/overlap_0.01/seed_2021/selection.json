@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "locked_at_utc": "2026-11-19T21:47:55.714162+00:00",
+  "reason": "Predeclared limited-overlap study: every listed variant is reported. Each run's checkpoint was chosen by validation RMSE; test data was not used for training, weights or checkpoint choice. Same 2023 test split as earlier experiments, so these are follow-up results.",
+  "metric": "validation_rmse",
+  "runs": [
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/overlap_seeds/overlap_0.01/seed_2021/dupgt",
+      "artifact_manifest_sha256": "e3ac08496c02ce73b262b14bc0a185797b59d40a721fd34e5ec0ef93b22a66bf",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0818247793688058
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/overlap_seeds/overlap_0.01/seed_2021/semantics",
+      "artifact_manifest_sha256": "5817f7c6358efd23e3c817a74819b1ab19f7816eeccf2bf224503d050db5cab3",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.070124125529437
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/overlap_seeds/overlap_0.01/seed_2021/semantics_llm_w0.01",
+      "artifact_manifest_sha256": "eab4ef6bd3c4e8569de03c68c3a063ffb02c0cd3be01ab18c416396737e9a599",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0712219732865056
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/overlap_seeds/overlap_0.01/seed_2021/semantics_text_w0.01",
+      "artifact_manifest_sha256": "f344f9f202447284a4120d151d82ebdbf74108183eb6a6e6c3b1a46696cd18a2",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0713047661583914
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/overlap_seeds/overlap_0.01/seed_2021/semantics_shuffled_w0.01",
+      "artifact_manifest_sha256": "ad97467c10b319ffe455554a61d222be1b7cd85f1f9d73ac40c6c218cb6bfd53",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0711307325794346
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/overlap_seeds/overlap_0.01/seed_2021/semantics_llm_w0.1",
+      "artifact_manifest_sha256": "b2e5e3c6d38a655eacc06bbd413d70144baf796b4de9b9bcdbe1278c481de18a",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0679436948546577
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/overlap_seeds/overlap_0.01/seed_2021/semantics_text_w0.1",
+      "artifact_manifest_sha256": "bac28879fafb31486174bba74da5d901497aea9c417b9f69b1617efcbaa0f5df",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0689994649852583
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/overlap_seeds/overlap_0.01/seed_2021/semantics_shuffled_w0.1",
+      "artifact_manifest_sha256": "aac62f9df7c01a7c86b46b3722531ab303f164fb7045308be6d923680e2c4f4e",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0668388507860878
+    }
+  ]
+}

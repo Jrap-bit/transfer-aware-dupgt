@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "locked_at_utc": "2026-11-20T08:30:20.732913+00:00",
+  "reason": "Uncertainty-gated ensemble: every member is reported. Each member's checkpoint was chosen by validation RMSE and the blend was fitted on validation only, before any test scoring. blend sha256=45f9e716f6f8534e5ac868dae5a034b28bbd9239192f8b7eb7a547891a744412",
+  "metric": "validation_rmse",
+  "runs": [
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_2022",
+      "artifact_manifest_sha256": "9f56c8df406d8e9bfed858619e4daa6b8115d0c3234ae809ded7d294e0de1b08",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0134982817678904
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_3022",
+      "artifact_manifest_sha256": "ef6cda95bcf391174a84139c8c1952d88758484fce024f43818da696e0b750c8",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.013094142670547
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_4022",
+      "artifact_manifest_sha256": "4e5f712edcb8dbed08b9a4a41aaefa1ba6c99a012ff7034fbcd827986d46c2e4",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.013026161630988
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_5022",
+      "artifact_manifest_sha256": "9f944f5d7a1f4c770ab375104b30779df88814932d3ce2359f364ae671822a74",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.01254944296589
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_6022",
+      "artifact_manifest_sha256": "1c27a3a4eb5692c59bb5c3c6400b5c696b68cb954f9be811c8ed30dcad037c64",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.011871931537654
+    }
+  ]
+}

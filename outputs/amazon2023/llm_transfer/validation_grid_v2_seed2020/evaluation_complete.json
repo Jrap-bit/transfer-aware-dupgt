@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "selection_record": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/final_selection.json",
+  "evaluated_models": 9,
+  "comparison_directories": [
+    "outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/test_w0.01",
+    "outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/test_selected_text",
+    "outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/test_w0.01"
+  ],
+  "selection_based_on": "validation_rmse",
+  "transfer_seeds": [
+    2020
+  ]
+}

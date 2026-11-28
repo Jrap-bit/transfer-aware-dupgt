@@ -1,0 +1,34 @@
+{
+  "status": "completed",
+  "selected_checkpoint": {
+    "epoch": 11,
+    "validation": {
+      "mae": 0.7100358957914771,
+      "rmse": 0.9984934209780723,
+      "n_ratings": 210455
+    }
+  },
+  "raw": {
+    "mae": 0.7100358957914771,
+    "rmse": 0.9984934209780723,
+    "n_ratings": 210455
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7029853408350404,
+    "rmse": 0.9967034414977746,
+    "n_ratings": 210455
+  },
+  "movie_mean": {
+    "mae": 0.7505646222798233,
+    "rmse": 1.0346387480075139,
+    "n_ratings": 210455
+  },
+  "mean_alpha_high": 0.511690080165863,
+  "prior_variance": 3.418004274368286,
+  "factor_sha256_after": "fbfeb46473dc56507b9f485ffd1fc7f05ccd047d1e5b481e53b3c4fbd40d435d",
+  "factors_unchanged": true,
+  "pseudo_comparisons_processed": 0,
+  "pseudo_exposures_per_pair": 0.0,
+  "elapsed_seconds": 587.4649303330079,
+  "test_evaluated": false
+}

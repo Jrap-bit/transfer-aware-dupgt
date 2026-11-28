@@ -1,0 +1,47 @@
+{
+  "selection_record": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/final_selection.json",
+  "run_dirs": [
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/none_w0",
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/text_w0.01",
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/llm_w0.01",
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/shuffled_w0.01",
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/text_w0.1",
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/none_w0",
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/text_w0.01",
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/llm_w0.01",
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/shuffled_w0.01"
+  ],
+  "groups": [
+    {
+      "overlap_fraction": 0.01,
+      "equal_weight": 0.01,
+      "matched_runs": [
+        "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/none_w0",
+        "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/text_w0.01",
+        "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/llm_w0.01",
+        "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/shuffled_w0.01"
+      ],
+      "validation_selected_families": {
+        "text": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/text_w0.1",
+        "llm": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/llm_w0.01",
+        "shuffled": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/shuffled_w0.01"
+      }
+    },
+    {
+      "overlap_fraction": 0.1,
+      "equal_weight": 0.01,
+      "matched_runs": [
+        "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/none_w0",
+        "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/text_w0.01",
+        "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/llm_w0.01",
+        "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/shuffled_w0.01"
+      ],
+      "validation_selected_families": {
+        "text": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/text_w0.01",
+        "llm": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/llm_w0.01",
+        "shuffled": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/shuffled_w0.01"
+      }
+    }
+  ],
+  "selection_rule": "Lowest saved validation RMSE including zero for each teacher family at the predeclared 1% and 10% supervision levels. Also retain text/shuffled controls at the LLM-selected weight for equal-weight attribution. No extension test metrics were read for selection; one transfer seed, exploratory pilot."
+}

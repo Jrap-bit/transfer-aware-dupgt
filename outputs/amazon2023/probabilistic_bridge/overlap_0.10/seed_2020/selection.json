@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "locked_at_utc": "2026-11-20T05:13:27.124187+00:00",
+  "reason": "Probabilistic bridge, both predeclared gate-prior weights reported. Checkpoints chosen by validation RMSE; the weight 0.1 was picked from a 4-epoch validation trial at 1% overlap, seed 2020. Same 2023 test split as earlier experiments, so these are follow-up results.",
+  "metric": "validation_rmse",
+  "runs": [
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/probabilistic_bridge/overlap_0.10/seed_2020/probabilistic_g0",
+      "artifact_manifest_sha256": "d9ad44433a2c3024e5ce2baf0328a5a3c741fda35afcbe064bb2388e5ba9abe3",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0010375896849213
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/probabilistic_bridge/overlap_0.10/seed_2020/probabilistic_g0.1",
+      "artifact_manifest_sha256": "128bc95b2267220e7ce54d9fc6467bcee8f815200dff58171106249bc59ee88e",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 0.9991823486811953
+    }
+  ]
+}

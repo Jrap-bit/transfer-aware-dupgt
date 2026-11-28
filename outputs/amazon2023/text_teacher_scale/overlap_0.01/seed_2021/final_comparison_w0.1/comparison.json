@@ -1,0 +1,62 @@
+{
+  "axis": "teacher",
+  "split": "test",
+  "rows": [
+    {
+      "run": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/text_teacher_scale/overlap_0.01/seed_2021/semantics",
+      "teacher": "none",
+      "model_variant": "semantics",
+      "overlap_fraction": 0.01,
+      "real_users": 890,
+      "real_ratings": 15474,
+      "pseudo_weight": 0.0,
+      "mae": 0.7915731296662171,
+      "rmse": 1.0870041498727747,
+      "movie_mean_mae": 0.762019474259309,
+      "movie_mean_rmse": 1.0506938709835925,
+      "requested_pairs": 0,
+      "matched_pairs": 0,
+      "changed_label_fraction": null
+    },
+    {
+      "run": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/text_teacher_scale/overlap_0.01/seed_2021/semantics_text_only_w0.1",
+      "teacher": "retrieval_text_only",
+      "model_variant": "semantics",
+      "overlap_fraction": 0.01,
+      "real_users": 890,
+      "real_ratings": 15474,
+      "pseudo_weight": 0.1,
+      "mae": 0.7897116571274306,
+      "rmse": 1.0846142913494548,
+      "movie_mean_mae": 0.762019474259309,
+      "movie_mean_rmse": 1.0506938709835925,
+      "requested_pairs": 20000,
+      "matched_pairs": 19880,
+      "changed_label_fraction": 0.9989436619718309
+    },
+    {
+      "run": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/text_teacher_scale/overlap_0.01/seed_2021/semantics_text_only_shuffled_w0.1",
+      "teacher": "retrieval_text_only_shuffled",
+      "model_variant": "semantics",
+      "overlap_fraction": 0.01,
+      "real_users": 890,
+      "real_ratings": 15474,
+      "pseudo_weight": 0.1,
+      "mae": 0.7897015528940421,
+      "rmse": 1.084672135291514,
+      "movie_mean_mae": 0.762019474259309,
+      "movie_mean_rmse": 1.0506938709835925,
+      "requested_pairs": 20000,
+      "matched_pairs": 19880,
+      "changed_label_fraction": 0.9989436619718309
+    }
+  ],
+  "inputs": {
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/text_teacher_scale/overlap_0.01/seed_2021/semantics": "f8eddccedee67c9bc008a19d17feaa9fca7685ba7f9f6c41e891bb56d0645415",
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/text_teacher_scale/overlap_0.01/seed_2021/semantics_text_only_w0.1": "ca87c396e98b578fe156258394f70bc7310297709415888f078fccbd4f932022",
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/text_teacher_scale/overlap_0.01/seed_2021/semantics_text_only_shuffled_w0.1": "e3912d97e22765447242ec3d18fe0f6e951c8f5c86ffb35331ad64dc1ab461f7"
+  },
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "factor_sha256": "fbfeb46473dc56507b9f485ffd1fc7f05ccd047d1e5b481e53b3c4fbd40d435d",
+  "comparison_sha256": "64e6b7c9fc765c52aa686264c0984a14c2d5123d925045f9d5f5febefa6440b4"
+}

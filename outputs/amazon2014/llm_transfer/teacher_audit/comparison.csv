@@ -1,0 +1,7 @@
+model,profile,pairs,answered_pairs,correct_pairs,coverage,accuracy_when_answered,correct_fraction_of_all_pairs,median_seconds_per_profile,valid_json_fraction
+dupgt-qwen35-9b,original,22,0,0,0.0,,0.0,9.16,1.0
+dupgt-qwen35-9b,shuffled,22,0,0,0.0,,0.0,7.6915,1.0
+dupgt-bonsai2-27b,original,22,0,0,0.0,,0.0,27.08,1.0
+dupgt-bonsai2-27b,shuffled,22,0,0,0.0,,0.0,27.313,0.875
+tfidf_text,original,22,16,8,0.7272727272727273,0.5,0.36363636363636365,,
+training_popularity,original,22,22,7,1.0,0.3181818181818182,0.3181818181818182,,

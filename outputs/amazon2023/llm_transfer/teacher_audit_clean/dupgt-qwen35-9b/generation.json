@@ -1,0 +1,13 @@
+{
+  "model_digest": "cd76ec205963b3b33350093e6904d9de16c4e666fd104e1f632d25c7f15f2a13",
+  "runtime_manifest_sha256": "877d5b1fb5496554fd16ec4f0549b5d2e264a5979d800301f8d665ced1366456",
+  "app_version": "0.4.28+2",
+  "loaded_context_tokens": 8192,
+  "model": "dupgt-qwen35-9b",
+  "context_tokens": 8192,
+  "max_output_tokens": 512,
+  "temperature": 0,
+  "seed": 2020,
+  "reasoning_effort": "none",
+  "audit_manifest_sha256": "05e901d923f60528d6e93d4d4b2b314c8efa7d090691ff520664ea5714b716a9"
+}

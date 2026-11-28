@@ -1,0 +1,22 @@
+{
+  "status": "reviewed_with_targeted_tests",
+  "tests_passed": 44,
+  "absolute_correctness_guaranteed": false,
+  "checks": [
+    "semantic gate agrees with sigmoid(logit(base)+clipped_delta)",
+    "gate derivatives checked by finite differences",
+    "zero adjustment and missing semantics recover baseline",
+    "float16 vectors normalized after loading",
+    "pairwise loss sign and separate mean reduction",
+    "semantic parameters receive rating-loss gradients",
+    "domain factors remain frozen",
+    "source-only teacher users; warm target items; no target outcomes in prompts",
+    "strict checkpoint/cache identity and architecture reload",
+    "automatic stage order, process lock and verified resume"
+  ],
+  "limitations": [
+    "weak retrieved preferences are assumptions, not observed ratings",
+    "single-seed follow-up experiment; prior test split already seen",
+    "semantic gate is an adaptation, not full SemaCDR/LGCD or calibrated confidence"
+  ]
+}

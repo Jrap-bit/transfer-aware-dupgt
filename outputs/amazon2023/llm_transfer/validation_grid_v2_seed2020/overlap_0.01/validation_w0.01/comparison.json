@@ -1,0 +1,75 @@
+{
+  "axis": "teacher",
+  "split": "validation",
+  "rows": [
+    {
+      "run": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/none_w0",
+      "teacher": "none",
+      "overlap_fraction": 0.01,
+      "real_users": 890,
+      "real_ratings": 13792,
+      "pseudo_weight": 0.0,
+      "mae": 0.8003152935784558,
+      "rmse": 1.0953152555099495,
+      "movie_mean_mae": 0.7505646222798233,
+      "movie_mean_rmse": 1.0346387480075139,
+      "requested_pairs": 0,
+      "matched_pairs": 0,
+      "changed_label_fraction": null
+    },
+    {
+      "run": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/text_w0.01",
+      "teacher": "text",
+      "overlap_fraction": 0.01,
+      "real_users": 890,
+      "real_ratings": 13792,
+      "pseudo_weight": 0.01,
+      "mae": 0.8002818990503826,
+      "rmse": 1.0947033980642504,
+      "movie_mean_mae": 0.7505646222798233,
+      "movie_mean_rmse": 1.0346387480075139,
+      "requested_pairs": 1000,
+      "matched_pairs": 927,
+      "changed_label_fraction": 0.23516720604099245
+    },
+    {
+      "run": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/llm_w0.01",
+      "teacher": "llm",
+      "overlap_fraction": 0.01,
+      "real_users": 890,
+      "real_ratings": 13792,
+      "pseudo_weight": 0.01,
+      "mae": 0.800145965376523,
+      "rmse": 1.0946671731646516,
+      "movie_mean_mae": 0.7505646222798233,
+      "movie_mean_rmse": 1.0346387480075139,
+      "requested_pairs": 1000,
+      "matched_pairs": 927,
+      "changed_label_fraction": 0.23516720604099245
+    },
+    {
+      "run": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/shuffled_w0.01",
+      "teacher": "shuffled",
+      "overlap_fraction": 0.01,
+      "real_users": 890,
+      "real_ratings": 13792,
+      "pseudo_weight": 0.01,
+      "mae": 0.8001449483730326,
+      "rmse": 1.0946638599637384,
+      "movie_mean_mae": 0.7505646222798233,
+      "movie_mean_rmse": 1.0346387480075139,
+      "requested_pairs": 1000,
+      "matched_pairs": 927,
+      "changed_label_fraction": 0.23516720604099245
+    }
+  ],
+  "inputs": {
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/none_w0": "85e17e3c89632b7fa2cd96f74a19fdf2edc3d3f391eae76028cc6cf7c4cf2dd5",
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/text_w0.01": "ebb0da58032757ce01bf9c4d4ab25b11c73aa8f70ec2d4ec6240f885b68c3e1f",
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/llm_w0.01": "d1d65c55c0615600af75dc4f0721b3f33fdcc0ba1424e2ae1807c14afdb0f28b",
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/shuffled_w0.01": "d51a9d51fd2bf1aa6088e315fbf004fae539bb3f98b4747af094ba017ef789ce"
+  },
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "factor_sha256": "fbfeb46473dc56507b9f485ffd1fc7f05ccd047d1e5b481e53b3c4fbd40d435d",
+  "comparison_sha256": "c302e5bf5eb9ee416aa4aad1853579f46dbfa98bf5c0256e86ca7daca662677e"
+}

@@ -1,0 +1,22 @@
+{
+  "raw": {
+    "mae": 0.7209599412966974,
+    "rmse": 1.0074218513694957,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7190931160110766,
+    "rmse": 1.006309806746684,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "264fff5bb9dbc86ae042e82e6ac8c33e6c35dfe9002e9815c8ec7fa721f8ee68",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "06fe8b7ec8ece6abc56db28198a325ea447d61d9b965813d941cb7aebccf8a89",
+  "predictions_sha256": "78c3c25bfb3cee81c660f9b55afac36456afff05bc135b68aca5e58dfbc5c4fc"
+}

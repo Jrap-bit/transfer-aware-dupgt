@@ -1,0 +1,1833 @@
+[09:30:24] 30 bridges planned -> /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble
+[09:30:24] == overlap 1%, seed 2020: 5 bridges ==
+[09:30:24] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.01 --overlap-seed 2020 --transfer-seed 2020 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_2020
+Bridge-only: 890 users, 13,792 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 3.96140; validation MAE 0.91730, RMSE 1.15547 (19.0s)
+dupgt             02/15: train MSE 1.09157; validation MAE 0.80095, RMSE 1.09562 (18.9s)
+dupgt             03/15: train MSE 1.04940; validation MAE 0.80987, RMSE 1.11086 (18.9s)
+dupgt             04/15: train MSE 1.04528; validation MAE 0.81079, RMSE 1.10424 (18.8s)
+dupgt             05/15: train MSE 1.01098; validation MAE 0.79963, RMSE 1.10499 (18.8s)
+dupgt             06/15: train MSE 0.99782; validation MAE 0.80881, RMSE 1.10820 (18.8s)
+dupgt             07/15: train MSE 0.99385; validation MAE 0.83697, RMSE 1.11510 (18.9s)
+dupgt             08/15: train MSE 0.99065; validation MAE 0.82932, RMSE 1.11497 (18.9s)
+dupgt             09/15: train MSE 0.98240; validation MAE 0.82617, RMSE 1.11327 (19.0s)
+dupgt             10/15: train MSE 0.97840; validation MAE 0.83041, RMSE 1.11920 (19.4s)
+dupgt             11/15: train MSE 0.96934; validation MAE 0.82035, RMSE 1.11482 (19.4s)
+dupgt             12/15: train MSE 0.95016; validation MAE 0.82092, RMSE 1.11712 (19.2s)
+dupgt             13/15: train MSE 0.94937; validation MAE 0.81512, RMSE 1.11496 (19.0s)
+dupgt             14/15: train MSE 0.94099; validation MAE 0.81348, RMSE 1.11517 (18.9s)
+dupgt             15/15: train MSE 0.93805; validation MAE 0.81549, RMSE 1.11524 (19.4s)
+Validation MAE=0.800950, RMSE=1.095618; test not evaluated
+[09:35:42] finished in 5.3 min
+[09:35:42] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.01 --overlap-seed 2020 --transfer-seed 3020 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_3020
+Bridge-only: 890 users, 13,792 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 3.73758; validation MAE 0.94414, RMSE 1.17817 (19.4s)
+dupgt             02/15: train MSE 1.08262; validation MAE 0.79975, RMSE 1.10057 (19.2s)
+dupgt             03/15: train MSE 1.04456; validation MAE 0.80569, RMSE 1.11535 (19.4s)
+dupgt             04/15: train MSE 1.02481; validation MAE 0.81351, RMSE 1.10499 (19.5s)
+dupgt             05/15: train MSE 1.00781; validation MAE 0.81131, RMSE 1.11062 (19.4s)
+dupgt             06/15: train MSE 1.01721; validation MAE 0.81374, RMSE 1.12615 (19.5s)
+dupgt             07/15: train MSE 0.99111; validation MAE 0.82125, RMSE 1.12291 (19.7s)
+dupgt             08/15: train MSE 0.98582; validation MAE 0.84318, RMSE 1.11934 (19.6s)
+dupgt             09/15: train MSE 0.97658; validation MAE 0.82701, RMSE 1.12124 (19.4s)
+dupgt             10/15: train MSE 0.96562; validation MAE 0.82600, RMSE 1.12006 (19.6s)
+dupgt             11/15: train MSE 0.96716; validation MAE 0.81566, RMSE 1.11987 (19.4s)
+dupgt             12/15: train MSE 0.95177; validation MAE 0.82803, RMSE 1.11991 (19.4s)
+dupgt             13/15: train MSE 0.94476; validation MAE 0.82068, RMSE 1.11601 (19.5s)
+dupgt             14/15: train MSE 0.93475; validation MAE 0.81755, RMSE 1.11791 (19.4s)
+dupgt             15/15: train MSE 0.93205; validation MAE 0.82080, RMSE 1.11793 (19.4s)
+Validation MAE=0.799747, RMSE=1.100566; test not evaluated
+[09:41:08] finished in 5.4 min
+[09:41:08] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.01 --overlap-seed 2020 --transfer-seed 4020 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_4020
+Bridge-only: 890 users, 13,792 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 3.90811; validation MAE 0.82373, RMSE 1.10236 (19.5s)
+dupgt             02/15: train MSE 1.13472; validation MAE 0.82705, RMSE 1.09726 (19.6s)
+dupgt             03/15: train MSE 1.03569; validation MAE 0.79192, RMSE 1.08393 (19.5s)
+dupgt             04/15: train MSE 0.99730; validation MAE 0.79217, RMSE 1.08157 (19.5s)
+dupgt             05/15: train MSE 0.98322; validation MAE 0.77328, RMSE 1.08327 (19.5s)
+dupgt             06/15: train MSE 0.95259; validation MAE 0.77998, RMSE 1.06836 (19.6s)
+dupgt             07/15: train MSE 0.92166; validation MAE 0.83996, RMSE 1.08038 (19.4s)
+dupgt             08/15: train MSE 0.90606; validation MAE 0.80534, RMSE 1.06734 (19.4s)
+dupgt             09/15: train MSE 0.89787; validation MAE 0.79774, RMSE 1.06268 (19.5s)
+dupgt             10/15: train MSE 0.88948; validation MAE 0.80932, RMSE 1.06452 (19.7s)
+dupgt             11/15: train MSE 0.88976; validation MAE 0.78699, RMSE 1.05736 (19.7s)
+dupgt             12/15: train MSE 0.86390; validation MAE 0.79767, RMSE 1.05972 (19.6s)
+dupgt             13/15: train MSE 0.86433; validation MAE 0.77698, RMSE 1.05390 (19.6s)
+dupgt             14/15: train MSE 0.85151; validation MAE 0.78776, RMSE 1.05442 (19.5s)
+dupgt             15/15: train MSE 0.84972; validation MAE 0.76313, RMSE 1.05200 (19.4s)
+Validation MAE=0.763127, RMSE=1.052000; test not evaluated
+[09:46:37] finished in 5.5 min
+[09:46:37] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.01 --overlap-seed 2020 --transfer-seed 5020 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_5020
+Bridge-only: 890 users, 13,792 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 4.59941; validation MAE 1.01282, RMSE 1.33395 (19.6s)
+dupgt             02/15: train MSE 1.15370; validation MAE 0.80269, RMSE 1.08442 (19.4s)
+dupgt             03/15: train MSE 1.02579; validation MAE 0.78322, RMSE 1.08574 (19.4s)
+dupgt             04/15: train MSE 0.99156; validation MAE 0.80393, RMSE 1.08055 (19.5s)
+dupgt             05/15: train MSE 0.96900; validation MAE 0.77901, RMSE 1.07372 (19.5s)
+dupgt             06/15: train MSE 0.94123; validation MAE 0.76861, RMSE 1.06965 (19.5s)
+dupgt             07/15: train MSE 0.93285; validation MAE 0.78040, RMSE 1.06859 (19.8s)
+dupgt             08/15: train MSE 0.91797; validation MAE 0.76098, RMSE 1.07331 (19.4s)
+dupgt             09/15: train MSE 0.91270; validation MAE 0.77737, RMSE 1.06352 (19.5s)
+dupgt             10/15: train MSE 0.89928; validation MAE 0.75744, RMSE 1.06186 (19.6s)
+dupgt             11/15: train MSE 0.88897; validation MAE 0.79138, RMSE 1.06312 (19.4s)
+dupgt             12/15: train MSE 0.87013; validation MAE 0.76404, RMSE 1.05522 (19.5s)
+dupgt             13/15: train MSE 0.86205; validation MAE 0.75819, RMSE 1.05423 (19.6s)
+dupgt             14/15: train MSE 0.85931; validation MAE 0.76897, RMSE 1.05172 (19.4s)
+dupgt             15/15: train MSE 0.85189; validation MAE 0.76348, RMSE 1.05152 (19.5s)
+Validation MAE=0.763480, RMSE=1.051522; test not evaluated
+[09:52:07] finished in 5.5 min
+[09:52:07] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.01 --overlap-seed 2020 --transfer-seed 6020 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_6020
+Bridge-only: 890 users, 13,792 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 3.58409; validation MAE 0.91282, RMSE 1.15705 (19.7s)
+dupgt             02/15: train MSE 1.09239; validation MAE 0.80051, RMSE 1.11108 (19.6s)
+dupgt             03/15: train MSE 1.04908; validation MAE 0.84883, RMSE 1.11439 (19.6s)
+dupgt             04/15: train MSE 1.02478; validation MAE 0.80633, RMSE 1.11770 (19.5s)
+dupgt             05/15: train MSE 1.01722; validation MAE 0.80533, RMSE 1.11061 (19.4s)
+dupgt             06/15: train MSE 1.00454; validation MAE 0.81534, RMSE 1.10662 (19.5s)
+dupgt             07/15: train MSE 0.99330; validation MAE 0.82820, RMSE 1.11159 (19.4s)
+dupgt             08/15: train MSE 0.98708; validation MAE 0.81557, RMSE 1.11628 (19.5s)
+dupgt             09/15: train MSE 0.98233; validation MAE 0.82059, RMSE 1.11508 (19.4s)
+dupgt             10/15: train MSE 0.97820; validation MAE 0.81712, RMSE 1.11822 (19.4s)
+dupgt             11/15: train MSE 0.96932; validation MAE 0.82316, RMSE 1.11531 (19.4s)
+dupgt             12/15: train MSE 0.96096; validation MAE 0.81643, RMSE 1.11462 (19.4s)
+dupgt             13/15: train MSE 0.94755; validation MAE 0.81282, RMSE 1.11317 (19.4s)
+dupgt             14/15: train MSE 0.94639; validation MAE 0.81686, RMSE 1.11404 (19.3s)
+dupgt             15/15: train MSE 0.94353; validation MAE 0.81691, RMSE 1.11399 (19.5s)
+Validation MAE=0.815336, RMSE=1.106618; test not evaluated
+[09:57:34] finished in 5.4 min
+[09:57:34] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr uncertainty-fit --runs /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_2020 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_3020 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_4020 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_5020 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_6020 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/blend
+{
+  "single_bridges": [
+    {
+      "mae": 0.8009501443681226,
+      "rmse": 1.095617599681313,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7997466574377147,
+      "rmse": 1.100565531191036,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7631274995841646,
+      "rmse": 1.0519999622107732,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7634798933182458,
+      "rmse": 1.051522183301915,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.8153355010077051,
+      "rmse": 1.106618441736171,
+      "n_ratings": 210455
+    }
+  ],
+  "ensemble_mean": {
+    "mae": 0.7727754591738526,
+    "rmse": 1.0615709967704536,
+    "n_ratings": 210455
+  },
+  "constant_blend": {
+    "mae": 0.7324395543919135,
+    "rmse": 1.0062535398587276,
+    "n_ratings": 210455
+  },
+  "uncertainty_blend": {
+    "mae": 0.730673710880757,
+    "rmse": 1.005823036247337,
+    "n_ratings": 210455
+  },
+  "movie_mean": {
+    "mae": 0.7505646222798233,
+    "rmse": 1.0346387480075139,
+    "n_ratings": 210455
+  },
+  "mean_weight": 0.441678489261495,
+  "mean_disagreement": 0.16879635316391628
+}
+[10:00:21] finished in 2.8 min
+[10:00:21] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-lock --runs /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_2020 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_3020 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_4020 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_5020 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_6020 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/selection.json --reason Uncertainty-gated ensemble: every member is reported. Each member's checkpoint was chosen by validation RMSE and the blend was fitted on validation only, before any test scoring. blend sha256=f074fa1206f56f71b8ca39311d55d4193a99545594798f13e3a5f457c19ced52
+[10:00:22] finished in 0.0 min
+[10:00:22] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_2020 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/selection.json
+{
+  "raw": {
+    "mae": 0.8135214163765607,
+    "rmse": 1.11144901393222,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7755387181881271,
+    "rmse": 1.0924074361691332,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "4dfd9a527a8da15df8a648f98d6433fb114593eaf133490c2d62e2f52ae568e3",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "f349f02edc66c4d74e51f79a771a8dfb8a8353445346c35ed4de2c354cf0c564",
+  "predictions_sha256": "7993c0838db4e8455353c9564f4c5cfcb354d04c389391339d6cb4ba5364a922"
+}
+[10:01:16] finished in 0.9 min
+[10:01:16] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_3020 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/selection.json
+{
+  "raw": {
+    "mae": 0.8124215779379476,
+    "rmse": 1.1157006015027293,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7613765983404958,
+    "rmse": 1.0911947219893188,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "72e3fcfe032f9b51dcb49dd08833a85db53ea01575752d0061b62cf78973dcb8",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "f349f02edc66c4d74e51f79a771a8dfb8a8353445346c35ed4de2c354cf0c564",
+  "predictions_sha256": "a3213aa58b004af9aee90a3e2699042c8616e461056a2e892f25495907cc1fb6"
+}
+[10:02:10] finished in 0.9 min
+[10:02:10] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_4020 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/selection.json
+{
+  "raw": {
+    "mae": 0.7767919934697549,
+    "rmse": 1.068909422095842,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7536517042455313,
+    "rmse": 1.0559642641958014,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "341f2e9c9230e3f30519bc7dff812bb1ba7ac3062e008807a5b1f027ab3b1033",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "f349f02edc66c4d74e51f79a771a8dfb8a8353445346c35ed4de2c354cf0c564",
+  "predictions_sha256": "2136bf4af88cf24d20f7ec84f95507937a08238f8081611292291ba80334b4ff"
+}
+[10:03:05] finished in 0.9 min
+[10:03:05] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_5020 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/selection.json
+{
+  "raw": {
+    "mae": 0.7768949759582096,
+    "rmse": 1.066514397767123,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7547497969059382,
+    "rmse": 1.0541658300985113,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "ee7efdb6c4907b03a7c612f3cad58c6a60bedf076e14bb13fd67942bf980354d",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "f349f02edc66c4d74e51f79a771a8dfb8a8353445346c35ed4de2c354cf0c564",
+  "predictions_sha256": "67a13e7c8d27f08c77f8bd1656e1d2c870f6b5b1bce337ba5c10e2d248437b79"
+}
+[10:04:01] finished in 0.9 min
+[10:04:01] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_6020 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/selection.json
+{
+  "raw": {
+    "mae": 0.8266329693201679,
+    "rmse": 1.119456718176363,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7860038571341804,
+    "rmse": 1.0989123761853485,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "40ba983cdbbde025f211fb3d2ac4a9d8a3894968cf3ddc22ecc434397281b145",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "f349f02edc66c4d74e51f79a771a8dfb8a8353445346c35ed4de2c354cf0c564",
+  "predictions_sha256": "94ac4ad6bb7e9410d66d1918c80a864e935fbc86ef4148d3afaf185aee2ecd87"
+}
+[10:04:55] finished in 0.9 min
+[10:04:55] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr uncertainty-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/blend --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/selection.json
+{
+  "schema": 1,
+  "split": "test",
+  "blend_sha256": "f074fa1206f56f71b8ca39311d55d4193a99545594798f13e3a5f457c19ced52",
+  "selection_sha256": "f349f02edc66c4d74e51f79a771a8dfb8a8353445346c35ed4de2c354cf0c564",
+  "ensemble_mean": {
+    "mae": 0.7856162140234351,
+    "rmse": 1.0765053635237636,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.5236260712320151
+  },
+  "constant_blend": {
+    "mae": 0.7442957642532896,
+    "rmse": 1.0217419049198624,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.43678748329271166
+  },
+  "uncertainty_blend": {
+    "mae": 0.7425374147666624,
+    "rmse": 1.0212477978702577,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.43949996068873337
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "mean_weight": 0.4416692923893364,
+  "mean_disagreement": 0.16847689100840232,
+  "predictions_sha256": "0000d2cd0d50258befda5e7ba99e55eb51de93cdd4db442372b64ffd5befc1d9"
+}
+[10:05:07] finished in 0.2 min
+[10:05:07] == overlap 1%, seed 2021: 5 bridges ==
+[10:05:07] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.01 --overlap-seed 2021 --transfer-seed 2021 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_2021
+Bridge-only: 890 users, 15,474 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 2.82750; validation MAE 0.86234, RMSE 1.12436 (19.9s)
+dupgt             02/15: train MSE 1.02586; validation MAE 0.78999, RMSE 1.09846 (21.9s)
+dupgt             03/15: train MSE 0.98006; validation MAE 0.80015, RMSE 1.09329 (20.9s)
+dupgt             04/15: train MSE 0.96731; validation MAE 0.79932, RMSE 1.09081 (20.1s)
+dupgt             05/15: train MSE 0.94754; validation MAE 0.79238, RMSE 1.09624 (19.8s)
+dupgt             06/15: train MSE 0.92679; validation MAE 0.82712, RMSE 1.09413 (19.8s)
+dupgt             07/15: train MSE 0.91893; validation MAE 0.80955, RMSE 1.08838 (19.8s)
+dupgt             08/15: train MSE 0.89096; validation MAE 0.78714, RMSE 1.08219 (19.7s)
+dupgt             09/15: train MSE 0.88014; validation MAE 0.78107, RMSE 1.07413 (20.4s)
+dupgt             10/15: train MSE 0.86636; validation MAE 0.76828, RMSE 1.07894 (20.8s)
+dupgt             11/15: train MSE 0.85501; validation MAE 0.78794, RMSE 1.07337 (19.7s)
+dupgt             12/15: train MSE 0.84488; validation MAE 0.80581, RMSE 1.07761 (19.9s)
+dupgt             13/15: train MSE 0.83506; validation MAE 0.77615, RMSE 1.07270 (19.8s)
+dupgt             14/15: train MSE 0.82985; validation MAE 0.77197, RMSE 1.07258 (19.5s)
+dupgt             15/15: train MSE 0.82456; validation MAE 0.77764, RMSE 1.07012 (19.9s)
+Validation MAE=0.777640, RMSE=1.070124; test not evaluated
+[10:10:48] finished in 5.7 min
+[10:10:48] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.01 --overlap-seed 2021 --transfer-seed 3021 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_3021
+Bridge-only: 890 users, 15,474 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 3.67359; validation MAE 0.86525, RMSE 1.12288 (20.0s)
+dupgt             02/15: train MSE 1.03029; validation MAE 0.78641, RMSE 1.07774 (19.7s)
+dupgt             03/15: train MSE 0.95396; validation MAE 0.75708, RMSE 1.06972 (19.9s)
+dupgt             04/15: train MSE 0.92108; validation MAE 0.75681, RMSE 1.07436 (19.8s)
+dupgt             05/15: train MSE 0.90005; validation MAE 0.77681, RMSE 1.05897 (19.3s)
+dupgt             06/15: train MSE 0.88638; validation MAE 0.76352, RMSE 1.05429 (19.4s)
+dupgt             07/15: train MSE 0.87215; validation MAE 0.76397, RMSE 1.05186 (19.3s)
+dupgt             08/15: train MSE 0.86034; validation MAE 0.78143, RMSE 1.05458 (19.5s)
+dupgt             09/15: train MSE 0.84684; validation MAE 0.78860, RMSE 1.05283 (19.5s)
+dupgt             10/15: train MSE 0.83742; validation MAE 0.74639, RMSE 1.05810 (19.3s)
+dupgt             11/15: train MSE 0.82776; validation MAE 0.74860, RMSE 1.05186 (19.4s)
+dupgt             12/15: train MSE 0.81808; validation MAE 0.76445, RMSE 1.04880 (19.4s)
+dupgt             13/15: train MSE 0.81139; validation MAE 0.75053, RMSE 1.04876 (19.4s)
+dupgt             14/15: train MSE 0.80638; validation MAE 0.75476, RMSE 1.04785 (19.4s)
+dupgt             15/15: train MSE 0.80188; validation MAE 0.75009, RMSE 1.04854 (19.5s)
+Validation MAE=0.754759, RMSE=1.047855; test not evaluated
+[10:16:18] finished in 5.5 min
+[10:16:18] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.01 --overlap-seed 2021 --transfer-seed 4021 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_4021
+Bridge-only: 890 users, 15,474 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 3.27633; validation MAE 0.97415, RMSE 1.18902 (19.7s)
+dupgt             02/15: train MSE 1.04077; validation MAE 0.78685, RMSE 1.08883 (19.4s)
+dupgt             03/15: train MSE 0.96686; validation MAE 0.80369, RMSE 1.08218 (19.5s)
+dupgt             04/15: train MSE 0.93916; validation MAE 0.78195, RMSE 1.09936 (19.8s)
+dupgt             05/15: train MSE 0.91334; validation MAE 0.76747, RMSE 1.06144 (19.7s)
+dupgt             06/15: train MSE 0.88683; validation MAE 0.75146, RMSE 1.06525 (19.9s)
+dupgt             07/15: train MSE 0.87671; validation MAE 0.77027, RMSE 1.06073 (19.9s)
+dupgt             08/15: train MSE 0.86406; validation MAE 0.76067, RMSE 1.05704 (19.7s)
+dupgt             09/15: train MSE 0.84941; validation MAE 0.75981, RMSE 1.05736 (19.9s)
+dupgt             10/15: train MSE 0.83560; validation MAE 0.77594, RMSE 1.05487 (19.9s)
+dupgt             11/15: train MSE 0.83152; validation MAE 0.76821, RMSE 1.05321 (19.9s)
+dupgt             12/15: train MSE 0.82088; validation MAE 0.76902, RMSE 1.05321 (19.6s)
+dupgt             13/15: train MSE 0.81389; validation MAE 0.76182, RMSE 1.05364 (19.9s)
+dupgt             14/15: train MSE 0.80661; validation MAE 0.75909, RMSE 1.05375 (19.8s)
+dupgt             15/15: train MSE 0.79804; validation MAE 0.76305, RMSE 1.05322 (19.9s)
+Validation MAE=0.768211, RMSE=1.053208; test not evaluated
+[10:21:51] finished in 5.6 min
+[10:21:51] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.01 --overlap-seed 2021 --transfer-seed 5021 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_5021
+Bridge-only: 890 users, 15,474 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 3.18684; validation MAE 0.82025, RMSE 1.13238 (20.0s)
+dupgt             02/15: train MSE 1.04894; validation MAE 0.80499, RMSE 1.07577 (20.4s)
+dupgt             03/15: train MSE 0.97081; validation MAE 0.76013, RMSE 1.06781 (19.4s)
+dupgt             04/15: train MSE 0.93966; validation MAE 0.77515, RMSE 1.05715 (19.8s)
+dupgt             05/15: train MSE 0.91508; validation MAE 0.77836, RMSE 1.05735 (19.9s)
+dupgt             06/15: train MSE 0.89565; validation MAE 0.75288, RMSE 1.07292 (19.7s)
+dupgt             07/15: train MSE 0.87243; validation MAE 0.79245, RMSE 1.05893 (20.5s)
+dupgt             08/15: train MSE 0.86143; validation MAE 0.74707, RMSE 1.05399 (19.9s)
+dupgt             09/15: train MSE 0.85309; validation MAE 0.74850, RMSE 1.04784 (19.6s)
+dupgt             10/15: train MSE 0.84049; validation MAE 0.75647, RMSE 1.04665 (19.6s)
+dupgt             11/15: train MSE 0.83683; validation MAE 0.74382, RMSE 1.05330 (19.7s)
+dupgt             12/15: train MSE 0.83493; validation MAE 0.75031, RMSE 1.04981 (19.8s)
+dupgt             13/15: train MSE 0.81735; validation MAE 0.74753, RMSE 1.04885 (19.7s)
+dupgt             14/15: train MSE 0.81141; validation MAE 0.76407, RMSE 1.04567 (20.1s)
+dupgt             15/15: train MSE 0.80661; validation MAE 0.75142, RMSE 1.04670 (20.3s)
+Validation MAE=0.764074, RMSE=1.045669; test not evaluated
+[10:27:27] finished in 5.6 min
+[10:27:27] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.01 --overlap-seed 2021 --transfer-seed 6021 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_6021
+Bridge-only: 890 users, 15,474 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 3.60358; validation MAE 0.92954, RMSE 1.16273 (19.7s)
+dupgt             02/15: train MSE 1.03267; validation MAE 0.79601, RMSE 1.10847 (19.6s)
+dupgt             03/15: train MSE 0.98248; validation MAE 0.80573, RMSE 1.10205 (20.3s)
+dupgt             04/15: train MSE 0.97161; validation MAE 0.80110, RMSE 1.10730 (22.3s)
+dupgt             05/15: train MSE 0.94927; validation MAE 0.80639, RMSE 1.11125 (19.8s)
+dupgt             06/15: train MSE 0.94136; validation MAE 0.80550, RMSE 1.11421 (21.3s)
+dupgt             07/15: train MSE 0.95310; validation MAE 0.80481, RMSE 1.10864 (20.5s)
+dupgt             08/15: train MSE 0.92861; validation MAE 0.80319, RMSE 1.11282 (19.8s)
+dupgt             09/15: train MSE 0.91577; validation MAE 0.81471, RMSE 1.11129 (19.5s)
+dupgt             10/15: train MSE 0.91103; validation MAE 0.80482, RMSE 1.11136 (19.5s)
+dupgt             11/15: train MSE 0.91318; validation MAE 0.80950, RMSE 1.11090 (19.7s)
+dupgt             12/15: train MSE 0.89750; validation MAE 0.82786, RMSE 1.11516 (20.0s)
+dupgt             13/15: train MSE 0.89700; validation MAE 0.80931, RMSE 1.11368 (19.9s)
+dupgt             14/15: train MSE 0.88228; validation MAE 0.80937, RMSE 1.11304 (20.4s)
+dupgt             15/15: train MSE 0.88107; validation MAE 0.80849, RMSE 1.11387 (23.0s)
+Validation MAE=0.805734, RMSE=1.102050; test not evaluated
+[10:33:12] finished in 5.8 min
+[10:33:12] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr uncertainty-fit --runs /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_2021 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_3021 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_4021 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_5021 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_6021 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/blend
+{
+  "single_bridges": [
+    {
+      "mae": 0.7776399242012747,
+      "rmse": 1.070124125529437,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7547585539868676,
+      "rmse": 1.0478549386712641,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7682112043157338,
+      "rmse": 1.0532079406656527,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7640741098083854,
+      "rmse": 1.045669379288984,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.8057339199837898,
+      "rmse": 1.1020495209957597,
+      "n_ratings": 210455
+    }
+  ],
+  "ensemble_mean": {
+    "mae": 0.7603869206694819,
+    "rmse": 1.0482721518816458,
+    "n_ratings": 210455
+  },
+  "constant_blend": {
+    "mae": 0.730357914935851,
+    "rmse": 1.0035112419308876,
+    "n_ratings": 210455
+  },
+  "uncertainty_blend": {
+    "mae": 0.7268460243153418,
+    "rmse": 1.0024392428428137,
+    "n_ratings": 210455
+  },
+  "movie_mean": {
+    "mae": 0.7505646222798233,
+    "rmse": 1.0346387480075139,
+    "n_ratings": 210455
+  },
+  "mean_weight": 0.5012526558637598,
+  "mean_disagreement": 0.15555160203298385
+}
+[10:36:15] finished in 3.0 min
+[10:36:15] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-lock --runs /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_2021 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_3021 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_4021 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_5021 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_6021 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/selection.json --reason Uncertainty-gated ensemble: every member is reported. Each member's checkpoint was chosen by validation RMSE and the blend was fitted on validation only, before any test scoring. blend sha256=f5e81975797efcddf5c4acec858e7c660b1675084349d8b5ca7b32c89646f3df
+[10:36:17] finished in 0.0 min
+[10:36:17] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_2021 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/selection.json
+{
+  "raw": {
+    "mae": 0.7915731296662171,
+    "rmse": 1.0870041498727747,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7525764842119469,
+    "rmse": 1.0663106238990758,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "7897dc98ad93fa17d83c8390f69dd958a33115d2dcbd2d47fb6f2a2280a5e345",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "9dba02a6872e956786460ef16467f533d50d966435a395f4c3d144b6476f15eb",
+  "predictions_sha256": "03c79b8e6229b3deab556b09598713a1fdfecaffdba67085d49c701b2c36603f"
+}
+[10:37:16] finished in 1.0 min
+[10:37:16] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_3021 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/selection.json
+{
+  "raw": {
+    "mae": 0.7701049385214991,
+    "rmse": 1.0649773977018198,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7482284855050058,
+    "rmse": 1.0543566904736075,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "3dbc0b4f2b55274302ae6e34e50e6cbe4540bf900bba9937597182dbba3db311",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "9dba02a6872e956786460ef16467f533d50d966435a395f4c3d144b6476f15eb",
+  "predictions_sha256": "93862b78908c1f5a12ba3aa26371e271cc4d1f1f6715dd5aae62ea727583017f"
+}
+[10:38:17] finished in 1.0 min
+[10:38:17] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_4021 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/selection.json
+{
+  "raw": {
+    "mae": 0.7819323314646689,
+    "rmse": 1.068797059947315,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7564322390419492,
+    "rmse": 1.0560445779448426,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "30c4900fc9c4983a1e37d66722dc44ac2c9266d92f404f40b6a5d5956b06f6c8",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "9dba02a6872e956786460ef16467f533d50d966435a395f4c3d144b6476f15eb",
+  "predictions_sha256": "f529d9d27e5df668f7a3f021fa617829cc1b7c5db777ff1df7bd9e1e5676bf9f"
+}
+[10:39:14] finished in 0.9 min
+[10:39:14] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_5021 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/selection.json
+{
+  "raw": {
+    "mae": 0.7778787077149122,
+    "rmse": 1.063150363892407,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7628048454494709,
+    "rmse": 1.0550715315096018,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "ffe07ab2d251d3b78ef944f7de1cf49e5335df30955af668f49f3d90f255adde",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "9dba02a6872e956786460ef16467f533d50d966435a395f4c3d144b6476f15eb",
+  "predictions_sha256": "9bea34a2b314322281b6debb5852080505dada19ae1f18361ec57611ccfaa684"
+}
+[10:40:12] finished in 1.0 min
+[10:40:12] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/bridge_6021 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/selection.json
+{
+  "raw": {
+    "mae": 0.8201098521669163,
+    "rmse": 1.1202117099927644,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.772729417941725,
+    "rmse": 1.0961059977697207,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "d67f70d227a9c9a83ef1e9882a7c953cdc9352f93980bca8962cfb32e68e05e4",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "9dba02a6872e956786460ef16467f533d50d966435a395f4c3d144b6476f15eb",
+  "predictions_sha256": "c3382c48e8c50f734956580846704d4f349cf09f7dd1784f8d430e1f8224acca"
+}
+[10:41:11] finished in 1.0 min
+[10:41:11] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr uncertainty-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/blend --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2021/selection.json
+{
+  "schema": 1,
+  "split": "test",
+  "blend_sha256": "f5e81975797efcddf5c4acec858e7c660b1675084349d8b5ca7b32c89646f3df",
+  "selection_sha256": "9dba02a6872e956786460ef16467f533d50d966435a395f4c3d144b6476f15eb",
+  "ensemble_mean": {
+    "mae": 0.7747023034474873,
+    "rmse": 1.0654089456575844,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.5128154729145373
+  },
+  "constant_blend": {
+    "mae": 0.742699943852848,
+    "rmse": 1.019893860072737,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.43910684802264327
+  },
+  "uncertainty_blend": {
+    "mae": 0.7391680872790938,
+    "rmse": 1.0186521425025359,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.4391854705558613
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "mean_weight": 0.5011315230664447,
+  "mean_disagreement": 0.1557177202175055,
+  "predictions_sha256": "abd2a04f73cb483c54d61ca09971f5d02b5881334164387c28b73cf2dfcb1038"
+}
+[10:41:24] finished in 0.2 min
+[10:41:24] == overlap 1%, seed 2022: 5 bridges ==
+[10:41:24] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.01 --overlap-seed 2022 --transfer-seed 2022 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_2022
+Bridge-only: 890 users, 15,287 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 3.66594; validation MAE 0.96267, RMSE 1.18383 (20.8s)
+dupgt             02/15: train MSE 1.15676; validation MAE 0.81393, RMSE 1.12201 (20.6s)
+dupgt             03/15: train MSE 1.09948; validation MAE 0.81969, RMSE 1.13743 (19.5s)
+dupgt             04/15: train MSE 1.07858; validation MAE 0.83201, RMSE 1.15325 (19.9s)
+dupgt             05/15: train MSE 1.05462; validation MAE 0.79125, RMSE 1.09761 (19.8s)
+dupgt             06/15: train MSE 1.03027; validation MAE 0.83484, RMSE 1.10274 (20.5s)
+dupgt             07/15: train MSE 1.02548; validation MAE 0.82572, RMSE 1.10414 (19.7s)
+dupgt             08/15: train MSE 0.99030; validation MAE 0.82896, RMSE 1.09559 (20.3s)
+dupgt             09/15: train MSE 0.96016; validation MAE 0.77429, RMSE 1.08648 (28.4s)
+dupgt             10/15: train MSE 0.94372; validation MAE 0.80033, RMSE 1.07283 (21.8s)
+dupgt             11/15: train MSE 0.92424; validation MAE 0.76894, RMSE 1.07539 (19.8s)
+dupgt             12/15: train MSE 0.91118; validation MAE 0.76261, RMSE 1.07632 (21.1s)
+dupgt             13/15: train MSE 0.89858; validation MAE 0.77448, RMSE 1.06777 (19.9s)
+dupgt             14/15: train MSE 0.88862; validation MAE 0.77167, RMSE 1.06730 (19.5s)
+dupgt             15/15: train MSE 0.88649; validation MAE 0.77139, RMSE 1.06727 (19.5s)
+Validation MAE=0.771392, RMSE=1.067269; test not evaluated
+[10:47:20] finished in 5.9 min
+[10:47:20] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.01 --overlap-seed 2022 --transfer-seed 3022 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_3022
+Bridge-only: 890 users, 15,287 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 3.04268; validation MAE 0.81599, RMSE 1.10237 (19.7s)
+dupgt             02/15: train MSE 1.13127; validation MAE 0.81439, RMSE 1.09281 (19.5s)
+dupgt             03/15: train MSE 1.07077; validation MAE 0.80118, RMSE 1.08131 (20.0s)
+dupgt             04/15: train MSE 1.01972; validation MAE 0.79243, RMSE 1.07617 (19.8s)
+dupgt             05/15: train MSE 0.98494; validation MAE 0.79233, RMSE 1.07496 (19.6s)
+dupgt             06/15: train MSE 0.96396; validation MAE 0.76672, RMSE 1.06854 (21.6s)
+dupgt             07/15: train MSE 0.94355; validation MAE 0.76010, RMSE 1.07323 (19.8s)
+dupgt             08/15: train MSE 0.93409; validation MAE 0.77705, RMSE 1.06192 (19.7s)
+dupgt             09/15: train MSE 0.92300; validation MAE 0.77147, RMSE 1.05956 (19.5s)
+dupgt             10/15: train MSE 0.90807; validation MAE 0.79362, RMSE 1.06298 (20.2s)
+dupgt             11/15: train MSE 0.89814; validation MAE 0.75218, RMSE 1.06160 (20.4s)
+dupgt             12/15: train MSE 0.88314; validation MAE 0.76303, RMSE 1.05543 (19.6s)
+dupgt             13/15: train MSE 0.87398; validation MAE 0.75967, RMSE 1.05353 (19.6s)
+dupgt             14/15: train MSE 0.87094; validation MAE 0.75744, RMSE 1.05557 (19.5s)
+dupgt             15/15: train MSE 0.86707; validation MAE 0.75930, RMSE 1.05492 (19.5s)
+Validation MAE=0.759667, RMSE=1.053526; test not evaluated
+[10:53:06] finished in 5.8 min
+[10:53:06] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.01 --overlap-seed 2022 --transfer-seed 4022 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_4022
+Bridge-only: 890 users, 15,287 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 3.17789; validation MAE 0.87242, RMSE 1.12040 (19.7s)
+dupgt             02/15: train MSE 1.11603; validation MAE 0.80009, RMSE 1.06532 (19.6s)
+dupgt             03/15: train MSE 1.05866; validation MAE 0.83221, RMSE 1.08020 (19.6s)
+dupgt             04/15: train MSE 0.98881; validation MAE 0.76995, RMSE 1.05961 (19.4s)
+dupgt             05/15: train MSE 0.96510; validation MAE 0.78283, RMSE 1.06108 (19.7s)
+dupgt             06/15: train MSE 0.94312; validation MAE 0.75793, RMSE 1.06224 (20.4s)
+dupgt             07/15: train MSE 0.92680; validation MAE 0.76295, RMSE 1.05765 (19.8s)
+dupgt             08/15: train MSE 0.91431; validation MAE 0.78811, RMSE 1.05560 (19.6s)
+dupgt             09/15: train MSE 0.90085; validation MAE 0.76434, RMSE 1.05507 (19.4s)
+dupgt             10/15: train MSE 0.89072; validation MAE 0.77105, RMSE 1.05546 (19.3s)
+dupgt             11/15: train MSE 0.88874; validation MAE 0.75220, RMSE 1.05813 (19.6s)
+dupgt             12/15: train MSE 0.86949; validation MAE 0.75428, RMSE 1.05916 (19.3s)
+dupgt             13/15: train MSE 0.86501; validation MAE 0.75854, RMSE 1.05749 (19.5s)
+dupgt             14/15: train MSE 0.85491; validation MAE 0.77003, RMSE 1.05671 (19.5s)
+dupgt             15/15: train MSE 0.84992; validation MAE 0.76049, RMSE 1.05740 (19.4s)
+Validation MAE=0.764339, RMSE=1.055075; test not evaluated
+[10:58:43] finished in 5.6 min
+[10:58:43] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.01 --overlap-seed 2022 --transfer-seed 5022 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_5022
+Bridge-only: 890 users, 15,287 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 4.13071; validation MAE 0.86699, RMSE 1.12997 (19.4s)
+dupgt             02/15: train MSE 1.16295; validation MAE 0.82034, RMSE 1.10730 (19.3s)
+dupgt             03/15: train MSE 1.05847; validation MAE 0.82656, RMSE 1.10019 (19.3s)
+dupgt             04/15: train MSE 1.03093; validation MAE 0.77159, RMSE 1.09149 (19.5s)
+dupgt             05/15: train MSE 0.98144; validation MAE 0.78041, RMSE 1.06255 (19.8s)
+dupgt             06/15: train MSE 0.95868; validation MAE 0.76294, RMSE 1.07069 (19.5s)
+dupgt             07/15: train MSE 0.94013; validation MAE 0.78466, RMSE 1.06197 (19.4s)
+dupgt             08/15: train MSE 0.93442; validation MAE 0.76310, RMSE 1.07107 (19.6s)
+dupgt             09/15: train MSE 0.92174; validation MAE 0.75580, RMSE 1.06476 (19.6s)
+dupgt             10/15: train MSE 0.90735; validation MAE 0.77126, RMSE 1.06147 (19.9s)
+dupgt             11/15: train MSE 0.89265; validation MAE 0.75759, RMSE 1.06278 (19.6s)
+dupgt             12/15: train MSE 0.88349; validation MAE 0.75506, RMSE 1.06139 (19.6s)
+dupgt             13/15: train MSE 0.87218; validation MAE 0.76685, RMSE 1.05870 (19.4s)
+dupgt             14/15: train MSE 0.87114; validation MAE 0.76053, RMSE 1.05866 (19.7s)
+dupgt             15/15: train MSE 0.86082; validation MAE 0.76376, RMSE 1.05775 (19.7s)
+Validation MAE=0.763760, RMSE=1.057752; test not evaluated
+[11:04:19] finished in 5.6 min
+[11:04:19] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.01 --overlap-seed 2022 --transfer-seed 6022 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_6022
+Bridge-only: 890 users, 15,287 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 4.04140; validation MAE 1.01577, RMSE 1.23144 (19.7s)
+dupgt             02/15: train MSE 1.17672; validation MAE 0.81306, RMSE 1.11113 (19.7s)
+dupgt             03/15: train MSE 1.07820; validation MAE 0.82361, RMSE 1.09247 (19.5s)
+dupgt             04/15: train MSE 1.04592; validation MAE 0.76952, RMSE 1.06934 (19.5s)
+dupgt             05/15: train MSE 0.98605; validation MAE 0.77743, RMSE 1.06880 (19.7s)
+dupgt             06/15: train MSE 0.96959; validation MAE 0.80937, RMSE 1.07313 (21.8s)
+dupgt             07/15: train MSE 0.94747; validation MAE 0.77113, RMSE 1.07285 (20.6s)
+dupgt             08/15: train MSE 0.93090; validation MAE 0.83336, RMSE 1.08062 (19.6s)
+dupgt             09/15: train MSE 0.92908; validation MAE 0.78700, RMSE 1.06543 (19.7s)
+dupgt             10/15: train MSE 0.91022; validation MAE 0.76339, RMSE 1.05962 (19.6s)
+dupgt             11/15: train MSE 0.90057; validation MAE 0.75499, RMSE 1.07136 (19.7s)
+dupgt             12/15: train MSE 0.88971; validation MAE 0.77055, RMSE 1.06147 (19.6s)
+dupgt             13/15: train MSE 0.87759; validation MAE 0.76848, RMSE 1.06060 (19.7s)
+dupgt             14/15: train MSE 0.87196; validation MAE 0.77067, RMSE 1.05998 (19.5s)
+dupgt             15/15: train MSE 0.86750; validation MAE 0.76448, RMSE 1.06043 (19.4s)
+Validation MAE=0.763393, RMSE=1.059621; test not evaluated
+[11:10:02] finished in 5.7 min
+[11:10:02] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr uncertainty-fit --runs /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_2022 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_3022 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_4022 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_5022 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_6022 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/blend
+{
+  "single_bridges": [
+    {
+      "mae": 0.771391608154052,
+      "rmse": 1.0672694125196696,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7596665545149932,
+      "rmse": 1.0535255784945994,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7643391953107409,
+      "rmse": 1.0550749746782095,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7637601108889017,
+      "rmse": 1.0577524099944768,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.763392629979096,
+      "rmse": 1.059621203378813,
+      "n_ratings": 210455
+    }
+  ],
+  "ensemble_mean": {
+    "mae": 0.7560287048943257,
+    "rmse": 1.0486243115713079,
+    "n_ratings": 210455
+  },
+  "constant_blend": {
+    "mae": 0.730330014519198,
+    "rmse": 1.0075027194370878,
+    "n_ratings": 210455
+  },
+  "uncertainty_blend": {
+    "mae": 0.7284482927385132,
+    "rmse": 1.006752239268813,
+    "n_ratings": 210455
+  },
+  "movie_mean": {
+    "mae": 0.7505646222798233,
+    "rmse": 1.0346387480075139,
+    "n_ratings": 210455
+  },
+  "mean_weight": 0.4761553125763986,
+  "mean_disagreement": 0.12112443136716751
+}
+[11:13:02] finished in 3.0 min
+[11:13:02] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-lock --runs /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_2022 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_3022 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_4022 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_5022 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_6022 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/selection.json --reason Uncertainty-gated ensemble: every member is reported. Each member's checkpoint was chosen by validation RMSE and the blend was fitted on validation only, before any test scoring. blend sha256=3484e5e6e7959282cae8972b6c5238446bbfbffa04ce22cc9ec89d542cfa3f23
+[11:13:11] finished in 0.1 min
+[11:13:11] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_2022 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/selection.json
+{
+  "raw": {
+    "mae": 0.7812547237238638,
+    "rmse": 1.0793523645549281,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7494222191710159,
+    "rmse": 1.061526858529789,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "40f331b63f2ff7513756d066b28d1726279613d0740fe114339e8972bc10842f",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "0ff101c9689de2191507fcbc4d9fcb12ef4cd8443ea04d0b4e18a7eefdaf4e6a",
+  "predictions_sha256": "618b8af0f0ec4f053896c62ce3c439c42fd6d13e7c0c50f8adc80ea1668ea1e1"
+}
+[11:14:06] finished in 0.9 min
+[11:14:06] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_3022 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/selection.json
+{
+  "raw": {
+    "mae": 0.7717247757606108,
+    "rmse": 1.066446310219464,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7448178367416938,
+    "rmse": 1.0528519315616145,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "1a7fbe396730f6fd7a3475078b71cc3f439278544a16e843ed38ed071c084fd0",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "0ff101c9689de2191507fcbc4d9fcb12ef4cd8443ea04d0b4e18a7eefdaf4e6a",
+  "predictions_sha256": "df3e61189573337963ff85c60ce0f7331cd0ff8d1ea77496a4f9bb3cca3d0e90"
+}
+[11:15:04] finished in 1.0 min
+[11:15:04] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_4022 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/selection.json
+{
+  "raw": {
+    "mae": 0.7750247586034156,
+    "rmse": 1.0699122281888165,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7562582937771768,
+    "rmse": 1.0582751847925578,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "da4479c20b01dc1cd2ed7dba82ec9bb86219eaf391eaa545a58c737dfdd7967b",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "0ff101c9689de2191507fcbc4d9fcb12ef4cd8443ea04d0b4e18a7eefdaf4e6a",
+  "predictions_sha256": "e9bbea4b81b1aca1a83f77b1dfa4d26dcf575994abac162958d9b189964b320d"
+}
+[11:16:02] finished in 1.0 min
+[11:16:02] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_5022 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/selection.json
+{
+  "raw": {
+    "mae": 0.7742820508194823,
+    "rmse": 1.070429650412508,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7492984222548398,
+    "rmse": 1.05642456379246,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "c7c99599c3441a5124308a4967bc1610e26b93ee12720ff5bc8abbc5969e3a15",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "0ff101c9689de2191507fcbc4d9fcb12ef4cd8443ea04d0b4e18a7eefdaf4e6a",
+  "predictions_sha256": "71c2a3a3c679efc93126931bf414d21f04ebd1fb1f463a7a73aac7d602551005"
+}
+[11:16:56] finished in 0.9 min
+[11:16:56] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/bridge_6022 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/selection.json
+{
+  "raw": {
+    "mae": 0.7744149004375647,
+    "rmse": 1.07241313175147,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7442394324649338,
+    "rmse": 1.0565396984693212,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "dbe7134d86771de32bec32ce009a046735fd560d357c0d29c65cd1638a64f74d",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "0ff101c9689de2191507fcbc4d9fcb12ef4cd8443ea04d0b4e18a7eefdaf4e6a",
+  "predictions_sha256": "07cc66fa377822bf0ed031da37db6eb1c12ffd5503e32d0e4144363dba4a79ca"
+}
+[11:17:56] finished in 1.0 min
+[11:17:56] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr uncertainty-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/blend --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2022/selection.json
+{
+  "schema": 1,
+  "split": "test",
+  "blend_sha256": "3484e5e6e7959282cae8972b6c5238446bbfbffa04ce22cc9ec89d542cfa3f23",
+  "selection_sha256": "0ff101c9689de2191507fcbc4d9fcb12ef4cd8443ea04d0b4e18a7eefdaf4e6a",
+  "ensemble_mean": {
+    "mae": 0.7669892492371095,
+    "rmse": 1.0615458836108065,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.5035380139948109
+  },
+  "constant_blend": {
+    "mae": 0.7414559693547346,
+    "rmse": 1.0216416267883093,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.4293969651702178
+  },
+  "uncertainty_blend": {
+    "mae": 0.7394454027014026,
+    "rmse": 1.0206731657070183,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.4275100243729853
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "mean_weight": 0.47576073906651506,
+  "mean_disagreement": 0.12173346388141014,
+  "predictions_sha256": "10376be2d7f35aaaa5b8300bbd9edf0b5bf11d951d95eb17699c81aced77eebe"
+}
+[11:18:08] finished in 0.2 min
+[11:18:08] == overlap 10%, seed 2020: 5 bridges ==
+[11:18:08] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.1 --overlap-seed 2020 --transfer-seed 2020 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_2020
+Bridge-only: 8,903 users, 148,359 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 1.40750; validation MAE 0.78407, RMSE 1.08679 (35.6s)
+dupgt             02/15: train MSE 1.06654; validation MAE 0.74389, RMSE 1.03544 (35.7s)
+dupgt             03/15: train MSE 0.99103; validation MAE 0.75349, RMSE 1.02524 (35.3s)
+dupgt             04/15: train MSE 0.97126; validation MAE 0.76699, RMSE 1.02555 (35.1s)
+dupgt             05/15: train MSE 0.95806; validation MAE 0.73675, RMSE 1.02015 (35.5s)
+dupgt             06/15: train MSE 0.94854; validation MAE 0.76176, RMSE 1.01955 (35.7s)
+dupgt             07/15: train MSE 0.93816; validation MAE 0.72645, RMSE 1.02128 (35.6s)
+dupgt             08/15: train MSE 0.93110; validation MAE 0.76034, RMSE 1.02044 (35.2s)
+dupgt             09/15: train MSE 0.92352; validation MAE 0.75411, RMSE 1.01932 (35.6s)
+dupgt             10/15: train MSE 0.91642; validation MAE 0.72969, RMSE 1.01817 (35.5s)
+dupgt             11/15: train MSE 0.91065; validation MAE 0.71436, RMSE 1.01963 (35.4s)
+dupgt             12/15: train MSE 0.90358; validation MAE 0.73547, RMSE 1.01359 (35.4s)
+dupgt             13/15: train MSE 0.89626; validation MAE 0.72037, RMSE 1.01523 (35.6s)
+dupgt             14/15: train MSE 0.89087; validation MAE 0.71803, RMSE 1.01541 (35.5s)
+dupgt             15/15: train MSE 0.88676; validation MAE 0.72305, RMSE 1.01494 (35.8s)
+Validation MAE=0.735470, RMSE=1.013593; test not evaluated
+[11:27:41] finished in 9.6 min
+[11:27:41] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.1 --overlap-seed 2020 --transfer-seed 3020 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_3020
+Bridge-only: 8,903 users, 148,359 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 1.34623; validation MAE 0.81587, RMSE 1.05144 (37.0s)
+dupgt             02/15: train MSE 0.99911; validation MAE 0.73662, RMSE 1.04271 (34.9s)
+dupgt             03/15: train MSE 0.98197; validation MAE 0.73551, RMSE 1.02484 (35.6s)
+dupgt             04/15: train MSE 0.96643; validation MAE 0.74516, RMSE 1.01822 (35.5s)
+dupgt             05/15: train MSE 0.95113; validation MAE 0.71682, RMSE 1.02758 (35.3s)
+dupgt             06/15: train MSE 0.94454; validation MAE 0.76864, RMSE 1.02667 (35.3s)
+dupgt             07/15: train MSE 0.93915; validation MAE 0.71491, RMSE 1.02576 (35.2s)
+dupgt             08/15: train MSE 0.93129; validation MAE 0.71143, RMSE 1.02346 (35.2s)
+dupgt             09/15: train MSE 0.92230; validation MAE 0.70810, RMSE 1.01965 (35.2s)
+dupgt             10/15: train MSE 0.91850; validation MAE 0.72125, RMSE 1.01827 (35.3s)
+dupgt             11/15: train MSE 0.90980; validation MAE 0.77156, RMSE 1.02241 (35.4s)
+dupgt             12/15: train MSE 0.90285; validation MAE 0.70347, RMSE 1.01977 (35.3s)
+dupgt             13/15: train MSE 0.89567; validation MAE 0.74598, RMSE 1.01551 (35.2s)
+dupgt             14/15: train MSE 0.88990; validation MAE 0.73296, RMSE 1.01373 (35.3s)
+dupgt             15/15: train MSE 0.88690; validation MAE 0.72227, RMSE 1.01413 (35.2s)
+Validation MAE=0.732959, RMSE=1.013732; test not evaluated
+[11:37:12] finished in 9.5 min
+[11:37:12] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.1 --overlap-seed 2020 --transfer-seed 4020 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_4020
+Bridge-only: 8,903 users, 148,359 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 1.35505; validation MAE 0.78140, RMSE 1.04399 (34.9s)
+dupgt             02/15: train MSE 1.00693; validation MAE 0.79607, RMSE 1.04270 (35.3s)
+dupgt             03/15: train MSE 0.98740; validation MAE 0.73318, RMSE 1.02771 (35.6s)
+dupgt             04/15: train MSE 0.97108; validation MAE 0.75713, RMSE 1.02087 (35.5s)
+dupgt             05/15: train MSE 0.95803; validation MAE 0.75963, RMSE 1.01904 (35.4s)
+dupgt             06/15: train MSE 0.94814; validation MAE 0.74851, RMSE 1.01813 (35.2s)
+dupgt             07/15: train MSE 0.94315; validation MAE 0.71802, RMSE 1.01578 (35.2s)
+dupgt             08/15: train MSE 0.93182; validation MAE 0.74743, RMSE 1.01953 (35.3s)
+dupgt             09/15: train MSE 0.92374; validation MAE 0.72954, RMSE 1.01711 (35.4s)
+dupgt             10/15: train MSE 0.91906; validation MAE 0.75325, RMSE 1.01886 (35.2s)
+dupgt             11/15: train MSE 0.91349; validation MAE 0.70533, RMSE 1.02094 (35.9s)
+dupgt             12/15: train MSE 0.90707; validation MAE 0.73559, RMSE 1.01575 (35.5s)
+dupgt             13/15: train MSE 0.89993; validation MAE 0.72395, RMSE 1.01425 (35.3s)
+dupgt             14/15: train MSE 0.89410; validation MAE 0.73082, RMSE 1.01410 (35.7s)
+dupgt             15/15: train MSE 0.89133; validation MAE 0.72453, RMSE 1.01393 (35.9s)
+Validation MAE=0.724534, RMSE=1.013933; test not evaluated
+[11:46:45] finished in 9.6 min
+[11:46:45] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.1 --overlap-seed 2020 --transfer-seed 5020 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_5020
+Bridge-only: 8,903 users, 148,359 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 1.41555; validation MAE 0.74015, RMSE 1.04245 (35.8s)
+dupgt             02/15: train MSE 0.99764; validation MAE 0.74075, RMSE 1.02694 (35.9s)
+dupgt             03/15: train MSE 0.97538; validation MAE 0.82445, RMSE 1.04652 (35.8s)
+dupgt             04/15: train MSE 0.96224; validation MAE 0.73548, RMSE 1.02190 (35.6s)
+dupgt             05/15: train MSE 0.95229; validation MAE 0.74404, RMSE 1.01955 (35.5s)
+dupgt             06/15: train MSE 0.94261; validation MAE 0.74769, RMSE 1.02045 (36.1s)
+dupgt             07/15: train MSE 0.93396; validation MAE 0.78771, RMSE 1.02914 (35.7s)
+dupgt             08/15: train MSE 0.92969; validation MAE 0.70503, RMSE 1.03201 (35.9s)
+dupgt             09/15: train MSE 0.92168; validation MAE 0.72570, RMSE 1.01762 (35.8s)
+dupgt             10/15: train MSE 0.91559; validation MAE 0.76308, RMSE 1.01872 (35.8s)
+dupgt             11/15: train MSE 0.91013; validation MAE 0.72617, RMSE 1.01637 (35.4s)
+dupgt             12/15: train MSE 0.90204; validation MAE 0.71290, RMSE 1.01771 (36.1s)
+dupgt             13/15: train MSE 0.89575; validation MAE 0.71650, RMSE 1.01573 (35.9s)
+dupgt             14/15: train MSE 0.88884; validation MAE 0.74771, RMSE 1.01548 (35.9s)
+dupgt             15/15: train MSE 0.88543; validation MAE 0.72129, RMSE 1.01441 (35.9s)
+Validation MAE=0.721288, RMSE=1.014413; test not evaluated
+[11:56:23] finished in 9.6 min
+[11:56:23] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.1 --overlap-seed 2020 --transfer-seed 6020 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_6020
+Bridge-only: 8,903 users, 148,359 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 1.33223; validation MAE 0.73619, RMSE 1.05199 (35.2s)
+dupgt             02/15: train MSE 1.00361; validation MAE 0.73986, RMSE 1.03028 (35.2s)
+dupgt             03/15: train MSE 0.98130; validation MAE 0.73589, RMSE 1.03102 (35.1s)
+dupgt             04/15: train MSE 0.96502; validation MAE 0.72112, RMSE 1.03066 (35.1s)
+dupgt             05/15: train MSE 0.95101; validation MAE 0.70931, RMSE 1.02560 (35.1s)
+dupgt             06/15: train MSE 0.94235; validation MAE 0.74231, RMSE 1.02193 (35.2s)
+dupgt             07/15: train MSE 0.93458; validation MAE 0.71627, RMSE 1.03218 (35.6s)
+dupgt             08/15: train MSE 0.92960; validation MAE 0.71759, RMSE 1.02069 (35.5s)
+dupgt             09/15: train MSE 0.92353; validation MAE 0.72104, RMSE 1.02039 (35.5s)
+dupgt             10/15: train MSE 0.91707; validation MAE 0.71070, RMSE 1.02481 (36.1s)
+dupgt             11/15: train MSE 0.91191; validation MAE 0.71002, RMSE 1.01758 (36.2s)
+dupgt             12/15: train MSE 0.90430; validation MAE 0.74575, RMSE 1.01625 (36.2s)
+dupgt             13/15: train MSE 0.89698; validation MAE 0.72879, RMSE 1.01513 (36.1s)
+dupgt             14/15: train MSE 0.89173; validation MAE 0.71613, RMSE 1.01510 (36.0s)
+dupgt             15/15: train MSE 0.88894; validation MAE 0.72206, RMSE 1.01462 (35.9s)
+Validation MAE=0.722059, RMSE=1.014616; test not evaluated
+[12:05:59] finished in 9.6 min
+[12:05:59] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr uncertainty-fit --runs /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_2020 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_3020 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_4020 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_5020 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_6020 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/blend
+{
+  "single_bridges": [
+    {
+      "mae": 0.7354703644461249,
+      "rmse": 1.0135928493384967,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7329587955398923,
+      "rmse": 1.0137321844207028,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7245337344992285,
+      "rmse": 1.0139328819984426,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7212880056727483,
+      "rmse": 1.0144134685508448,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7220586061786236,
+      "rmse": 1.01461559729311,
+      "n_ratings": 210455
+    }
+  ],
+  "ensemble_mean": {
+    "mae": 0.7250576799665506,
+    "rmse": 1.01083097325198,
+    "n_ratings": 210455
+  },
+  "constant_blend": {
+    "mae": 0.7244431546984685,
+    "rmse": 0.9970414317962638,
+    "n_ratings": 210455
+  },
+  "uncertainty_blend": {
+    "mae": 0.7227312086589264,
+    "rmse": 0.9963496852212936,
+    "n_ratings": 210455
+  },
+  "movie_mean": {
+    "mae": 0.7505646222798233,
+    "rmse": 1.0346387480075139,
+    "n_ratings": 210455
+  },
+  "mean_weight": 0.652962906450425,
+  "mean_disagreement": 0.06365032313852881
+}
+[12:08:49] finished in 2.8 min
+[12:08:49] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-lock --runs /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_2020 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_3020 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_4020 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_5020 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_6020 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/selection.json --reason Uncertainty-gated ensemble: every member is reported. Each member's checkpoint was chosen by validation RMSE and the blend was fitted on validation only, before any test scoring. blend sha256=66664c34982e6f6a442997c54e109e2c4198889d3fcacf2570c85a38d0a7716b
+[12:08:55] finished in 0.1 min
+[12:08:55] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_2020 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/selection.json
+{
+  "raw": {
+    "mae": 0.7460501859308442,
+    "rmse": 1.0260987071890781,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7429639268645801,
+    "rmse": 1.0242232861676963,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "462c533cd7e963c0a4c77225331e5aa9549acd8b88fd7bef77e30c82c099168e",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "5b86f794de22d5233cb83a0cf3b315552314c85b3b18b9dfbc642bf1aa3beb47",
+  "predictions_sha256": "ebfed8810f0fcb1e3883fa039f49b4ab550cdb5e7abba4703c5ce759fac745c9"
+}
+[12:09:49] finished in 0.9 min
+[12:09:49] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_3020 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/selection.json
+{
+  "raw": {
+    "mae": 0.7440992320557143,
+    "rmse": 1.026503827211386,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7408585222279686,
+    "rmse": 1.0244805966564892,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "e2df35312c41703103c23983b1bc542ff030252ed742636aeaac6c2fd67854de",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "5b86f794de22d5233cb83a0cf3b315552314c85b3b18b9dfbc642bf1aa3beb47",
+  "predictions_sha256": "726acaa18ba64d2a87fd31e5c1e99e7b7536b95d633ed42b5e3e4964e0468e10"
+}
+[12:10:44] finished in 0.9 min
+[12:10:44] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_4020 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/selection.json
+{
+  "raw": {
+    "mae": 0.7359480783432147,
+    "rmse": 1.0272916738642393,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7315579208609877,
+    "rmse": 1.0251970517637155,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "fa341da32f9bf0b47d1a1e622f1ff50204ec92b76118c1412822a0ace8e4e918",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "5b86f794de22d5233cb83a0cf3b315552314c85b3b18b9dfbc642bf1aa3beb47",
+  "predictions_sha256": "64c4de20d45dc0967ff62983353ecc96975f4e494319596d0cccd30b5071b210"
+}
+[12:11:39] finished in 0.9 min
+[12:11:39] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_5020 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/selection.json
+{
+  "raw": {
+    "mae": 0.7329723232524646,
+    "rmse": 1.0266962235485264,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7280405149433491,
+    "rmse": 1.024527267906516,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "6585c17d43c8440f6d87f73cc69424079a39edc1f7b5ae1afcee79de6d7a24a0",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "5b86f794de22d5233cb83a0cf3b315552314c85b3b18b9dfbc642bf1aa3beb47",
+  "predictions_sha256": "3945eee0e6fda1ad5ff5cc12b3c000831c502af8979a007bae0acf39fa28cfba"
+}
+[12:12:33] finished in 0.9 min
+[12:12:33] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/bridge_6020 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/selection.json
+{
+  "raw": {
+    "mae": 0.7333463563079545,
+    "rmse": 1.0277594747626217,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7286244440977386,
+    "rmse": 1.0253894617905042,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "4da3c427c5e1491904eb51abe4b1843fa2d989453ef821dd1813bae0b98d75e4",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "5b86f794de22d5233cb83a0cf3b315552314c85b3b18b9dfbc642bf1aa3beb47",
+  "predictions_sha256": "b3df65c5dacecafdce7c7393fb1a30ddb7b8a46cbd5e4b665c07fbb9320cf666"
+}
+[12:13:27] finished in 0.9 min
+[12:13:27] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr uncertainty-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/blend --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2020/selection.json
+{
+  "schema": 1,
+  "split": "test",
+  "blend_sha256": "66664c34982e6f6a442997c54e109e2c4198889d3fcacf2570c85a38d0a7716b",
+  "selection_sha256": "5b86f794de22d5233cb83a0cf3b315552314c85b3b18b9dfbc642bf1aa3beb47",
+  "ensemble_mean": {
+    "mae": 0.7362959602252884,
+    "rmse": 1.0236227452917848,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.4511754068716094
+  },
+  "constant_blend": {
+    "mae": 0.7351707832481843,
+    "rmse": 1.010586390154655,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.42416856671121944
+  },
+  "uncertainty_blend": {
+    "mae": 0.7332784079263482,
+    "rmse": 1.0095806277675892,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.42373614277852034
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "mean_weight": 0.6528236241405131,
+  "mean_disagreement": 0.06385011837121635,
+  "predictions_sha256": "b7ddb255fd4a15b1b2f37e4485d7be40fa19b96917a8b440aaba45951a07e3aa"
+}
+[12:13:39] finished in 0.2 min
+[12:13:39] == overlap 10%, seed 2021: 5 bridges ==
+[12:13:39] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.1 --overlap-seed 2021 --transfer-seed 2021 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_2021
+Bridge-only: 8,903 users, 151,035 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 1.29185; validation MAE 0.77525, RMSE 1.03914 (35.7s)
+dupgt             02/15: train MSE 1.02525; validation MAE 0.76203, RMSE 1.03071 (35.7s)
+dupgt             03/15: train MSE 1.00321; validation MAE 0.75078, RMSE 1.03013 (35.6s)
+dupgt             04/15: train MSE 0.98921; validation MAE 0.73349, RMSE 1.02180 (35.4s)
+dupgt             05/15: train MSE 0.97593; validation MAE 0.76825, RMSE 1.02363 (35.4s)
+dupgt             06/15: train MSE 0.96830; validation MAE 0.76740, RMSE 1.02447 (35.5s)
+dupgt             07/15: train MSE 0.95804; validation MAE 0.72372, RMSE 1.02248 (35.4s)
+dupgt             08/15: train MSE 0.95152; validation MAE 0.74152, RMSE 1.02175 (35.3s)
+dupgt             09/15: train MSE 0.94493; validation MAE 0.75087, RMSE 1.01802 (36.4s)
+dupgt             10/15: train MSE 0.93740; validation MAE 0.72043, RMSE 1.01510 (36.5s)
+dupgt             11/15: train MSE 0.92880; validation MAE 0.71738, RMSE 1.01549 (36.6s)
+dupgt             12/15: train MSE 0.92038; validation MAE 0.72640, RMSE 1.01534 (36.6s)
+dupgt             13/15: train MSE 0.91442; validation MAE 0.73618, RMSE 1.01436 (36.5s)
+dupgt             14/15: train MSE 0.90831; validation MAE 0.73061, RMSE 1.01383 (36.4s)
+dupgt             15/15: train MSE 0.90596; validation MAE 0.72608, RMSE 1.01248 (36.4s)
+Validation MAE=0.726082, RMSE=1.012485; test not evaluated
+[12:23:20] finished in 9.7 min
+[12:23:20] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.1 --overlap-seed 2021 --transfer-seed 3021 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_3021
+Bridge-only: 8,903 users, 151,035 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 1.37939; validation MAE 0.74654, RMSE 1.04591 (35.5s)
+dupgt             02/15: train MSE 1.02415; validation MAE 0.72795, RMSE 1.03577 (36.0s)
+dupgt             03/15: train MSE 1.00472; validation MAE 0.73910, RMSE 1.02235 (36.0s)
+dupgt             04/15: train MSE 0.98732; validation MAE 0.80797, RMSE 1.04070 (35.8s)
+dupgt             05/15: train MSE 0.97347; validation MAE 0.72453, RMSE 1.02428 (35.9s)
+dupgt             06/15: train MSE 0.96440; validation MAE 0.72038, RMSE 1.01848 (35.9s)
+dupgt             07/15: train MSE 0.95421; validation MAE 0.71347, RMSE 1.02461 (35.9s)
+dupgt             08/15: train MSE 0.94868; validation MAE 0.72024, RMSE 1.02532 (35.9s)
+dupgt             09/15: train MSE 0.94085; validation MAE 0.72002, RMSE 1.01366 (35.9s)
+dupgt             10/15: train MSE 0.93651; validation MAE 0.72258, RMSE 1.02482 (36.2s)
+dupgt             11/15: train MSE 0.92760; validation MAE 0.75471, RMSE 1.01675 (35.9s)
+dupgt             12/15: train MSE 0.92017; validation MAE 0.70688, RMSE 1.02154 (35.9s)
+dupgt             13/15: train MSE 0.91307; validation MAE 0.76351, RMSE 1.01932 (36.0s)
+dupgt             14/15: train MSE 0.90626; validation MAE 0.71201, RMSE 1.01451 (36.0s)
+dupgt             15/15: train MSE 0.90287; validation MAE 0.72489, RMSE 1.01216 (36.1s)
+Validation MAE=0.724887, RMSE=1.012158; test not evaluated
+[12:32:58] finished in 9.6 min
+[12:32:58] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.1 --overlap-seed 2021 --transfer-seed 4021 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_4021
+Bridge-only: 8,903 users, 151,035 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 1.34279; validation MAE 0.77475, RMSE 1.05374 (36.4s)
+dupgt             02/15: train MSE 1.03055; validation MAE 0.74438, RMSE 1.03641 (36.4s)
+dupgt             03/15: train MSE 1.00594; validation MAE 0.75528, RMSE 1.02843 (36.4s)
+dupgt             04/15: train MSE 0.98500; validation MAE 0.74896, RMSE 1.02272 (36.3s)
+dupgt             05/15: train MSE 0.97726; validation MAE 0.75450, RMSE 1.02205 (36.0s)
+dupgt             06/15: train MSE 0.96675; validation MAE 0.72625, RMSE 1.02537 (36.1s)
+dupgt             07/15: train MSE 0.95503; validation MAE 0.73857, RMSE 1.01754 (36.1s)
+dupgt             08/15: train MSE 0.95005; validation MAE 0.73433, RMSE 1.01868 (36.1s)
+dupgt             09/15: train MSE 0.94358; validation MAE 0.71761, RMSE 1.02041 (36.1s)
+dupgt             10/15: train MSE 0.93463; validation MAE 0.74242, RMSE 1.01556 (36.0s)
+dupgt             11/15: train MSE 0.92820; validation MAE 0.71723, RMSE 1.02026 (36.2s)
+dupgt             12/15: train MSE 0.91959; validation MAE 0.72089, RMSE 1.01598 (36.1s)
+dupgt             13/15: train MSE 0.91407; validation MAE 0.73258, RMSE 1.01405 (36.2s)
+dupgt             14/15: train MSE 0.90827; validation MAE 0.72791, RMSE 1.01243 (36.2s)
+dupgt             15/15: train MSE 0.90400; validation MAE 0.72771, RMSE 1.01226 (36.3s)
+Validation MAE=0.727713, RMSE=1.012261; test not evaluated
+[12:42:42] finished in 9.7 min
+[12:42:42] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.1 --overlap-seed 2021 --transfer-seed 5021 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_5021
+Bridge-only: 8,903 users, 151,035 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 1.34076; validation MAE 0.78809, RMSE 1.04033 (36.8s)
+dupgt             02/15: train MSE 1.02369; validation MAE 0.74828, RMSE 1.02961 (36.2s)
+dupgt             03/15: train MSE 1.00320; validation MAE 0.76782, RMSE 1.02946 (36.2s)
+dupgt             04/15: train MSE 0.99002; validation MAE 0.78569, RMSE 1.03331 (36.3s)
+dupgt             05/15: train MSE 0.97607; validation MAE 0.72936, RMSE 1.01786 (36.1s)
+dupgt             06/15: train MSE 0.96633; validation MAE 0.73618, RMSE 1.02037 (35.9s)
+dupgt             07/15: train MSE 0.95868; validation MAE 0.74416, RMSE 1.01985 (35.9s)
+dupgt             08/15: train MSE 0.94891; validation MAE 0.72143, RMSE 1.01968 (36.0s)
+dupgt             09/15: train MSE 0.94420; validation MAE 0.74310, RMSE 1.01614 (35.9s)
+dupgt             10/15: train MSE 0.93795; validation MAE 0.72244, RMSE 1.01337 (36.0s)
+dupgt             11/15: train MSE 0.92699; validation MAE 0.70614, RMSE 1.01946 (35.9s)
+dupgt             12/15: train MSE 0.92232; validation MAE 0.72016, RMSE 1.01485 (36.1s)
+dupgt             13/15: train MSE 0.91582; validation MAE 0.72651, RMSE 1.01501 (36.0s)
+dupgt             14/15: train MSE 0.90801; validation MAE 0.73712, RMSE 1.01392 (36.2s)
+dupgt             15/15: train MSE 0.90490; validation MAE 0.72393, RMSE 1.01207 (36.1s)
+Validation MAE=0.723935, RMSE=1.012072; test not evaluated
+[12:52:23] finished in 9.7 min
+[12:52:23] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.1 --overlap-seed 2021 --transfer-seed 6021 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_6021
+Bridge-only: 8,903 users, 151,035 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 1.40169; validation MAE 0.79444, RMSE 1.08445 (36.5s)
+dupgt             02/15: train MSE 1.12452; validation MAE 0.84689, RMSE 1.10453 (36.3s)
+dupgt             03/15: train MSE 1.12091; validation MAE 0.78801, RMSE 1.08780 (36.1s)
+dupgt             04/15: train MSE 1.12042; validation MAE 0.78677, RMSE 1.09327 (36.3s)
+dupgt             05/15: train MSE 1.11256; validation MAE 0.78841, RMSE 1.09390 (36.0s)
+dupgt             06/15: train MSE 1.11086; validation MAE 0.78994, RMSE 1.08382 (36.1s)
+dupgt             07/15: train MSE 1.10508; validation MAE 0.79904, RMSE 1.08718 (36.0s)
+dupgt             08/15: train MSE 1.10430; validation MAE 0.79837, RMSE 1.08887 (40.7s)
+dupgt             09/15: train MSE 1.10072; validation MAE 0.78719, RMSE 1.09183 (36.5s)
+dupgt             10/15: train MSE 1.09713; validation MAE 0.78883, RMSE 1.08512 (36.0s)
+dupgt             11/15: train MSE 1.09233; validation MAE 0.79328, RMSE 1.08544 (36.3s)
+dupgt             12/15: train MSE 1.08510; validation MAE 0.79411, RMSE 1.08647 (35.8s)
+dupgt             13/15: train MSE 1.07960; validation MAE 0.79855, RMSE 1.08429 (35.6s)
+dupgt             14/15: train MSE 1.07478; validation MAE 0.79233, RMSE 1.08349 (35.5s)
+dupgt             15/15: train MSE 1.07023; validation MAE 0.78957, RMSE 1.08310 (35.5s)
+Validation MAE=0.789575, RMSE=1.083103; test not evaluated
+[13:02:05] finished in 9.7 min
+[13:02:05] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr uncertainty-fit --runs /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_2021 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_3021 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_4021 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_5021 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_6021 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/blend
+{
+  "single_bridges": [
+    {
+      "mae": 0.7260823673055754,
+      "rmse": 1.0124848200887913,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7248872034692625,
+      "rmse": 1.0121578012388324,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7277127565784404,
+      "rmse": 1.0122610756765513,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.723934586711182,
+      "rmse": 1.012071851189254,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7895749528648616,
+      "rmse": 1.0831029865172426,
+      "n_ratings": 210455
+    }
+  ],
+  "ensemble_mean": {
+    "mae": 0.7249024341258843,
+    "rmse": 1.012199792243025,
+    "n_ratings": 210455
+  },
+  "constant_blend": {
+    "mae": 0.7209832600560246,
+    "rmse": 0.9953833695565125,
+    "n_ratings": 210455
+  },
+  "uncertainty_blend": {
+    "mae": 0.7207216480891323,
+    "rmse": 0.9952901985826813,
+    "n_ratings": 210455
+  },
+  "movie_mean": {
+    "mae": 0.7505646222798233,
+    "rmse": 1.0346387480075139,
+    "n_ratings": 210455
+  },
+  "mean_weight": 0.6210363225712243,
+  "mean_disagreement": 0.12908938181707563
+}
+[13:04:48] finished in 2.7 min
+[13:04:48] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-lock --runs /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_2021 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_3021 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_4021 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_5021 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_6021 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/selection.json --reason Uncertainty-gated ensemble: every member is reported. Each member's checkpoint was chosen by validation RMSE and the blend was fitted on validation only, before any test scoring. blend sha256=03f1a642fc8eed2681733049d61220bc1ccdcac123636f4f14fee829f35706ea
+[13:04:53] finished in 0.1 min
+[13:04:53] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_2021 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/selection.json
+{
+  "raw": {
+    "mae": 0.7369882689693799,
+    "rmse": 1.024783242282507,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7324399216346771,
+    "rmse": 1.0226579730586616,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "86bbdc4d50f120366ebfa4e07568a5170ef7d980e00fcc5feaa7d42a6e40881a",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "82b4eae5e225526490253ecdda05c0ebef9f446dc8db62cf158e077391c44ead",
+  "predictions_sha256": "21812af19df44941e5a81765bd72da4ba32153031f9b7f64a2b6f8cc93a28c6e"
+}
+[13:05:46] finished in 0.9 min
+[13:05:46] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_3021 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/selection.json
+{
+  "raw": {
+    "mae": 0.7359925140969151,
+    "rmse": 1.024801240810487,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7311856420687101,
+    "rmse": 1.0226259265752757,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "05b65130e34fd76396e3c9f09ef2f23afba740bc87d4825a5d6c413d2a19fae4",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "82b4eae5e225526490253ecdda05c0ebef9f446dc8db62cf158e077391c44ead",
+  "predictions_sha256": "d5fc00cd051abda89770e7525cda533b247336047cfebe747c26eab6e2fe05bc"
+}
+[13:06:41] finished in 0.9 min
+[13:06:41] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_4021 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/selection.json
+{
+  "raw": {
+    "mae": 0.7388744183995601,
+    "rmse": 1.0258474768658374,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7341206759161205,
+    "rmse": 1.0237489269545488,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "10ee2f23399ae77ef6de97d5d1afc243720322f18b2eaae9c27bf46c7362be8f",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "82b4eae5e225526490253ecdda05c0ebef9f446dc8db62cf158e077391c44ead",
+  "predictions_sha256": "1dcd3178433e7d9b7f3e820201257fc7fb36bc6069f8162c21f11381f1972c21"
+}
+[13:07:34] finished in 0.9 min
+[13:07:34] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_5021 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/selection.json
+{
+  "raw": {
+    "mae": 0.7353492716876552,
+    "rmse": 1.025127142592511,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7306007359613427,
+    "rmse": 1.0229735878094894,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "cc3985bc3000f9b003582e3bd45ebc32182667bca09a62033d2426354a877618",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "82b4eae5e225526490253ecdda05c0ebef9f446dc8db62cf158e077391c44ead",
+  "predictions_sha256": "7d191da59af7561b2c6cb35b6a9186f016b193798335031d31a6cb321b41ced3"
+}
+[13:08:27] finished in 0.9 min
+[13:08:27] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/bridge_6021 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/selection.json
+{
+  "raw": {
+    "mae": 0.8039245581359321,
+    "rmse": 1.1005115967283519,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7629030461972991,
+    "rmse": 1.081214405894632,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "bb688367d62ebca507fa8429887e92a019fd87e455e9cb29e9ad2b6f8d4efd36",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "82b4eae5e225526490253ecdda05c0ebef9f446dc8db62cf158e077391c44ead",
+  "predictions_sha256": "9e0040d4eade7644c50bd7b882a2b4f34ae74784379705f833cbe11c0f00cf08"
+}
+[13:09:22] finished in 0.9 min
+[13:09:22] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr uncertainty-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/blend --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2021/selection.json
+{
+  "schema": 1,
+  "split": "test",
+  "blend_sha256": "03f1a642fc8eed2681733049d61220bc1ccdcac123636f4f14fee829f35706ea",
+  "selection_sha256": "82b4eae5e225526490253ecdda05c0ebef9f446dc8db62cf158e077391c44ead",
+  "ensemble_mean": {
+    "mae": 0.7369661259619368,
+    "rmse": 1.0260212707532168,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.45376995046780405
+  },
+  "constant_blend": {
+    "mae": 0.7323882813213729,
+    "rmse": 1.009548061027217,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.42491548077679064
+  },
+  "uncertainty_blend": {
+    "mae": 0.7320480251196919,
+    "rmse": 1.00935650174736,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.42373614277852034
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "mean_weight": 0.620930110054509,
+  "mean_disagreement": 0.12994828589140378,
+  "predictions_sha256": "23990030c72bd5760f53fe0f290e85b51c6d6d080cb0382c0be499d867b613ad"
+}
+[13:09:34] finished in 0.2 min
+[13:09:34] == overlap 10%, seed 2022: 5 bridges ==
+[13:09:34] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.1 --overlap-seed 2022 --transfer-seed 2022 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_2022
+Bridge-only: 8,903 users, 148,756 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 1.36450; validation MAE 0.75701, RMSE 1.04701 (36.2s)
+dupgt             02/15: train MSE 1.01687; validation MAE 0.75326, RMSE 1.03493 (36.2s)
+dupgt             03/15: train MSE 0.99063; validation MAE 0.72396, RMSE 1.03827 (35.9s)
+dupgt             04/15: train MSE 0.97922; validation MAE 0.75634, RMSE 1.02140 (35.8s)
+dupgt             05/15: train MSE 0.96728; validation MAE 0.73712, RMSE 1.02042 (35.5s)
+dupgt             06/15: train MSE 0.96034; validation MAE 0.77335, RMSE 1.02575 (35.7s)
+dupgt             07/15: train MSE 0.95003; validation MAE 0.72167, RMSE 1.02302 (35.5s)
+dupgt             08/15: train MSE 0.94515; validation MAE 0.72592, RMSE 1.01798 (35.4s)
+dupgt             09/15: train MSE 0.93870; validation MAE 0.77491, RMSE 1.02762 (35.9s)
+dupgt             10/15: train MSE 0.93428; validation MAE 0.77590, RMSE 1.02379 (35.7s)
+dupgt             11/15: train MSE 0.92646; validation MAE 0.73307, RMSE 1.01498 (35.8s)
+dupgt             12/15: train MSE 0.92119; validation MAE 0.71030, RMSE 1.01769 (36.8s)
+dupgt             13/15: train MSE 0.91144; validation MAE 0.73812, RMSE 1.01561 (35.3s)
+dupgt             14/15: train MSE 0.90734; validation MAE 0.72621, RMSE 1.01414 (35.3s)
+dupgt             15/15: train MSE 0.90365; validation MAE 0.72685, RMSE 1.01350 (35.4s)
+Validation MAE=0.726847, RMSE=1.013498; test not evaluated
+[13:19:09] finished in 9.6 min
+[13:19:09] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.1 --overlap-seed 2022 --transfer-seed 3022 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_3022
+Bridge-only: 8,903 users, 148,756 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 1.28105; validation MAE 0.74419, RMSE 1.03608 (35.5s)
+dupgt             02/15: train MSE 1.00953; validation MAE 0.76254, RMSE 1.02758 (35.3s)
+dupgt             03/15: train MSE 0.99344; validation MAE 0.77465, RMSE 1.02766 (35.3s)
+dupgt             04/15: train MSE 0.97843; validation MAE 0.73249, RMSE 1.02446 (35.3s)
+dupgt             05/15: train MSE 0.96812; validation MAE 0.75531, RMSE 1.02062 (35.3s)
+dupgt             06/15: train MSE 0.95702; validation MAE 0.72419, RMSE 1.02598 (35.4s)
+dupgt             07/15: train MSE 0.95532; validation MAE 0.71492, RMSE 1.03711 (35.2s)
+dupgt             08/15: train MSE 0.94743; validation MAE 0.77644, RMSE 1.02557 (35.3s)
+dupgt             09/15: train MSE 0.93806; validation MAE 0.76258, RMSE 1.02140 (35.2s)
+dupgt             10/15: train MSE 0.93337; validation MAE 0.72969, RMSE 1.01546 (35.6s)
+dupgt             11/15: train MSE 0.92795; validation MAE 0.79206, RMSE 1.02494 (35.2s)
+dupgt             12/15: train MSE 0.91958; validation MAE 0.73394, RMSE 1.01462 (35.3s)
+dupgt             13/15: train MSE 0.91235; validation MAE 0.73430, RMSE 1.01321 (35.2s)
+dupgt             14/15: train MSE 0.90510; validation MAE 0.72364, RMSE 1.01313 (35.3s)
+dupgt             15/15: train MSE 0.90334; validation MAE 0.72524, RMSE 1.01309 (35.3s)
+Validation MAE=0.725235, RMSE=1.013094; test not evaluated
+[13:28:38] finished in 9.5 min
+[13:28:38] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.1 --overlap-seed 2022 --transfer-seed 4022 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_4022
+Bridge-only: 8,903 users, 148,756 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 1.29485; validation MAE 0.75788, RMSE 1.03782 (36.6s)
+dupgt             02/15: train MSE 1.01114; validation MAE 0.74354, RMSE 1.03393 (35.4s)
+dupgt             03/15: train MSE 0.99472; validation MAE 0.76299, RMSE 1.02706 (36.1s)
+dupgt             04/15: train MSE 0.97749; validation MAE 0.75564, RMSE 1.02355 (35.5s)
+dupgt             05/15: train MSE 0.96687; validation MAE 0.72444, RMSE 1.02713 (35.3s)
+dupgt             06/15: train MSE 0.95842; validation MAE 0.74203, RMSE 1.01678 (35.3s)
+dupgt             07/15: train MSE 0.95031; validation MAE 0.72522, RMSE 1.03091 (35.2s)
+dupgt             08/15: train MSE 0.94813; validation MAE 0.72106, RMSE 1.01763 (35.3s)
+dupgt             09/15: train MSE 0.93862; validation MAE 0.71404, RMSE 1.01975 (35.3s)
+dupgt             10/15: train MSE 0.93366; validation MAE 0.75436, RMSE 1.01859 (35.4s)
+dupgt             11/15: train MSE 0.92533; validation MAE 0.74988, RMSE 1.01653 (35.3s)
+dupgt             12/15: train MSE 0.92024; validation MAE 0.73434, RMSE 1.01654 (35.2s)
+dupgt             13/15: train MSE 0.91305; validation MAE 0.74679, RMSE 1.01508 (35.3s)
+dupgt             14/15: train MSE 0.90762; validation MAE 0.72062, RMSE 1.01349 (35.5s)
+dupgt             15/15: train MSE 0.90490; validation MAE 0.72631, RMSE 1.01303 (35.3s)
+Validation MAE=0.726313, RMSE=1.013026; test not evaluated
+[13:38:10] finished in 9.5 min
+[13:38:10] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.1 --overlap-seed 2022 --transfer-seed 5022 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_5022
+Bridge-only: 8,903 users, 148,756 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 1.38136; validation MAE 0.74124, RMSE 1.04152 (35.7s)
+dupgt             02/15: train MSE 1.00766; validation MAE 0.75193, RMSE 1.02979 (35.9s)
+dupgt             03/15: train MSE 0.98823; validation MAE 0.80857, RMSE 1.04267 (36.0s)
+dupgt             04/15: train MSE 0.96993; validation MAE 0.72360, RMSE 1.04139 (35.9s)
+dupgt             05/15: train MSE 0.96125; validation MAE 0.72577, RMSE 1.02272 (35.3s)
+dupgt             06/15: train MSE 0.95198; validation MAE 0.79111, RMSE 1.02707 (35.4s)
+dupgt             07/15: train MSE 0.94595; validation MAE 0.76523, RMSE 1.01954 (36.0s)
+dupgt             08/15: train MSE 0.94030; validation MAE 0.71565, RMSE 1.02486 (41.5s)
+dupgt             09/15: train MSE 0.93499; validation MAE 0.72432, RMSE 1.01573 (37.7s)
+dupgt             10/15: train MSE 0.92869; validation MAE 0.72843, RMSE 1.01676 (36.2s)
+dupgt             11/15: train MSE 0.92181; validation MAE 0.76532, RMSE 1.01945 (35.9s)
+dupgt             12/15: train MSE 0.91748; validation MAE 0.72178, RMSE 1.01445 (35.2s)
+dupgt             13/15: train MSE 0.90987; validation MAE 0.72959, RMSE 1.01506 (35.5s)
+dupgt             14/15: train MSE 0.90660; validation MAE 0.72759, RMSE 1.01289 (35.4s)
+dupgt             15/15: train MSE 0.90258; validation MAE 0.72547, RMSE 1.01255 (35.4s)
+Validation MAE=0.725471, RMSE=1.012549; test not evaluated
+[13:47:53] finished in 9.7 min
+[13:47:53] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-train --dataset 2023 --size full --device cpu --overlap-fraction 0.1 --overlap-seed 2022 --transfer-seed 6022 --factor-checkpoint /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt --semantic-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_6022
+Bridge-only: 8,903 users, 148,756 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 1.39812; validation MAE 0.78906, RMSE 1.04530 (36.7s)
+dupgt             02/15: train MSE 1.01355; validation MAE 0.73716, RMSE 1.03115 (35.6s)
+dupgt             03/15: train MSE 0.99028; validation MAE 0.75534, RMSE 1.02590 (35.8s)
+dupgt             04/15: train MSE 0.97587; validation MAE 0.74569, RMSE 1.02074 (35.9s)
+dupgt             05/15: train MSE 0.96478; validation MAE 0.72966, RMSE 1.02011 (35.1s)
+dupgt             06/15: train MSE 0.96017; validation MAE 0.75327, RMSE 1.02089 (35.8s)
+dupgt             07/15: train MSE 0.94991; validation MAE 0.77446, RMSE 1.02436 (36.2s)
+dupgt             08/15: train MSE 0.94363; validation MAE 0.71814, RMSE 1.02315 (37.5s)
+dupgt             09/15: train MSE 0.94031; validation MAE 0.72204, RMSE 1.01780 (35.5s)
+dupgt             10/15: train MSE 0.92922; validation MAE 0.78159, RMSE 1.02467 (35.5s)
+dupgt             11/15: train MSE 0.92234; validation MAE 0.71399, RMSE 1.01921 (35.4s)
+dupgt             12/15: train MSE 0.91566; validation MAE 0.72847, RMSE 1.01350 (35.5s)
+dupgt             13/15: train MSE 0.90863; validation MAE 0.73681, RMSE 1.01307 (35.5s)
+dupgt             14/15: train MSE 0.90356; validation MAE 0.72677, RMSE 1.01217 (35.6s)
+dupgt             15/15: train MSE 0.90103; validation MAE 0.72411, RMSE 1.01187 (35.5s)
+Validation MAE=0.724108, RMSE=1.011872; test not evaluated
+[13:57:31] finished in 9.6 min
+[13:57:31] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr uncertainty-fit --runs /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_2022 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_3022 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_4022 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_5022 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_6022 --output-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/blend
+{
+  "single_bridges": [
+    {
+      "mae": 0.7268470516918982,
+      "rmse": 1.0134982817678904,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.72523500065284,
+      "rmse": 1.013094142670547,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7263129930220956,
+      "rmse": 1.013026161630988,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.7254711180312512,
+      "rmse": 1.01254944296589,
+      "n_ratings": 210455
+    },
+    {
+      "mae": 0.724108380676647,
+      "rmse": 1.011871931537654,
+      "n_ratings": 210455
+    }
+  ],
+  "ensemble_mean": {
+    "mae": 0.7238130550904811,
+    "rmse": 1.0101850179790028,
+    "n_ratings": 210455
+  },
+  "constant_blend": {
+    "mae": 0.7229290528085769,
+    "rmse": 0.9971757436022589,
+    "n_ratings": 210455
+  },
+  "uncertainty_blend": {
+    "mae": 0.7213783392760506,
+    "rmse": 0.9966999656342038,
+    "n_ratings": 210455
+  },
+  "movie_mean": {
+    "mae": 0.7505646222798233,
+    "rmse": 1.0346387480075139,
+    "n_ratings": 210455
+  },
+  "mean_weight": 0.6622788440803563,
+  "mean_disagreement": 0.05495190241002576
+}
+[14:00:17] finished in 2.8 min
+[14:00:17] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-lock --runs /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_2022 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_3022 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_4022 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_5022 /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_6022 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/selection.json --reason Uncertainty-gated ensemble: every member is reported. Each member's checkpoint was chosen by validation RMSE and the blend was fitted on validation only, before any test scoring. blend sha256=45f9e716f6f8534e5ac868dae5a034b28bbd9239192f8b7eb7a547891a744412
+[14:00:20] finished in 0.1 min
+[14:00:20] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_2022 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/selection.json
+{
+  "raw": {
+    "mae": 0.7393692250856031,
+    "rmse": 1.0264771680542386,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7349225858456825,
+    "rmse": 1.0242765444852144,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "9f56c8df406d8e9bfed858619e4daa6b8115d0c3234ae809ded7d294e0de1b08",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "4d5da517bc2d974e7887573a0455e56d5ffd1b193e7f63aa55e2ab0e0597d822",
+  "predictions_sha256": "6999b4ff027eeb5d3fe64e6570e0ec72de5194992a9d1f7b8fa8f67cb344b873"
+}
+[14:01:16] finished in 0.9 min
+[14:01:16] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_3022 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/selection.json
+{
+  "raw": {
+    "mae": 0.737702100955399,
+    "rmse": 1.025808276366242,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7327677039099859,
+    "rmse": 1.0234318411073755,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "ef6cda95bcf391174a84139c8c1952d88758484fce024f43818da696e0b750c8",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "4d5da517bc2d974e7887573a0455e56d5ffd1b193e7f63aa55e2ab0e0597d822",
+  "predictions_sha256": "16171879ed6474cd7a9c0b1310e09bdb74987282e5ccf4eec07a02c925ef8db0"
+}
+[14:02:11] finished in 0.9 min
+[14:02:11] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_4022 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/selection.json
+{
+  "raw": {
+    "mae": 0.7386161405487571,
+    "rmse": 1.0266262133074693,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7335372294540875,
+    "rmse": 1.0240278531683713,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "4e5f712edcb8dbed08b9a4a41aaefa1ba6c99a012ff7034fbcd827986d46c2e4",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "4d5da517bc2d974e7887573a0455e56d5ffd1b193e7f63aa55e2ab0e0597d822",
+  "predictions_sha256": "5decf4b4879cbd48a00ece52c6008b911dc30514306c2d5da40098f4076dc662"
+}
+[14:03:06] finished in 0.9 min
+[14:03:06] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_5022 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/selection.json
+{
+  "raw": {
+    "mae": 0.7387348679590549,
+    "rmse": 1.0265887804171645,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7336479740285362,
+    "rmse": 1.0244031261110433,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "9f944f5d7a1f4c770ab375104b30779df88814932d3ce2359f364ae671822a74",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "4d5da517bc2d974e7887573a0455e56d5ffd1b193e7f63aa55e2ab0e0597d822",
+  "predictions_sha256": "b9b5176566c7f55891709631e851faa3b92781b2d4df1c4db5aec33e3ed83771"
+}
+[14:04:01] finished in 0.9 min
+[14:04:01] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr transfer-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/bridge_6022 --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/selection.json
+{
+  "raw": {
+    "mae": 0.7368290029329965,
+    "rmse": 1.0254107741496838,
+    "n_ratings": 433618
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7319256419005784,
+    "rmse": 1.0230211889422702,
+    "n_ratings": 433618
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "artifact_manifest_sha256": "1c27a3a4eb5692c59bb5c3c6400b5c696b68cb954f9be811c8ed30dcad037c64",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "selection_sha256": "4d5da517bc2d974e7887573a0455e56d5ffd1b193e7f63aa55e2ab0e0597d822",
+  "predictions_sha256": "0d7d90dac1752ad4bc16ba5fd8203fdd09223a63a7fded0dc87661481dfa523a"
+}
+[14:04:55] finished in 0.9 min
+[14:04:55] running: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python -m dupgt_cdr uncertainty-evaluate --run-dir /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/blend --selection-record /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.10/seed_2022/selection.json
+{
+  "schema": 1,
+  "split": "test",
+  "blend_sha256": "45f9e716f6f8534e5ac868dae5a034b28bbd9239192f8b7eb7a547891a744412",
+  "selection_sha256": "4d5da517bc2d974e7887573a0455e56d5ffd1b193e7f63aa55e2ab0e0597d822",
+  "ensemble_mean": {
+    "mae": 0.7364764344069408,
+    "rmse": 1.0235300526650317,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.45597138139790866
+  },
+  "constant_blend": {
+    "mae": 0.7347299744091694,
+    "rmse": 1.01093468508087,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.4279424483056844
+  },
+  "uncertainty_blend": {
+    "mae": 0.7330804544124984,
+    "rmse": 1.0100735531549294,
+    "n_ratings": 433618,
+    "negative_transfer_rate": 0.42849280603821055
+  },
+  "movie_mean": {
+    "mae": 0.762019474259309,
+    "rmse": 1.0506938709835925,
+    "n_ratings": 433618
+  },
+  "mean_weight": 0.662154435488533,
+  "mean_disagreement": 0.05506993831314415,
+  "predictions_sha256": "e147b5401ea7697f1290cd719df447e23c5a039d5c986b9ad494744502c7f336"
+}
+[14:05:08] finished in 0.2 min
+[14:05:08] all groups finished
+EXIT 0 Fri Nov 20 14:05:08 IST 2026

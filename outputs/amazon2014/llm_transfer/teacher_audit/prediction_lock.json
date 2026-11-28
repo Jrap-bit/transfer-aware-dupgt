@@ -1,0 +1,13 @@
+{
+  "audit_manifest_sha256": "ea13bf122a952093ae7f2006a4617543696afecdfad5c9d450d40374beca1453",
+  "models": {
+    "dupgt-qwen35-9b": {
+      "generation.json": "d6c1d7494d03cae70ccf280172aea2eaa1fd8034f19f96381b9f52bd1bb019f1",
+      "responses.jsonl": "b98615a312e65c295f40797f832d050a398e6a5276c2efc7a6955432c1c8ef23"
+    },
+    "dupgt-bonsai2-27b": {
+      "generation.json": "4ff0f74a77ffea8b9cbe0833c1568982b2bf3cb345e03af76e95b2dc9e94a03d",
+      "responses.jsonl": "0b51bac6e23ff95eafbaf1fabc21980bf7f4e41902ab6fb8a7be549d5c6ea23b"
+    }
+  }
+}

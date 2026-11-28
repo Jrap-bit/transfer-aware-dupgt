@@ -1,0 +1,37 @@
+{
+  "cache_key": "59883f508d79fa8f4a5374557a90d4c9178e3b37d2ffefa9a1de489ce77d2bb9",
+  "response": {
+    "preferences": [
+      {
+        "choice": "B",
+        "pair_id": "p0"
+      },
+      {
+        "choice": "A",
+        "pair_id": "p1"
+      },
+      {
+        "choice": "insufficient_evidence",
+        "pair_id": "p2"
+      },
+      {
+        "choice": "insufficient_evidence",
+        "pair_id": "p3"
+      },
+      {
+        "choice": "insufficient_evidence",
+        "pair_id": "p4"
+      }
+    ],
+    "request_id": "8b1161a07874066b47e1c37fe98c07d8fe6a2fff68fc2b4c3884bce7f07093f6"
+  },
+  "usage": {
+    "prompt_tokens": 1493,
+    "completion_tokens": 126,
+    "total_tokens": 1619,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "elapsed_seconds": 15.0657383329999
+  }
+}

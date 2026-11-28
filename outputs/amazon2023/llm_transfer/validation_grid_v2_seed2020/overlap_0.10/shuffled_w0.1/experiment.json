@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "method": "limited_bridge_supervision",
+  "overlap_fraction": 0.1,
+  "source_files": {
+    "experiments.py": "7a144663716f635a46f180acf0fd4485be10da59c686aaacaa72c4be9f1a0194",
+    "train.py": "e958f99e4e150abb0b32458011e97748790c2aeef783c61642a4f6de1e79c561",
+    "teacher.py": "d723f98fe3784f5f1ad227430b0ea61879a87b26462aa63117f58701e481fc13",
+    "metadata.py": "41e248b52e0ead1b0a2e3daa411dcafa488ecde7c31045447a31fd0e796cb128",
+    "settings.py": "f3115eb2038807798e2b20158b2a473a3fae07e2b7b59a089246a4b65b9b5a4c",
+    "model.py": "e1d3d6c1e3c5c3c06334d3e215fdfe8e2b098065b1a0d2f3ca4fcb34f558d052",
+    "upstream.py": "f99ac57f48d42353dcc753489e001e8b501e7639feef3190fc4ff64510759f6f"
+  },
+  "environment": {
+    "torch": "2.8.0",
+    "numpy": "2.2.6"
+  },
+  "overlap_seed": 2020,
+  "transfer_seed": 2020,
+  "teacher_kind": "shuffled",
+  "teacher_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/teacher/amazon2023/pilot",
+  "teacher": {
+    "manifest_sha256": "a45412aabd200a6b70cbecedb7165f83fde3c15617a46b1eae4eca3318f86ee9",
+    "controls_sha256": "5011554ab814f54dc69f6f7eedd34625c5caf41a74aa8f659a4e4e2ff80724a8",
+    "pair_file_sha256": "64fc3a1773c00ea906465f27f9cbc80df20f256348714bf5bf653b833a674563",
+    "support_sha256": "a5cf852b3342cb48415bb9a696e49748c00553171da9cff080d126dd7723e0ec",
+    "coverage": {
+      "requests": 200,
+      "requested_pairs": 1000,
+      "llm_accepted": 970,
+      "text_accepted": 957,
+      "matched_pairs": 927,
+      "lost_llm_pairs": 43,
+      "shuffle_seed": 2020,
+      "changed_label_fraction": 0.23516720604099245,
+      "per_pair_preferences": {
+        "p0": {
+          "645264": 164
+        },
+        "p1": {
+          "665481": 196
+        },
+        "p2": {
+          "682512": 134,
+          "509560": 52
+        },
+        "p3": {
+          "564275": 138,
+          "589843": 53
+        },
+        "p4": {
+          "501990": 145,
+          "621542": 45
+        }
+      },
+      "text_tie_tolerance": 1e-08,
+      "text_method": "per-request TF-IDF, log TF, smoothed IDF, fixed stop words, L2 cosine",
+      "personalization_identifiable": true,
+      "status": "ready",
+      "minimum_matched_pairs": 20,
+      "generation_sha256": "b45d3a78c9ba14723ce718d6a61a91ce397606f8b5742ddbd0893e012aa859f0",
+      "files": {
+        "pairs_text.jsonl": "5ca8c00c908fd39bc4b0f3aa25b401054c2b3cfcc1ff46c02d3bc861a77e2176",
+        "pairs_llm_matched.jsonl": "5868817bdaf357398d1949016e2313198ad622cad48a1695db13430dfae0afca",
+        "pairs_text_matched.jsonl": "ba0822cdb696618b96499d50a98accc02457985bfd4b6ff991b7f60329bce930",
+        "pairs_shuffled.jsonl": "64fc3a1773c00ea906465f27f9cbc80df20f256348714bf5bf653b833a674563"
+      }
+    },
+    "generation": {
+      "provider": "lm-studio-local",
+      "model": "dupgt-qwen35-9b",
+      "model_digest": "cd76ec205963b3b33350093e6904d9de16c4e666fd104e1f632d25c7f15f2a13",
+      "prompt_version": "book-movie-pairs-v2",
+      "temperature": 0,
+      "seed": 2020,
+      "max_output_tokens": 512,
+      "context_tokens": 8192,
+      "reasoning_effort": "none",
+      "runtime_manifest_sha256": "877d5b1fb5496554fd16ec4f0549b5d2e264a5979d800301f8d665ced1366456",
+      "app_version": "0.4.28+2",
+      "loaded_context_tokens": 8192,
+      "evidence": "real"
+    }
+  },
+  "pseudo_weight": 0.1,
+  "pseudo_batch_size": 64,
+  "pseudo_pairs": 927,
+  "real_training_users": 8903,
+  "real_training_rows": 148359,
+  "optimizer_steps_per_epoch": 580,
+  "factor_checkpoint": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt",
+  "factor_checkpoint_sha256": "e3a5ccec55f37aea8e4ec4f4b53ab5183b707d0730b73c96113e22d20d343f87",
+  "factor_sha256": "fbfeb46473dc56507b9f485ffd1fc7f05ccd047d1e5b481e53b3c4fbd40d435d",
+  "initial_bridge_sha256": "c59b05805bd9a026f5ac92de16a66f5049d01885ea49928e7ba1c2930eb633f6",
+  "real_rows_sha256": "15d2223656541fe08d9e92d8b699564f7c334f9ac90238a2623369c04b9f7dbe",
+  "users_sha256": "adb5b2f6f82fad02bdf678cade8f2fb04f8b2401509f4e34df05fbe78155172a",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "validation_rows_sha256": "4573db76ad2d299fc5214528068eef564b2f2dd3ef5184045f6642f8a9d064b3"
+}

@@ -1,0 +1,122 @@
+{
+  "status": "completed_pilot_no_clear_llm_specific_gain",
+  "dataset_release": "2023",
+  "monetary_budget": 0,
+  "prepared_metadata": {
+    "directory": "data/metadata/amazon2023/clean",
+    "book_items": 477781,
+    "warm_movie_items": 96969,
+    "eligible_source_only_users": 648443,
+    "eligible_validation_users": 12706,
+    "teacher_directory": "data/teacher/amazon2023/pilot",
+    "prepared_profiles": 200,
+    "potential_pairs": 1000,
+    "prompts_within_context": 200,
+    "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+    "factor_checkpoint_sha256": "e3a5ccec55f37aea8e4ec4f4b53ab5183b707d0730b73c96113e22d20d343f87",
+    "benchmark_unchanged": true,
+    "llm_labels_at_preparation": 0
+  },
+  "runtime_manifest": "outputs/amazon2014/llm_transfer/qwen35_runtime.json",
+  "original_full_baseline": "outputs/amazon2023/full_seed2020",
+  "matched_augmented_training_started": true,
+  "final_test_evaluated_for_extension": true,
+  "checks": {
+    "focused_tests_passed": 33,
+    "preprocessing_notebook_executed": true
+  },
+  "comparison_contract": "Same 2023 split, factors, real supervision, fresh bridge initialization and training budget; compare no teacher, text, LLM and shuffled supervision. No cross-release improvement claim.",
+  "first_cleaned_audit": {
+    "directory": "outputs/amazon2023/llm_transfer/teacher_audit_clean",
+    "validation_users": 20,
+    "pairs": 56,
+    "answered": 6,
+    "correct": 3,
+    "shuffled_answered": 2,
+    "interpretation": "Low coverage and insufficient evidence of teacher usefulness; not an augmented training result."
+  },
+  "focus_order": [
+    "2023 operational LLM-assisted DUPGT pipeline and matched controls",
+    "Paper-protocol alignment after the pipeline works",
+    "2014 LLM extension if time permits"
+  ],
+  "status_is_launch_snapshot": false,
+  "launched_at_utc": "2026-11-18T19:22:37.882272+00:00",
+  "prompt_version": "book-movie-pairs-v2",
+  "fresh_prompt_audit": {
+    "directory": "outputs/amazon2023/llm_transfer/teacher_audit_prompt_v2",
+    "users": 20,
+    "pairs": 53,
+    "answered": 52,
+    "correct": 24,
+    "interpretation": "Labels are available but noisy; usefulness is not established. The grid includes zero weight."
+  },
+  "batch": {
+    "teacher_profiles": 200,
+    "maximum_api_attempts": 220,
+    "maximum_reserved_tokens": 2000000,
+    "api_cost": 0,
+    "overlap_fractions": [
+      0.01,
+      0.1
+    ],
+    "positive_auxiliary_weights": [
+      0.01,
+      0.1
+    ],
+    "zero_weight_baseline": true,
+    "variants": [
+      "none",
+      "text",
+      "llm",
+      "shuffled"
+    ],
+    "planned_bridge_runs": 14,
+    "factor_pretraining_repeated": false,
+    "final_test_evaluation_queued": false
+  },
+  "live_status_sources": {
+    "generation_summary": "data/teacher/amazon2023/pilot/generation_summary.json",
+    "generation_log": "outputs/amazon2023/llm_transfer/teacher_generation_v2.log",
+    "training_log": "outputs/amazon2023/llm_transfer/transfer_grid_resume_v2.log",
+    "grid_summary": "outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/grid_summary.json"
+  },
+  "current_source_sha256": {
+    "src/dupgt_cdr/metadata.py": "41e248b52e0ead1b0a2e3daa411dcafa488ecde7c31045447a31fd0e796cb128",
+    "src/dupgt_cdr/teacher.py": "d723f98fe3784f5f1ad227430b0ea61879a87b26462aa63117f58701e481fc13",
+    "src/dupgt_cdr/predict.py": "6234b6ab05156d0f69e752f476ca612b0c52cfaa5d9dbf55cc36f41edb344c1a",
+    "src/dupgt_cdr/__init__.py": "c932bc78361a28bafe1cc3f78773dcf20c11eefdf0c4230bf2c5395d03c7bb83",
+    "src/dupgt_cdr/runtime.py": "1d5080c2cd917e4964686df28ceae9bfce7dc7a25e600d95c4b04c6e7d171d28",
+    "src/dupgt_cdr/model.py": "e1d3d6c1e3c5c3c06334d3e215fdfe8e2b098065b1a0d2f3ca4fcb34f558d052",
+    "src/dupgt_cdr/teacher_audit.py": "b779abf8883a38a95c4dd4cff5ac269467b96685ff5165c4803960b27f3e9c22",
+    "src/dupgt_cdr/experiments.py": "7a144663716f635a46f180acf0fd4485be10da59c686aaacaa72c4be9f1a0194",
+    "src/dupgt_cdr/cli.py": "3eed267c451681c27f5716cd0c9a01252cd670dcb7f6a99f998075e390475e33",
+    "src/dupgt_cdr/common.py": "689e36d1f8a44c2a6339a675f499ba8f3218ba32b1d6ddd871dc379a2080df91",
+    "src/dupgt_cdr/train.py": "e958f99e4e150abb0b32458011e97748790c2aeef783c61642a4f6de1e79c561",
+    "src/dupgt_cdr/settings.py": "f3115eb2038807798e2b20158b2a473a3fae07e2b7b59a089246a4b65b9b5a4c",
+    "src/dupgt_cdr/upstream.py": "f99ac57f48d42353dcc753489e001e8b501e7639feef3190fc4ff64510759f6f",
+    "src/dupgt_cdr/evaluate.py": "eb18d64493894d894e9703b64dbad8182c69b3b8fe83859b72f3c82f90a51037",
+    "src/dupgt_cdr/__main__.py": "03e309e90664d6399795f3d628c07ddcd16d5c61fab1d90e9c6aa6a87c9c32e0",
+    "src/dupgt_cdr/data.py": "44234ec9a619d5538f44677e5b432ee72c46e7e6a5d4909bc82645c1e2f3a585"
+  },
+  "resume": {
+    "cause": "Mixed auxiliary weights were sent to an equal-weight comparison. Learning rules and comparison checks are unchanged.",
+    "labels_regenerated": false,
+    "completed_runs_to_reuse": 7,
+    "remaining_training_runs": 7,
+    "regression_tests_passed": 33,
+    "resume_log": "outputs/amazon2023/llm_transfer/transfer_grid_resume_v2.log",
+    "resumed_at_utc": "2026-11-18T20:19:52.387346+00:00",
+    "saved_checkpoints_verified_unchanged": true
+  },
+  "result_summary": "outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/pilot_result_summary.json",
+  "results_notebook": "notebooks/dupgt_2023_llm_results.ipynb",
+  "result": {
+    "trained_models": 14,
+    "test_evaluated_models": 9,
+    "llm_specific_improvement_demonstrated": false,
+    "transfer_seeds": [
+      2020
+    ]
+  }
+}

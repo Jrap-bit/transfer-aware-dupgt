@@ -1,0 +1,34 @@
+Teacher: 10/200 profiles, 49 directed preferences
+Teacher: 20/200 profiles, 99 directed preferences
+Teacher: 30/200 profiles, 147 directed preferences
+Teacher: 40/200 profiles, 188 directed preferences
+Teacher: 50/200 profiles, 236 directed preferences
+Teacher: 60/200 profiles, 283 directed preferences
+Teacher: 70/200 profiles, 333 directed preferences
+Teacher: 80/200 profiles, 382 directed preferences
+Teacher: 90/200 profiles, 431 directed preferences
+Teacher: 100/200 profiles, 481 directed preferences
+Teacher: 110/200 profiles, 531 directed preferences
+Teacher: 120/200 profiles, 581 directed preferences
+Teacher: 130/200 profiles, 631 directed preferences
+Teacher: 140/200 profiles, 678 directed preferences
+Teacher: 150/200 profiles, 728 directed preferences
+Teacher: 160/200 profiles, 778 directed preferences
+Teacher: 170/200 profiles, 828 directed preferences
+Teacher: 180/200 profiles, 878 directed preferences
+Teacher: 190/200 profiles, 925 directed preferences
+Teacher: 200/200 profiles, 970 directed preferences
+{
+  "requests": 200,
+  "requested_pairs": 1000,
+  "status": "accepted",
+  "responses": 200,
+  "accepted_pairs": 970,
+  "cache_hits": 0,
+  "reserved_tokens": 1459625,
+  "attempts": 200,
+  "api_cost": 0,
+  "evidence": "real",
+  "generation_sha256": "52580ab14a1ceeb574d24806bd055159f984724f674787c628c029dd593cd36d"
+}
+Model "dupgt-qwen35-9b" unloaded.

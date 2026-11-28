@@ -1,0 +1,9 @@
+encoded 250/2000 profiles
+encoded 500/2000 profiles
+encoded 750/2000 profiles
+encoded 1000/2000 profiles
+encoded 1250/2000 profiles
+encoded 1500/2000 profiles
+encoded 1750/2000 profiles
+encoded 2000/2000 profiles
+{'status': 'ready', 'top_k': 10, 'seed': 2020, 'requested_pairs': 20000, 'matched_pairs': 19880, 'changed_label_fraction': 0.9989436619718309, 'personalization_identifiable': True, 'support_sha256': '502f66b76b54d8ef20522041affb0dbadca9fc0b4382203d5aebb867657871b4', 'support_scope': 'same users and pair budget; retrieved endpoints differ by teacher', 'text_profile_rule': 'sum((rating-3) * embedding(book)); normalize; 3 is neutral', 'caution': 'No LLM. Background items are unlabelled, not known dislikes.'}

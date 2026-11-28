@@ -1,0 +1,37 @@
+{
+  "cache_key": "6fe7f7ff597a95536583829e2b3db9edc307b644bdb6b9449a26fd25b3ae071f",
+  "response": {
+    "preferences": [
+      {
+        "choice": "B",
+        "pair_id": "p0"
+      },
+      {
+        "choice": "A",
+        "pair_id": "p1"
+      },
+      {
+        "choice": "B",
+        "pair_id": "p2"
+      },
+      {
+        "choice": "B",
+        "pair_id": "p3"
+      },
+      {
+        "choice": "B",
+        "pair_id": "p4"
+      }
+    ],
+    "request_id": "b20517dc84899ea440661a701de7f906e27c29eab10204db32d5078febe502d8"
+  },
+  "usage": {
+    "prompt_tokens": 1633,
+    "completion_tokens": 116,
+    "total_tokens": 1749,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "elapsed_seconds": 15.170284249998076
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "verified_at_utc": "2026-11-18T16:33:02.588316+00:00",
+  "status": "ready",
+  "runner": "LM Studio",
+  "app_version": "0.4.28+2",
+  "app_path": "/Applications/LM Studio.app",
+  "server_url": "http://127.0.0.1:1234",
+  "chat_endpoint": "http://127.0.0.1:1234/v1/chat/completions",
+  "binding": "127.0.0.1 only",
+  "model_identifier": "dupgt-bonsai2-27b",
+  "model_key": "ternary-bonsai-2-27b",
+  "model_path": "/Users/parjanyapandey/.lmstudio/models/prism-ml/Ternary-Bonsai-2-27B-gguf/Ternary-Bonsai-2-27B-Q2_0.gguf",
+  "source_repository": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "source_revision": "839bd57023c1558945afea70a74fa83c054f35f9",
+  "sha256": "4f99aed01b8a877e153f9aa6569a4440fe17c59701cc0953e36d7f460549e70e",
+  "checksum_verified": true,
+  "model_size_bytes": 7626008928,
+  "quantization": "Q2_0",
+  "context_tokens": 8192,
+  "parallel_requests": 1,
+  "gpu_offload": "100% Apple Metal",
+  "estimated_model_memory_gib": 8.37,
+  "backend_version": "2.67.0",
+  "llama_cpp_build": "b11999",
+  "backend_manifest_path": "/Users/parjanyapandey/.lmstudio/extensions/backends/llama.cpp-mac-arm64-apple-metal-advsimd-2.67.0/backend-manifest.json",
+  "backend_manifest_sha256": "163c309c6b67b31203ea7f902f9edd6928448ab067fa094cbe2923bc885186e4",
+  "structured_output_verified": true,
+  "reasoning_effort": "none",
+  "api_cost": 0,
+  "server_model_info": {
+    "type": "llm",
+    "publisher": "prism-ml",
+    "key": "ternary-bonsai-2-27b",
+    "display_name": "Ternary Bonsai 2 27B",
+    "architecture": "qwen35",
+    "quantization": {
+      "name": "Q2_0",
+      "bits_per_weight": 2
+    },
+    "size_bytes": 7626008928,
+    "params_string": "27B",
+    "loaded_instances": [
+      {
+        "id": "dupgt-bonsai2-27b",
+        "config": {
+          "context_length": 8192,
+          "eval_batch_size": 2048,
+          "physical_batch_size": 512,
+          "parallel": 1,
+          "flash_attention": true,
+          "lazy_mode": "auto",
+          "context_checkpoints": 32,
+          "reasoning_budget_message": "",
+          "speculative_draft_mtp": false,
+          "speculative_draft_simple": false,
+          "speculative_draft_model": "",
+          "speculative_draft_max_tokens": 3,
+          "speculative_draft_min_tokens": 0,
+          "speculative_draft_min_continue_probability": 0,
+          "offload_kv_cache_to_gpu": true
+        }
+      }
+    ],
+    "max_context_length": 262144,
+    "format": "gguf",
+    "capabilities": {
+      "vision": false,
+      "trained_for_tool_use": true,
+      "reasoning": {
+        "allowed_options": [
+          "off",
+          "on"
+        ],
+        "default": "on"
+      }
+    },
+    "description": null
+  },
+  "smoke_test": {
+    "test": "Synthetic setup/profile-sensitivity checks only; not real teacher labels or recommendation results",
+    "model": "dupgt-bonsai2-27b",
+    "api_cost": 0,
+    "structured_output_verified": true,
+    "cases": [
+      {
+        "case": "space_profile",
+        "response": {
+          "preferences": [
+            {
+              "choice": "A",
+              "pair_id": "p0"
+            }
+          ],
+          "request_id": "e56ab9aad5804d46de6aa9d168e51f21b194d6a007e477007efd2cdebefbaf22"
+        },
+        "usage": {
+          "prompt_tokens": 386,
+          "completion_tokens": 72,
+          "total_tokens": 458,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "elapsed_seconds": 16.03,
+        "finish_reason": "stop"
+      },
+      {
+        "case": "romance_profile",
+        "response": {
+          "preferences": [
+            {
+              "choice": "B",
+              "pair_id": "p0"
+            }
+          ],
+          "request_id": "53203f5618be7ff5aa8c53452dbb2cb0a959307e0cb16410cf99dd226e50ca21"
+        },
+        "usage": {
+          "prompt_tokens": 389,
+          "completion_tokens": 74,
+          "total_tokens": 463,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "elapsed_seconds": 14.88,
+        "finish_reason": "stop"
+      }
+    ]
+  },
+  "disk_free_gib": 12.16,
+  "restart_commands": [
+    "lms server start --port 1234 --bind 127.0.0.1",
+    "lms load ternary-bonsai-2-27b --context-length 8192 --parallel 1 --gpu max --identifier dupgt-bonsai2-27b --yes"
+  ],
+  "teacher_adapter": "LM Studio adapter connected; real metadata requests pending",
+  "teacher_dataset_generated": false,
+  "training_started": false,
+  "previous_setup": {
+    "model_identifier": "dupgt-qwen3-4b",
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "source_repository": "https://huggingface.co/Qwen/Qwen3-4B-GGUF",
+    "source_revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+    "smoke_test": {
+      "test": "synthetic structured-output setup check only; not research evidence",
+      "model": "dupgt-qwen3-4b",
+      "response": {
+        "request_id": "local-setup-check",
+        "preferences": [
+          {
+            "pair_id": "p0",
+            "choice": "A"
+          }
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 97,
+        "completion_tokens": 46,
+        "total_tokens": 143,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "elapsed_seconds": 2.2,
+      "api_cost": 0
+    }
+  }
+}

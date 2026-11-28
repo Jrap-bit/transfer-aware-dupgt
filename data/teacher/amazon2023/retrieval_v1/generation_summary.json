@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "responses": 200,
+  "requested": 200,
+  "nonempty_profiles": 199,
+  "evidence": "real",
+  "reserved_tokens": 758780,
+  "api_cost": 0,
+  "files": {
+    "generation.json": "a8edefd8fb59cff63238b805034fb85f6bc6c05d755f6162300740faabf40fac",
+    "responses.jsonl": "d93d13a4b5eb731f783cd3635ba33936e77de66ef7384c84ab1ff36889e3f9db",
+    "rejections.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

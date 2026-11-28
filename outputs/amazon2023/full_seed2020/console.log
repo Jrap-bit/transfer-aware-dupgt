@@ -1,0 +1,102 @@
+Training on cpu; 1,306,385 users; 1,497,886 bridge-training ratings
+source_pretrain   01/15: train MSE 19.37592 (208.4s)
+source_pretrain   02/15: train MSE 5.30500 (209.1s)
+source_pretrain   03/15: train MSE 4.49668 (205.8s)
+source_pretrain   04/15: train MSE 5.88317 (220.1s)
+source_pretrain   05/15: train MSE 5.74000 (223.1s)
+source_pretrain   06/15: train MSE 5.04079 (215.7s)
+source_pretrain   07/15: train MSE 4.11131 (153.8s)
+source_pretrain   08/15: train MSE 3.12550 (158.6s)
+source_pretrain   09/15: train MSE 2.23763 (154.5s)
+source_pretrain   10/15: train MSE 1.52259 (153.8s)
+source_pretrain   11/15: train MSE 0.98739 (141.6s)
+source_pretrain   12/15: train MSE 0.61554 (136.0s)
+source_pretrain   13/15: train MSE 0.37933 (138.1s)
+source_pretrain   14/15: train MSE 0.25147 (136.3s)
+source_pretrain   15/15: train MSE 0.19694 (135.9s)
+target_pretrain   01/15: train MSE 18.10684 (100.6s)
+target_pretrain   02/15: train MSE 3.70982 (97.8s)
+target_pretrain   03/15: train MSE 3.43913 (97.7s)
+target_pretrain   04/15: train MSE 3.92170 (97.2s)
+target_pretrain   05/15: train MSE 3.77584 (96.6s)
+target_pretrain   06/15: train MSE 3.37706 (96.6s)
+target_pretrain   07/15: train MSE 2.83885 (99.8s)
+target_pretrain   08/15: train MSE 2.25462 (97.3s)
+target_pretrain   09/15: train MSE 1.70345 (97.2s)
+target_pretrain   10/15: train MSE 1.22681 (97.4s)
+target_pretrain   11/15: train MSE 0.84792 (96.4s)
+target_pretrain   12/15: train MSE 0.56980 (99.8s)
+target_pretrain   13/15: train MSE 0.38788 (99.4s)
+target_pretrain   14/15: train MSE 0.28477 (101.0s)
+target_pretrain   15/15: train MSE 0.23774 (100.6s)
+linear_mapping    01/30: train MSE 2.03661; validation MAE 5.18875, RMSE 5.37429 (0.1s)
+linear_mapping    02/30: train MSE 1.53372; validation MAE 3.92317, RMSE 4.13879 (0.0s)
+linear_mapping    03/30: train MSE 0.97329; validation MAE 2.34969, RMSE 2.61958 (0.0s)
+linear_mapping    04/30: train MSE 0.69043; validation MAE 1.46161, RMSE 1.71992 (0.0s)
+linear_mapping    05/30: train MSE 0.60501; validation MAE 1.11524, RMSE 1.36698 (0.0s)
+linear_mapping    06/30: train MSE 0.58056; validation MAE 0.97073, RMSE 1.22127 (0.0s)
+linear_mapping    07/30: train MSE 0.57118; validation MAE 0.90118, RMSE 1.15438 (0.0s)
+linear_mapping    08/30: train MSE 0.56726; validation MAE 0.86519, RMSE 1.12228 (0.0s)
+linear_mapping    09/30: train MSE 0.56552; validation MAE 0.84569, RMSE 1.10673 (0.0s)
+linear_mapping    10/30: train MSE 0.56485; validation MAE 0.83610, RMSE 1.09977 (0.0s)
+linear_mapping    11/30: train MSE 0.56451; validation MAE 0.82943, RMSE 1.09625 (0.0s)
+linear_mapping    12/30: train MSE 0.56436; validation MAE 0.82703, RMSE 1.09441 (0.0s)
+linear_mapping    13/30: train MSE 0.56427; validation MAE 0.82548, RMSE 1.09347 (0.0s)
+linear_mapping    14/30: train MSE 0.56423; validation MAE 0.82515, RMSE 1.09359 (0.0s)
+linear_mapping    15/30: train MSE 0.56421; validation MAE 0.82278, RMSE 1.09242 (0.0s)
+linear_mapping    16/30: train MSE 0.56421; validation MAE 0.82262, RMSE 1.09235 (0.0s)
+linear_mapping    17/30: train MSE 0.56410; validation MAE 0.82347, RMSE 1.09225 (0.0s)
+linear_mapping    18/30: train MSE 0.56412; validation MAE 0.82237, RMSE 1.09227 (0.0s)
+linear_mapping    19/30: train MSE 0.56408; validation MAE 0.82332, RMSE 1.09254 (0.0s)
+linear_mapping    20/30: train MSE 0.56403; validation MAE 0.82150, RMSE 1.09178 (0.0s)
+linear_mapping    21/30: train MSE 0.56401; validation MAE 0.82296, RMSE 1.09215 (0.0s)
+linear_mapping    22/30: train MSE 0.56396; validation MAE 0.82231, RMSE 1.09188 (0.0s)
+linear_mapping    23/30: train MSE 0.56390; validation MAE 0.82184, RMSE 1.09186 (0.0s)
+linear_mapping    24/30: train MSE 0.56389; validation MAE 0.82202, RMSE 1.09186 (0.0s)
+linear_mapping    25/30: train MSE 0.56386; validation MAE 0.82196, RMSE 1.09181 (0.0s)
+linear_mapping    26/30: train MSE 0.56381; validation MAE 0.82217, RMSE 1.09191 (0.0s)
+linear_mapping    27/30: train MSE 0.56379; validation MAE 0.82173, RMSE 1.09174 (0.0s)
+linear_mapping    28/30: train MSE 0.56375; validation MAE 0.82174, RMSE 1.09175 (0.0s)
+linear_mapping    29/30: train MSE 0.56374; validation MAE 0.82177, RMSE 1.09177 (0.0s)
+linear_mapping    30/30: train MSE 0.56373; validation MAE 0.82177, RMSE 1.09177 (0.0s)
+dupgt             01/15: train MSE 1.06193; validation MAE 0.75525, RMSE 1.01416 (65.9s)
+dupgt             02/15: train MSE 0.98714; validation MAE 0.74199, RMSE 1.01287 (66.0s)
+dupgt             03/15: train MSE 0.98166; validation MAE 0.75436, RMSE 1.01219 (64.6s)
+dupgt             04/15: train MSE 0.97517; validation MAE 0.77230, RMSE 1.01277 (64.9s)
+dupgt             05/15: train MSE 0.97202; validation MAE 0.71707, RMSE 1.00526 (64.7s)
+dupgt             06/15: train MSE 0.96799; validation MAE 0.81053, RMSE 1.02345 (65.6s)
+dupgt             07/15: train MSE 0.96452; validation MAE 0.73980, RMSE 1.00413 (65.7s)
+dupgt             08/15: train MSE 0.96113; validation MAE 0.77431, RMSE 1.01466 (65.3s)
+dupgt             09/15: train MSE 0.95712; validation MAE 0.69931, RMSE 1.00549 (68.9s)
+dupgt             10/15: train MSE 0.95302; validation MAE 0.73029, RMSE 0.99973 (66.2s)
+dupgt             11/15: train MSE 0.94817; validation MAE 0.70556, RMSE 0.99958 (65.9s)
+dupgt             12/15: train MSE 0.94323; validation MAE 0.73086, RMSE 0.99965 (66.3s)
+dupgt             13/15: train MSE 0.93799; validation MAE 0.71503, RMSE 0.99824 (65.4s)
+dupgt             14/15: train MSE 0.93347; validation MAE 0.70204, RMSE 0.99670 (66.2s)
+dupgt             15/15: train MSE 0.93027; validation MAE 0.71047, RMSE 0.99598 (64.9s)
+Matplotlib is building the font cache; this may take a moment.
+
+FINAL TEST RESULTS (checkpoint selected on validation RMSE)
+  global_mean      MAE=0.910987  RMSE=1.143215
+  movie_mean       MAE=0.762019  RMSE=1.050694
+  linear_mapping   MAE=0.833627  RMSE=1.105525
+  dupgt            MAE=0.723044  RMSE=1.011914
+Artifacts: /Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020
+     5121.29 real     13580.35 user       402.46 sys
+          1913536512  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1442087  page reclaims
+                6340  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               22082  voluntary context switches
+            56458097  involuntary context switches
+      91919093598746  instructions retired
+      41126990198794  cycles elapsed
+          3017182304  peak memory footprint

@@ -1,0 +1,12 @@
+{
+  "requests": 200,
+  "requested_pairs": 1000,
+  "prompt_bytes": 1306025,
+  "rough_input_tokens": 435342,
+  "maximum_output_tokens": 102400,
+  "context_tokens": 8192,
+  "within_conservative_context_bound": 200,
+  "over_context_bound": 0,
+  "generation_started": false,
+  "api_cost": 0
+}

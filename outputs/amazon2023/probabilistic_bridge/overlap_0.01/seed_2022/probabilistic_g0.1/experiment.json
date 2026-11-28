@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "method": "probabilistic_bridge",
+  "overlap_fraction": 0.01,
+  "model_variant": "probabilistic",
+  "semantic_cache": {
+    "directory": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/data/semantics/amazon2023/jina_v2",
+    "manifest_sha256": "ba6a8eaa3bf53e474b3e5a17f2b9f07a99d0072d3ba4bdb75984b1e94958bfb4"
+  },
+  "initial_semantic_sha256": "d60bc9e62e056a92eadd09df18d1a7d0e2213d8297660c60e6d738272fd38d88",
+  "gate_prior_weight": 0.1,
+  "source_files": {
+    "probabilistic.py": "90bcfeee3f96cf89e3c1e66d714a3b1ffd910e01c6f33facf0879113bc14ce7c",
+    "experiments.py": "938977e9dc7f30fe7d7f7c69de36ae92aa55d5ea4db7005b8599cbb3fe08992c",
+    "train.py": "e958f99e4e150abb0b32458011e97748790c2aeef783c61642a4f6de1e79c561",
+    "model.py": "e1d3d6c1e3c5c3c06334d3e215fdfe8e2b098065b1a0d2f3ca4fcb34f558d052",
+    "semantics.py": "478e0026ceb0ff9361744718dc910a8ff5f676be6ebece0034a4ea0b63b30c2d",
+    "runtime.py": "f3439fb68cceb452b138c498778664567bad6c590a8972c3e58bdf6969939914"
+  },
+  "environment": {
+    "torch": "2.8.0",
+    "numpy": "2.2.6"
+  },
+  "overlap_seed": 2022,
+  "transfer_seed": 2022,
+  "teacher_kind": "none",
+  "teacher_dir": null,
+  "teacher": null,
+  "pseudo_weight": 0.0,
+  "pseudo_batch_size": 0,
+  "pseudo_pairs": 0,
+  "real_training_users": 890,
+  "real_training_rows": 15287,
+  "optimizer_steps_per_epoch": 60,
+  "factor_checkpoint": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt",
+  "factor_checkpoint_sha256": "e3a5ccec55f37aea8e4ec4f4b53ab5183b707d0730b73c96113e22d20d343f87",
+  "factor_sha256": "fbfeb46473dc56507b9f485ffd1fc7f05ccd047d1e5b481e53b3c4fbd40d435d",
+  "initial_bridge_sha256": "e76bb4439077258477b84811e77dcf89858a55652b92b1558b5e1f6350048b54",
+  "real_rows_sha256": "f8e913aa63b091b7e70173266eea7966b5ab4406b4f9f1c095aabd4c4b2f2f22",
+  "users_sha256": "24aba9396d84574c6916a500d0c174e352ec21bfa5a5c1bfe0fcdad2b43f40f2",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "validation_rows_sha256": "4573db76ad2d299fc5214528068eef564b2f2dd3ef5184045f6642f8a9d064b3"
+}

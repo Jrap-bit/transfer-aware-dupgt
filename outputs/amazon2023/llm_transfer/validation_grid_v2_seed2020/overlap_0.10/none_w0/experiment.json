@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "method": "limited_bridge_supervision",
+  "overlap_fraction": 0.1,
+  "source_files": {
+    "experiments.py": "7a144663716f635a46f180acf0fd4485be10da59c686aaacaa72c4be9f1a0194",
+    "train.py": "e958f99e4e150abb0b32458011e97748790c2aeef783c61642a4f6de1e79c561",
+    "teacher.py": "d723f98fe3784f5f1ad227430b0ea61879a87b26462aa63117f58701e481fc13",
+    "metadata.py": "41e248b52e0ead1b0a2e3daa411dcafa488ecde7c31045447a31fd0e796cb128",
+    "settings.py": "f3115eb2038807798e2b20158b2a473a3fae07e2b7b59a089246a4b65b9b5a4c",
+    "model.py": "e1d3d6c1e3c5c3c06334d3e215fdfe8e2b098065b1a0d2f3ca4fcb34f558d052",
+    "upstream.py": "f99ac57f48d42353dcc753489e001e8b501e7639feef3190fc4ff64510759f6f"
+  },
+  "environment": {
+    "torch": "2.8.0",
+    "numpy": "2.2.6"
+  },
+  "overlap_seed": 2020,
+  "transfer_seed": 2020,
+  "teacher_kind": "none",
+  "teacher_dir": null,
+  "teacher": null,
+  "pseudo_weight": 0.0,
+  "pseudo_batch_size": 64,
+  "pseudo_pairs": 0,
+  "real_training_users": 8903,
+  "real_training_rows": 148359,
+  "optimizer_steps_per_epoch": 580,
+  "factor_checkpoint": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/full_seed2020/checkpoints/pretrained_factors.pt",
+  "factor_checkpoint_sha256": "e3a5ccec55f37aea8e4ec4f4b53ab5183b707d0730b73c96113e22d20d343f87",
+  "factor_sha256": "fbfeb46473dc56507b9f485ffd1fc7f05ccd047d1e5b481e53b3c4fbd40d435d",
+  "initial_bridge_sha256": "c59b05805bd9a026f5ac92de16a66f5049d01885ea49928e7ba1c2930eb633f6",
+  "real_rows_sha256": "15d2223656541fe08d9e92d8b699564f7c334f9ac90238a2623369c04b9f7dbe",
+  "users_sha256": "adb5b2f6f82fad02bdf678cade8f2fb04f8b2401509f4e34df05fbe78155172a",
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "validation_rows_sha256": "4573db76ad2d299fc5214528068eef564b2f2dd3ef5184045f6642f8a9d064b3"
+}

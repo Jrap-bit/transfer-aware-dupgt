@@ -1,0 +1,3 @@
+run,teacher,overlap_fraction,real_users,real_ratings,pseudo_weight,mae,rmse,movie_mean_mae,movie_mean_rmse,requested_pairs,matched_pairs,changed_label_fraction
+/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/none_w0,none,0.01,890,13792,0.0,0.8130808880845943,1.1112416000205485,0.762019474259309,1.0506938709835925,0,0,
+/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/text_w0.1,text,0.01,890,13792,0.1,0.8133291108944141,1.110457945815379,0.762019474259309,1.0506938709835925,1000,927,0.23516720604099245

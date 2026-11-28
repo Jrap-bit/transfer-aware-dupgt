@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "split": "validation",
+  "metrics": {
+    "mae": 0.72523500065284,
+    "rmse": 1.013094142670547,
+    "n_ratings": 210455
+  },
+  "movie_mean": {
+    "mae": 0.7505646222798233,
+    "rmse": 1.0346387480075139,
+    "n_ratings": 210455
+  },
+  "validation_rows_sha256": "4573db76ad2d299fc5214528068eef564b2f2dd3ef5184045f6642f8a9d064b3",
+  "artifact_manifest_sha256": "ef6cda95bcf391174a84139c8c1952d88758484fce024f43818da696e0b750c8",
+  "predictions_sha256": "c2e7fd7cda92fa4af392fc03e0ca7f12f14a7a334ff6dd0bfff0343cbe7c2e87"
+}

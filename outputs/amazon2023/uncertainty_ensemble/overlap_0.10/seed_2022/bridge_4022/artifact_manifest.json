@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "factor_sha256": "fbfeb46473dc56507b9f485ffd1fc7f05ccd047d1e5b481e53b3c4fbd40d435d",
+  "files": {
+    "config.json": "f51b8c149e122f40ec9b6a23ca612f88684b42dbbdde557feb9fc756d50576fc",
+    "experiment.json": "ecdd48b2a5d886efc9cce8b934256e9b82416f62e79b5a5c008e70367ef31541",
+    "real_training_users.npy": "ae16e5d5ad943a19b6152540851f48e70fbcbd58ff0373de80ece493e254d8c6",
+    "training_history.csv": "4bbc5fc2a18018e9bd8605e82ec76bd1474b91eeab1d769963c3ee892bbe8e4f",
+    "validation_metrics.json": "e7614c6ba14b16d2d327bcce75264dbee708a181ad362059d4f02192fbf955e7"
+  },
+  "checkpoint_sha256": "9e25fcc6b86297a575dd8d36e31a5348a033f7548188b5d3476173e87d4ede95"
+}

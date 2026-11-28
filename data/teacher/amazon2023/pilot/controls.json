@@ -1,0 +1,42 @@
+{
+  "requests": 200,
+  "requested_pairs": 1000,
+  "llm_accepted": 970,
+  "text_accepted": 957,
+  "matched_pairs": 927,
+  "lost_llm_pairs": 43,
+  "shuffle_seed": 2020,
+  "changed_label_fraction": 0.23516720604099245,
+  "per_pair_preferences": {
+    "p0": {
+      "645264": 164
+    },
+    "p1": {
+      "665481": 196
+    },
+    "p2": {
+      "682512": 134,
+      "509560": 52
+    },
+    "p3": {
+      "564275": 138,
+      "589843": 53
+    },
+    "p4": {
+      "501990": 145,
+      "621542": 45
+    }
+  },
+  "text_tie_tolerance": 1e-08,
+  "text_method": "per-request TF-IDF, log TF, smoothed IDF, fixed stop words, L2 cosine",
+  "personalization_identifiable": true,
+  "status": "ready",
+  "minimum_matched_pairs": 20,
+  "generation_sha256": "b45d3a78c9ba14723ce718d6a61a91ce397606f8b5742ddbd0893e012aa859f0",
+  "files": {
+    "pairs_text.jsonl": "5ca8c00c908fd39bc4b0f3aa25b401054c2b3cfcc1ff46c02d3bc861a77e2176",
+    "pairs_llm_matched.jsonl": "5868817bdaf357398d1949016e2313198ad622cad48a1695db13430dfae0afca",
+    "pairs_text_matched.jsonl": "ba0822cdb696618b96499d50a98accc02457985bfd4b6ff991b7f60329bce930",
+    "pairs_shuffled.jsonl": "64fc3a1773c00ea906465f27f9cbc80df20f256348714bf5bf653b833a674563"
+  }
+}

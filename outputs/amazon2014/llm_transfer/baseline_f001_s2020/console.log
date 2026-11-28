@@ -1,0 +1,17 @@
+Bridge-only: 261 users, 6,104 real ratings, teacher=none, device=cpu
+dupgt             01/15: train MSE 6.10759; validation MAE 1.59708, RMSE 1.89113 (0.8s)
+dupgt             02/15: train MSE 1.89687; validation MAE 0.84469, RMSE 1.10355 (0.9s)
+dupgt             03/15: train MSE 1.04679; validation MAE 0.82845, RMSE 1.09865 (0.9s)
+dupgt             04/15: train MSE 0.90468; validation MAE 0.82879, RMSE 1.09708 (0.8s)
+dupgt             05/15: train MSE 0.87707; validation MAE 0.82325, RMSE 1.09061 (0.9s)
+dupgt             06/15: train MSE 0.86926; validation MAE 0.82048, RMSE 1.10154 (0.9s)
+dupgt             07/15: train MSE 0.85133; validation MAE 0.83129, RMSE 1.09940 (0.9s)
+dupgt             08/15: train MSE 0.85315; validation MAE 0.83194, RMSE 1.09559 (0.9s)
+dupgt             09/15: train MSE 0.82180; validation MAE 0.82109, RMSE 1.09512 (0.9s)
+dupgt             10/15: train MSE 0.81222; validation MAE 0.81823, RMSE 1.09936 (0.9s)
+dupgt             11/15: train MSE 0.80772; validation MAE 0.83228, RMSE 1.09550 (0.9s)
+dupgt             12/15: train MSE 0.80148; validation MAE 0.81489, RMSE 1.09825 (1.1s)
+dupgt             13/15: train MSE 0.78783; validation MAE 0.82856, RMSE 1.09453 (1.0s)
+dupgt             14/15: train MSE 0.78690; validation MAE 0.81767, RMSE 1.09712 (1.0s)
+dupgt             15/15: train MSE 0.77693; validation MAE 0.81980, RMSE 1.09576 (0.9s)
+Validation MAE=0.823245, RMSE=1.090610; test not evaluated

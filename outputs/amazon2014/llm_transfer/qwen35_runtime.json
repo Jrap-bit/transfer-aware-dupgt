@@ -1,0 +1,138 @@
+{
+  "runner": "LM Studio",
+  "app_version": "0.4.28+2",
+  "app_path": "/Applications/LM Studio.app",
+  "server_url": "http://127.0.0.1:1234",
+  "chat_endpoint": "http://127.0.0.1:1234/v1/chat/completions",
+  "binding": "127.0.0.1 only",
+  "backend_version": "2.67.0",
+  "llama_cpp_build": "b11999",
+  "backend_manifest_path": "/Users/parjanyapandey/.lmstudio/extensions/backends/llama.cpp-mac-arm64-apple-metal-advsimd-2.67.0/backend-manifest.json",
+  "backend_manifest_sha256": "163c309c6b67b31203ea7f902f9edd6928448ab067fa094cbe2923bc885186e4",
+  "verified_at_utc": "2026-11-18T16:49:15.111240+00:00",
+  "status": "ready",
+  "model_identifier": "dupgt-qwen35-9b",
+  "model_key": "qwen3.5-9b",
+  "model_path": "/Users/parjanyapandey/.lmstudio/models/lmstudio-community/Qwen3.5-9B-GGUF/Qwen3.5-9B-Q4_K_M.gguf",
+  "source_repository": "https://huggingface.co/lmstudio-community/Qwen3.5-9B-GGUF",
+  "source_revision": "1379f25c6b505a3fc737bd7818cb09389cf807c1",
+  "sha256": "cd76ec205963b3b33350093e6904d9de16c4e666fd104e1f632d25c7f15f2a13",
+  "checksum_verified": true,
+  "model_size_bytes": 5627044256,
+  "quantization": "Q4_K_M",
+  "context_tokens": 8192,
+  "parallel_requests": 1,
+  "gpu_offload": "100% Apple Metal",
+  "estimated_model_memory_gib": 6.17,
+  "structured_output_verified": true,
+  "reasoning_effort": "none",
+  "api_cost": 0,
+  "server_model_info": {
+    "type": "llm",
+    "publisher": "lmstudio-community",
+    "key": "qwen3.5-9b",
+    "display_name": "Qwen3.5 9B",
+    "architecture": "qwen35",
+    "quantization": {
+      "name": "Q4_K_M",
+      "bits_per_weight": 4
+    },
+    "size_bytes": 5627044256,
+    "params_string": "9B",
+    "loaded_instances": [
+      {
+        "id": "dupgt-qwen35-9b",
+        "config": {
+          "context_length": 8192,
+          "eval_batch_size": 2048,
+          "physical_batch_size": 512,
+          "parallel": 1,
+          "flash_attention": true,
+          "lazy_mode": "auto",
+          "context_checkpoints": 32,
+          "reasoning_budget_message": "",
+          "speculative_draft_mtp": false,
+          "speculative_draft_simple": false,
+          "speculative_draft_model": "",
+          "speculative_draft_max_tokens": 3,
+          "speculative_draft_min_tokens": 0,
+          "speculative_draft_min_continue_probability": 0,
+          "offload_kv_cache_to_gpu": true
+        }
+      }
+    ],
+    "max_context_length": 262144,
+    "format": "gguf",
+    "capabilities": {
+      "vision": false,
+      "trained_for_tool_use": true,
+      "reasoning": {
+        "allowed_options": [
+          "off",
+          "on"
+        ],
+        "default": "on"
+      }
+    },
+    "description": null
+  },
+  "smoke_test": {
+    "test": "Synthetic setup/profile-sensitivity checks only; not real teacher labels or recommendation results",
+    "model": "dupgt-qwen35-9b",
+    "api_cost": 0,
+    "structured_output_verified": true,
+    "cases": [
+      {
+        "case": "space_profile",
+        "response": {
+          "preferences": [
+            {
+              "choice": "A",
+              "pair_id": "p0"
+            }
+          ],
+          "request_id": "e56ab9aad5804d46de6aa9d168e51f21b194d6a007e477007efd2cdebefbaf22"
+        },
+        "usage": {
+          "prompt_tokens": 386,
+          "completion_tokens": 72,
+          "total_tokens": 458,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "elapsed_seconds": 6.43,
+        "finish_reason": "stop"
+      },
+      {
+        "case": "romance_profile",
+        "response": {
+          "preferences": [
+            {
+              "choice": "B",
+              "pair_id": "p0"
+            }
+          ],
+          "request_id": "53203f5618be7ff5aa8c53452dbb2cb0a959307e0cb16410cf99dd226e50ca21"
+        },
+        "usage": {
+          "prompt_tokens": 389,
+          "completion_tokens": 74,
+          "total_tokens": 463,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "elapsed_seconds": 6.82,
+        "finish_reason": "stop"
+      }
+    ]
+  },
+  "disk_free_gib": 12.22,
+  "restart_commands": [
+    "lms server start --port 1234 --bind 127.0.0.1",
+    "lms load qwen3.5-9b --context-length 8192 --parallel 1 --gpu max --identifier dupgt-qwen35-9b --yes"
+  ],
+  "teacher_dataset_generated": false,
+  "training_started": false
+}

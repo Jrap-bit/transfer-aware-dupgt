@@ -8,6 +8,18 @@
 !/tests/
 !/notebooks/
 !/demo/
+!/outputs/
+!/data/
+
+# outputs/: keep metrics, logs, figures and the overlap user lists; checkpoints, predictions and per-user tables stay local
+/outputs/amazon2023/demo_models/
+/outputs/**/*.pt
+/outputs/**/*.gz
+/outputs/**/*.lock
+/outputs/**/*user_metrics.csv
+# data/: only the LLM teacher responses (hours of local generation); everything else is downloaded or derived
+/data/*
+!/data/teacher/
 
 # inside demo/: no data bundle, no installed packages, no build output
 /demo/bundle/

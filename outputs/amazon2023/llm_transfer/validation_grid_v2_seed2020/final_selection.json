@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "locked_at_utc": "2026-11-18T20:43:38.021671+00:00",
+  "reason": "Lowest saved validation RMSE including zero for each teacher family at the predeclared 1% and 10% supervision levels. Also retain text/shuffled controls at the LLM-selected weight for equal-weight attribution. No extension test metrics were read for selection; one transfer seed, exploratory pilot.",
+  "metric": "validation_rmse",
+  "runs": [
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/none_w0",
+      "artifact_manifest_sha256": "85e17e3c89632b7fa2cd96f74a19fdf2edc3d3f391eae76028cc6cf7c4cf2dd5",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0953152555099495
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/text_w0.01",
+      "artifact_manifest_sha256": "ebb0da58032757ce01bf9c4d4ab25b11c73aa8f70ec2d4ec6240f885b68c3e1f",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0947033980642504
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/llm_w0.01",
+      "artifact_manifest_sha256": "d1d65c55c0615600af75dc4f0721b3f33fdcc0ba1424e2ae1807c14afdb0f28b",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0946671731646516
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/shuffled_w0.01",
+      "artifact_manifest_sha256": "d51a9d51fd2bf1aa6088e315fbf004fae539bb3f98b4747af094ba017ef789ce",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0946638599637384
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/text_w0.1",
+      "artifact_manifest_sha256": "a89a5c2eb2d49c7936f8beffd5d3011f36c379fe03a270ee4e90e7723c9446e7",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0943348295342568
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/none_w0",
+      "artifact_manifest_sha256": "d445a7193aac2f25edb95d894ba74d037364352437c20b57585821be35f10313",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0161960555528458
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/text_w0.01",
+      "artifact_manifest_sha256": "30d09b471a926aedf9004892240c2e627ffb95d5bb04090a1cfc024875cc159a",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.015538676473282
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/llm_w0.01",
+      "artifact_manifest_sha256": "f398e6e7a10dec8331c1fea96dbba1dd935adc19010754a081620e27d0a6fa3c",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0155486442610004
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/shuffled_w0.01",
+      "artifact_manifest_sha256": "a244b18e4de45918138b2a9b6202bc68037fe8a123de94886a1599c2a85ddf49",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0155656391369472
+    }
+  ]
+}

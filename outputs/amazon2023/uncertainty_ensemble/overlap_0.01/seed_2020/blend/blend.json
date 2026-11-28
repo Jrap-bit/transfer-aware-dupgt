@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "method": "uncertainty_gated_ensemble",
+  "split_used_for_fitting": "validation",
+  "fitted_at_utc": "2026-11-20T04:30:20.803536+00:00",
+  "formula": "w = s0 / (s0 + tau2 + c * d^2); prediction = w * mean(bridges) + (1 - w) * movie_mean",
+  "members": [
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_2020",
+      "transfer_seed": 2020,
+      "artifact_manifest_sha256": "4dfd9a527a8da15df8a648f98d6433fb114593eaf133490c2d62e2f52ae568e3",
+      "validation_predictions_sha256": "019436b9c13c2aa99d34599d6048c989d3848cb2e7b9b6658cfcaa1c3903c22c"
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_3020",
+      "transfer_seed": 3020,
+      "artifact_manifest_sha256": "72e3fcfe032f9b51dcb49dd08833a85db53ea01575752d0061b62cf78973dcb8",
+      "validation_predictions_sha256": "8ce0df8fd8dbe9e123a0254dc5e6adc7f76d85a00cfbefe7742d0ea7122f4bfa"
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_4020",
+      "transfer_seed": 4020,
+      "artifact_manifest_sha256": "341f2e9c9230e3f30519bc7dff812bb1ba7ac3062e008807a5b1f027ab3b1033",
+      "validation_predictions_sha256": "2c077ef22999dd0f6b132b1bb5c376f68c9827c00af3f8a7a181d55bf4b4185f"
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_5020",
+      "transfer_seed": 5020,
+      "artifact_manifest_sha256": "ee7efdb6c4907b03a7c612f3cad58c6a60bedf076e14bb13fd67942bf980354d",
+      "validation_predictions_sha256": "dee821a771fd35cf171d61d0d49716a99fe1d61ae6dbfc7201020eb4069f0efa"
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/uncertainty_ensemble/overlap_0.01/seed_2020/bridge_6020",
+      "transfer_seed": 6020,
+      "artifact_manifest_sha256": "40ba983cdbbde025f211fb3d2ac4a9d8a3894968cf3ddc22ecc434397281b145",
+      "validation_predictions_sha256": "05402c606f15f3ce59b68ac378d60286547d40c33bb6def7a3a095962a8e9002"
+    }
+  ],
+  "overlap_fraction": 0.01,
+  "overlap_seed": 2020,
+  "model_variant": "semantics",
+  "uncertainty_blend": {
+    "s0": 1.0704773388785558,
+    "tau2": 1.2589254117941675,
+    "c": 2.5118864315095824
+  },
+  "constant_blend": {
+    "s0": 1.0704773388785558,
+    "tau2": 1.584893192461114,
+    "c": 0.0
+  },
+  "validation": {
+    "single_bridges": [
+      {
+        "mae": 0.8009501443681226,
+        "rmse": 1.095617599681313,
+        "n_ratings": 210455
+      },
+      {
+        "mae": 0.7997466574377147,
+        "rmse": 1.100565531191036,
+        "n_ratings": 210455
+      },
+      {
+        "mae": 0.7631274995841646,
+        "rmse": 1.0519999622107732,
+        "n_ratings": 210455
+      },
+      {
+        "mae": 0.7634798933182458,
+        "rmse": 1.051522183301915,
+        "n_ratings": 210455
+      },
+      {
+        "mae": 0.8153355010077051,
+        "rmse": 1.106618441736171,
+        "n_ratings": 210455
+      }
+    ],
+    "ensemble_mean": {
+      "mae": 0.7727754591738526,
+      "rmse": 1.0615709967704536,
+      "n_ratings": 210455
+    },
+    "constant_blend": {
+      "mae": 0.7324395543919135,
+      "rmse": 1.0062535398587276,
+      "n_ratings": 210455
+    },
+    "uncertainty_blend": {
+      "mae": 0.730673710880757,
+      "rmse": 1.005823036247337,
+      "n_ratings": 210455
+    },
+    "movie_mean": {
+      "mae": 0.7505646222798233,
+      "rmse": 1.0346387480075139,
+      "n_ratings": 210455
+    },
+    "mean_weight": 0.441678489261495,
+    "mean_disagreement": 0.16879635316391628
+  }
+}

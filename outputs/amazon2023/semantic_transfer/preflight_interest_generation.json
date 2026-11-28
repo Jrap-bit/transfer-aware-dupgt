@@ -1,0 +1,78 @@
+{
+  "purpose": "generation preflight only; not teacher training data or accuracy evidence",
+  "request": {
+    "request_id": "01688f9577970131c1e398ef850a3559bf81fd9a1c815b4319cb9fa319e49fee",
+    "input": {
+      "request_id": "01688f9577970131c1e398ef850a3559bf81fd9a1c815b4319cb9fa319e49fee",
+      "profile_token": "preflight",
+      "books": [
+        {
+          "alias": "b0",
+          "categories": "Humor & Entertainment Humor",
+          "description": "\u201cHere, one of our most talented writers has written an elegant, witty work of fiction, deceptively simple, emotionally and intellectually penetrating, the kind of novel that brings a plot to satisfying closure but whose questions linger",
+          "rating": 5,
+          "title": "How It All Began: A Novel"
+        },
+        {
+          "alias": "b1",
+          "categories": "Christian Books & Bibles Bible Study & Reference",
+          "description": "You are probably familiar with the old birthday party game \u201ctelephone.\u201d A group of kids sits in a circle, the first tells a brief story to the one sitting next to her, who tells it to the next, and to the next, and so on, until it comes",
+          "rating": 5,
+          "title": "The Case for Jesus: The Biblical and Historical Evidence for Christ"
+        },
+        {
+          "alias": "b2",
+          "categories": "Literature & Fiction Women's Fiction",
+          "description": "Moriarty has created a cast of appealing characters that she deftly juggles through various plot threads, notably Sophie's languishing love life and the mystery itself, previously revealed only to family members when they turned 40",
+          "rating": 4,
+          "title": "The Last Anniversary: A Novel"
+        },
+        {
+          "alias": "b3",
+          "categories": "Mystery, Thriller & Suspense Thrillers & Suspense",
+          "description": "She does so with evocative and insightful prose, striking characters and a plot that\u2019s astute, addictive and alarming. \u201cDownes' debut novel is a slow burn of a story with Emily picking up on snippets of conversations as a breadcrumb trail",
+          "rating": 3,
+          "title": "Safe Place"
+        },
+        {
+          "alias": "b4",
+          "categories": "Mystery, Thriller & Suspense Thrillers & Suspense",
+          "description": "As the heart-pounding tension unfolds page after page, Rachel Ryan expertly unravels the mystery, leaving readers guessing until the satisfying, surprising ending. \"Ryan\u2019s debut is a chilling story about motherhood and grief, centered on a",
+          "rating": 3,
+          "title": "The Woman Outside My Door"
+        },
+        {
+          "alias": "b5",
+          "categories": "Mystery, Thriller & Suspense Thrillers & Suspense",
+          "description": "\u201cWith unreliable characters, wry voices, exquisite pacing, and a twisting plot, Steadman potently draws upon her acting chops. . . . \u201cThis debut\u2019s opening hook, which jumps ahead in the story to reveal a shocking outcome, teamed with",
+          "rating": 3,
+          "title": "Something in the Water: A Novel"
+        }
+      ]
+    }
+  },
+  "response": {
+    "interests": [
+      "Witty, emotionally resonant fiction that balances a satisfying plot closure with lingering intellectual questions.",
+      "Narratives exploring faith and historical evidence through accessible storytelling or engaging metaphors.",
+      "Character-driven mysteries featuring complex relationships, family secrets revealed over time, and evocative prose."
+    ],
+    "request_id": "01688f9577970131c1e398ef850a3559bf81fd9a1c815b4319cb9fa319e49fee"
+  },
+  "provenance": {
+    "model_digest": "cd76ec205963b3b33350093e6904d9de16c4e666fd104e1f632d25c7f15f2a13",
+    "runtime_manifest_sha256": "877d5b1fb5496554fd16ec4f0549b5d2e264a5979d800301f8d665ced1366456",
+    "app_version": "0.4.28+2",
+    "loaded_context_tokens": 8192
+  },
+  "usage": {
+    "prompt_tokens": 741,
+    "completion_tokens": 141,
+    "total_tokens": 882,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 12.874101707995578,
+  "finish_reason": "stop"
+}

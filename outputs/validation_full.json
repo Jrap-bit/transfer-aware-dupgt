@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "release": "2014",
+      "size": "full",
+      "test_ratings": 163789,
+      "recomputed_metrics": {
+        "global_mean": {
+          "mae": 0.9342272396370785,
+          "rmse": 1.1812532864149123
+        },
+        "movie_mean": {
+          "mae": 0.826782976041568,
+          "rmse": 1.0757403664651541
+        },
+        "linear_mapping": {
+          "mae": 0.8629572388244134,
+          "rmse": 1.1036674900482804
+        },
+        "dupgt": {
+          "mae": 0.7879386180161779,
+          "rmse": 1.041991353545923
+        }
+      },
+      "checkpoint_reload_matches_export": true,
+      "gate_weights_sum_to_one": true,
+      "split_integrity_checks_passed": true
+    },
+    {
+      "release": "2023",
+      "size": "full",
+      "test_ratings": 433618,
+      "recomputed_metrics": {
+        "global_mean": {
+          "mae": 0.9109874080199998,
+          "rmse": 1.143214954270708
+        },
+        "movie_mean": {
+          "mae": 0.7620194742593087,
+          "rmse": 1.0506938709835925
+        },
+        "linear_mapping": {
+          "mae": 0.8336271147510937,
+          "rmse": 1.1055247685868743
+        },
+        "dupgt": {
+          "mae": 0.723043621835192,
+          "rmse": 1.0119141482706826
+        }
+      },
+      "checkpoint_reload_matches_export": true,
+      "gate_weights_sum_to_one": true,
+      "split_integrity_checks_passed": true
+    }
+  ]
+}

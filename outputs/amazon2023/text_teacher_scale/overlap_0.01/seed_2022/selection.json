@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "locked_at_utc": "2026-11-20T03:03:34.180826+00:00",
+  "reason": "Predeclared limited-overlap study: every listed variant is reported. Each run's checkpoint was chosen by validation RMSE; test data was not used for training, weights or checkpoint choice. Same 2023 test split as earlier experiments, so these are follow-up results.",
+  "metric": "validation_rmse",
+  "runs": [
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/text_teacher_scale/overlap_0.01/seed_2022/semantics",
+      "artifact_manifest_sha256": "cb205d82fceb79dd75efea4c866a466ff17fc38b14bd6b4b0f433df3cc5c50bc",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0672694125196696
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/text_teacher_scale/overlap_0.01/seed_2022/semantics_text_only_w0.1",
+      "artifact_manifest_sha256": "3bdb6c68345231a8a4a10ccb67453d72546e9911113c1584c4552e1060d6803f",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0697153731883322
+    },
+    {
+      "run_dir": "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/text_teacher_scale/overlap_0.01/seed_2022/semantics_text_only_shuffled_w0.1",
+      "artifact_manifest_sha256": "12de07988014b5f608b7c60fe94bd5a7c5e725b615f816517a676d59c8dbaf4b",
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "validation_rmse": 1.0707037889315747
+    }
+  ]
+}

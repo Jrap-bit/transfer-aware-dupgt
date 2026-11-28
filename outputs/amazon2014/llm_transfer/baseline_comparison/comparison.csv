@@ -1,0 +1,4 @@
+run,teacher,overlap_fraction,real_users,real_ratings,pseudo_weight,mae,rmse,movie_mean_mae,movie_mean_rmse,requested_pairs,matched_pairs,changed_label_fraction
+/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2014/llm_transfer/baseline_f001_s2020,none,0.01,261,6104,0.0,0.8232450422226286,1.0906096729347137,0.8132161095365166,1.062266511407128,0,0,
+/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2014/llm_transfer/baseline_f010_s2020,none,0.1,2617,55765,0.0,0.7932055955352252,1.0534663570355167,0.8132161095365166,1.062266511407128,0,0,
+/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2014/llm_transfer/baseline_f100_s2020,none,1.0,26171,541059,0.0,0.7734695602769621,1.024309305784702,0.8132161095365166,1.062266511407128,0,0,

@@ -1,0 +1,265 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "label": "Amazon 2014 Books to Movies: full, small-factor initialization",
+  "completed_at_utc": "2026-10-30T21:06:14.689667+00:00",
+  "seed": 2020,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "torch": "2.8.0",
+    "numpy": "2.2.6",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "device": "cpu",
+    "torch_threads": 4,
+    "mps_available": true
+  },
+  "dataset_sha256": "0c3d7ec4b68aff71642cd165603beb8a3b87d54341f25af600c620e6f6212a60",
+  "results": {
+    "global_mean": {
+      "raw": {
+        "mae": 0.9342272396370788,
+        "rmse": 1.1812532864149123,
+        "n_ratings": 163789
+      },
+      "clipped_to_1_5": {
+        "mae": 0.9342272396370788,
+        "rmse": 1.1812532864149123,
+        "n_ratings": 163789
+      }
+    },
+    "movie_mean": {
+      "raw": {
+        "mae": 0.826782976041568,
+        "rmse": 1.075740366465154,
+        "n_ratings": 163789
+      },
+      "clipped_to_1_5": {
+        "mae": 0.826782976041568,
+        "rmse": 1.075740366465154,
+        "n_ratings": 163789
+      }
+    },
+    "linear_mapping": {
+      "raw": {
+        "mae": 0.8629572388244134,
+        "rmse": 1.1036674900482804,
+        "n_ratings": 163789
+      },
+      "clipped_to_1_5": {
+        "mae": 0.853053210558073,
+        "rmse": 1.099132894461648,
+        "n_ratings": 163789
+      }
+    },
+    "dupgt": {
+      "raw": {
+        "mae": 0.7879386180161779,
+        "rmse": 1.041991353545923,
+        "n_ratings": 163789
+      },
+      "clipped_to_1_5": {
+        "mae": 0.7864925887203613,
+        "rmse": 1.0411441103797816,
+        "n_ratings": 163789
+      }
+    }
+  },
+  "factor_initialization": "normal with std 0.1",
+  "selected_checkpoints": {
+    "linear_mapping": {
+      "epoch": 28,
+      "validation": {
+        "mae": 0.8549387873001046,
+        "rmse": 1.0956912969481127,
+        "n_ratings": 87463
+      }
+    },
+    "dupgt": {
+      "epoch": 15,
+      "validation": {
+        "mae": 0.7733451917932955,
+        "rmse": 1.0250471552742364,
+        "n_ratings": 87463
+      }
+    }
+  },
+  "user_level_comparison": {
+    "linear_mapping": {
+      "reference": "movie_mean",
+      "definition": "Fraction of evaluated users with higher user MAE than the Movie-mean baseline",
+      "fraction_harmed": 0.5738165284835518,
+      "mean_user_mae_difference": 0.08258017075143942
+    },
+    "dupgt": {
+      "reference": "movie_mean",
+      "definition": "Fraction of evaluated users with higher user MAE than the Movie-mean baseline",
+      "fraction_harmed": 0.4590799679058572,
+      "mean_user_mae_difference": -0.01978987220069121
+    }
+  },
+  "stratified_test_results": {
+    "source_has_no_low_ratings": {
+      "users": 1745,
+      "metrics": {
+        "global_mean": {
+          "mae": 0.8576999936776253,
+          "rmse": 0.9941708120912948,
+          "n_ratings": 24248
+        },
+        "movie_mean": {
+          "mae": 0.7197345165127467,
+          "rmse": 0.9145438567727737,
+          "n_ratings": 24248
+        },
+        "linear_mapping": {
+          "mae": 0.6671835240525114,
+          "rmse": 0.9214087117552473,
+          "n_ratings": 24248
+        },
+        "dupgt": {
+          "mae": 0.570196574966198,
+          "rmse": 0.8422864865180909,
+          "n_ratings": 24248
+        }
+      }
+    },
+    "source_has_both_polarities": {
+      "users": 5710,
+      "metrics": {
+        "global_mean": {
+          "mae": 0.9454712399622905,
+          "rmse": 1.20801643417879,
+          "n_ratings": 139108
+        },
+        "movie_mean": {
+          "mae": 0.8433132635549923,
+          "rmse": 1.0983981548513588,
+          "n_ratings": 139108
+        },
+        "linear_mapping": {
+          "mae": 0.8958159739011645,
+          "rmse": 1.1304813338555488,
+          "n_ratings": 139108
+        },
+        "dupgt": {
+          "mae": 0.824486776901242,
+          "rmse": 1.0714456683900868,
+          "n_ratings": 139108
+        }
+      }
+    },
+    "source_1_to_5_ratings": {
+      "users": 838,
+      "metrics": {
+        "global_mean": {
+          "mae": 0.9645093424903735,
+          "rmse": 1.2054175686985906,
+          "n_ratings": 10083
+        },
+        "movie_mean": {
+          "mae": 0.8549383916040384,
+          "rmse": 1.1248997785432604,
+          "n_ratings": 10083
+        },
+        "linear_mapping": {
+          "mae": 1.0075705422924044,
+          "rmse": 1.2882677958464066,
+          "n_ratings": 10083
+        },
+        "dupgt": {
+          "mae": 0.8706537403722705,
+          "rmse": 1.145308210099121,
+          "n_ratings": 10083
+        }
+      }
+    },
+    "source_6_to_10_ratings": {
+      "users": 2502,
+      "metrics": {
+        "global_mean": {
+          "mae": 0.9607469854338189,
+          "rmse": 1.2080887742335151,
+          "n_ratings": 32062
+        },
+        "movie_mean": {
+          "mae": 0.8437262943499325,
+          "rmse": 1.1083071403459621,
+          "n_ratings": 32062
+        },
+        "linear_mapping": {
+          "mae": 0.9348956419954506,
+          "rmse": 1.2073343662875302,
+          "n_ratings": 32062
+        },
+        "dupgt": {
+          "mae": 0.8315069814762258,
+          "rmse": 1.1018897343527996,
+          "n_ratings": 32062
+        }
+      }
+    },
+    "source_11_to_20_ratings": {
+      "users": 1906,
+      "metrics": {
+        "global_mean": {
+          "mae": 0.9590162478295828,
+          "rmse": 1.206705164531764,
+          "n_ratings": 32757
+        },
+        "movie_mean": {
+          "mae": 0.8394078609610105,
+          "rmse": 1.09451623298777,
+          "n_ratings": 32757
+        },
+        "linear_mapping": {
+          "mae": 0.8867328427692187,
+          "rmse": 1.1322790158084015,
+          "n_ratings": 32757
+        },
+        "dupgt": {
+          "mae": 0.8170778154426142,
+          "rmse": 1.077728568609454,
+          "n_ratings": 32757
+        }
+      }
+    },
+    "source_over_20_ratings": {
+      "users": 2232,
+      "metrics": {
+        "global_mean": {
+          "mae": 0.9120909984075769,
+          "rmse": 1.1590042865510763,
+          "n_ratings": 88887
+        },
+        "movie_mean": {
+          "mae": 0.8128250172621588,
+          "rmse": 1.050843835754532,
+          "n_ratings": 88887
+        },
+        "linear_mapping": {
+          "mae": 0.8118424247373419,
+          "rmse": 1.0285924181391917,
+          "n_ratings": 88887
+        },
+        "dupgt": {
+          "mae": 0.7521019024326808,
+          "rmse": 0.992912081158164,
+          "n_ratings": 88887
+        }
+      }
+    }
+  },
+  "gate_summary": {
+    "mean_high_weight": 0.36611825227737427,
+    "min_high_weight": 0.04258439317345619,
+    "max_high_weight": 0.9961138963699341
+  },
+  "elapsed_seconds": 2509.53282004199,
+  "limitations": [
+    "One seed",
+    "Progress subset unless full config used",
+    "Static user split, not chronological",
+    "No claim of paper-score reproduction",
+    "No semantics or confidence extension"
+  ]
+}

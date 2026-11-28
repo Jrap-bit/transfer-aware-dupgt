@@ -1,0 +1,12 @@
+{
+  "pid": 34508,
+  "started": 1795119509.504766,
+  "started_text": "2026-11-20 01:48:29",
+  "command": [
+    "/usr/bin/caffeinate",
+    "-is",
+    "/bin/bash",
+    "-c",
+    "'/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python' -u '/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/scripts/run_overlap_seeds.py'; status=$?; '/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/.venv/bin/python' -u '/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/scripts/summarise_overlap_seeds.py' --include '/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/semantic_transfer/full_seed2020'; echo; if [ $status -eq 0 ]; then echo \"ALL DONE $(date)\"; else echo \"STOPPED WITH AN ERROR $(date); see above\"; fi"
+  ]
+}

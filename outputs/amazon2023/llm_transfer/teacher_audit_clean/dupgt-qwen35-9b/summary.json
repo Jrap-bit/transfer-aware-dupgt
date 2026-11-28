@@ -1,0 +1,11 @@
+{
+  "model": "dupgt-qwen35-9b",
+  "complete": true,
+  "requests": 40,
+  "responses": 40,
+  "valid": 40,
+  "files": {
+    "generation.json": "0bde89ae69c8a7140a75a678d4d3b436188f50d0d8d3bc8a3772efcfeac5a387",
+    "responses.jsonl": "8afb3f65d8a3afea4b0e5d245793bb3d91c242d984aac57a3c5ac882d78704d8"
+  }
+}

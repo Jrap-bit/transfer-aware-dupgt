@@ -1,0 +1,27 @@
+{
+  "status": "code_checks_completed",
+  "full_semantic_cache_encoded": false,
+  "new_models_trained_on_full_data": false,
+  "real_encoder": {
+    "model": "jinaai/jina-embeddings-v2-base-en",
+    "revision": "322d4d7e2f35e84137961a65af894fda0385eb7a",
+    "code_revision": "f3ec4cf7de7e561007f27c9efc7148b0bd713f81",
+    "max_length": 128,
+    "pooling": "masked_mean_l2",
+    "dimension": 768
+  },
+  "real_check_counts": {
+    "book": 16,
+    "movie": 16
+  },
+  "real_check_scope": "bounded_trial",
+  "notebook": "notebooks/semantic_transfer.ipynb",
+  "source_sha256": {
+    "semantics.py": "7cfac2f99dde60f94d828b16cd683ddf35d7980810303f0fd0fd1025c9adf5ca",
+    "retrieval.py": "ecc71992cf035de93bd955e27bd6e85b3b2adf0a3b306048504f001b25d9a5c7",
+    "experiments.py": "91a646db0776007f7f5e2a084408f69ae80c3e962c5046635a93d849bd9c0832",
+    "runtime.py": "e4ca1b0d3d5cd550390dfe3037efc5fa7587edf3854a8a5ef62dea1cd7b48261",
+    "cli.py": "c84996de29f5e69888657fe156cc39f1816b75e269bc532c19de5dcb26471c7d",
+    "predict.py": "d7eb4f0fb888edc9bfcd839961b109c77eb36a2417fea83a48e1e031b0d7baa0"
+  }
+}

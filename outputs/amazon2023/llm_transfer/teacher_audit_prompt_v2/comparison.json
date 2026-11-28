@@ -1,0 +1,113 @@
+{
+  "purpose": "validation_teacher_audit_only",
+  "users": 20,
+  "comparison_scope": "local teachers versus text, popularity and shuffled-profile controls",
+  "prediction_lock_sha256": "f00d508f12a545e6c5a4368269115cf71520cbd63797f7b9a6d27b02bb2de006",
+  "results": [
+    {
+      "model": "dupgt-qwen35-9b",
+      "profile": "original",
+      "pairs": 53,
+      "valid_profiles": 20,
+      "answered_pairs": 52,
+      "correct_pairs": 24,
+      "coverage": 0.9811320754716981,
+      "accuracy_when_answered": 0.46153846153846156,
+      "correct_fraction_of_all_pairs": 0.4528301886792453,
+      "choices": {
+        "B": 21,
+        "A": 31,
+        "insufficient_evidence": 1
+      },
+      "median_seconds_per_profile": 10.0715,
+      "valid_json_fraction": 1.0
+    },
+    {
+      "model": "dupgt-qwen35-9b",
+      "profile": "shuffled",
+      "pairs": 53,
+      "valid_profiles": 20,
+      "answered_pairs": 49,
+      "correct_pairs": 19,
+      "coverage": 0.9245283018867925,
+      "accuracy_when_answered": 0.3877551020408163,
+      "correct_fraction_of_all_pairs": 0.3584905660377358,
+      "choices": {
+        "A": 28,
+        "B": 21,
+        "insufficient_evidence": 4
+      },
+      "median_seconds_per_profile": 8.5095,
+      "valid_json_fraction": 1.0
+    },
+    {
+      "model": "tfidf_text",
+      "profile": "original",
+      "pairs": 53,
+      "valid_profiles": 20,
+      "answered_pairs": 52,
+      "correct_pairs": 29,
+      "coverage": 0.9811320754716981,
+      "accuracy_when_answered": 0.5576923076923077,
+      "correct_fraction_of_all_pairs": 0.5471698113207547,
+      "choices": {
+        "A": 26,
+        "B": 26,
+        "tie": 1
+      }
+    },
+    {
+      "model": "training_popularity",
+      "profile": "original",
+      "pairs": 53,
+      "valid_profiles": 20,
+      "answered_pairs": 51,
+      "correct_pairs": 32,
+      "coverage": 0.9622641509433962,
+      "accuracy_when_answered": 0.6274509803921569,
+      "correct_fraction_of_all_pairs": 0.6037735849056604,
+      "choices": {
+        "A": 26,
+        "B": 25,
+        "tie": 2
+      }
+    }
+  ],
+  "common_decisive_support": {
+    "pairs": 52,
+    "models": {
+      "dupgt-qwen35-9b": {
+        "correct_pairs": 24,
+        "accuracy": 0.46153846153846156
+      }
+    }
+  },
+  "profile_shuffle_control": {
+    "dupgt-qwen35-9b": {
+      "common_answered_pairs": 48,
+      "changed_choices": 11,
+      "original_accuracy": 0.4583333333333333,
+      "shuffled_accuracy": 0.3958333333333333,
+      "valid_pairs_in_both_profiles": 53,
+      "changed_choices_including_abstentions": 16,
+      "original_only_answered": 4,
+      "shuffled_only_answered": 1
+    }
+  },
+  "label_balance": {
+    "A": 31,
+    "B": 22
+  },
+  "position_baselines": {
+    "always_A": 0.5849056603773585,
+    "always_B": 0.41509433962264153
+  },
+  "limitations": [
+    "Small development pilot; pairs within a user are correlated.",
+    "Pairs are conditioned on unequal observed ratings, not randomly sampled catalogue choices.",
+    "Candidates are Movies/TV products the validation user actually rated; this is not full-catalogue retrieval.",
+    "Prompt text is shortened identically for both models; no reasoning mode, one seed.",
+    "No test outcomes were used and no audit label may enter bridge training.",
+    "Teacher pair accuracy does not establish an improvement in DUPGT MAE/RMSE."
+  ]
+}

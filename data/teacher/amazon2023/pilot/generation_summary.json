@@ -1,0 +1,19 @@
+{
+  "requests": 200,
+  "requested_pairs": 1000,
+  "status": "accepted",
+  "responses": 200,
+  "accepted_pairs": 970,
+  "cache_hits": 0,
+  "reserved_tokens": 1459625,
+  "attempts": 200,
+  "api_cost": 0,
+  "evidence": "real",
+  "generation_sha256": "52580ab14a1ceeb574d24806bd055159f984724f674787c628c029dd593cd36d",
+  "files": {
+    "generation.json": "73f9eab86fc163ed9f5ebfa5ecc1f9e0130d8426db4c58dbb4ffa2e3698cb3c8",
+    "responses.jsonl": "ddbd5b33ccaec94e25904e8407dedfa056b2c9e7d59047ddd74e157825f4a1e7",
+    "pairs_llm.jsonl": "6c71a4c414d5d445a4887acab7aefe08217a2e2ff4ef8118e39ceb2c8d55ba8b",
+    "rejections.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

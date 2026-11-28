@@ -1,0 +1,62 @@
+{
+  "runs": {
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/none_w0": {
+      "test_metrics_sha256": "aac940123b5738209e1ee05f17055a9da6c0a13e7c90bb2f33afa8875335d5bd",
+      "test_predictions_sha256": "8e6c0a4310ad6e61dc16d85ecb18d4d2ffc85bac0e595e905f9321fec5c9cca6",
+      "checkpoint_sha256": "622fb13bb1a22c8156a5f1b8da52f656c1edff04458659ad01d2afd6cca796d6"
+    },
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/text_w0.01": {
+      "test_metrics_sha256": "7e8198dd00a70add862bc6734ba767878b387cc1c946491282f2d5912a17376b",
+      "test_predictions_sha256": "c4faa003014cd43ace728081394a3e8200e938ac757f857b844af45f557b1bc9",
+      "checkpoint_sha256": "5fe2d5581cbfbea39740edebf64df69092154a34ba81d26457558a8cb050b079"
+    },
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/llm_w0.01": {
+      "test_metrics_sha256": "4724078afe508b09568cfd56b8df4e9142bab1794ccc796cc7d2ddd05bf53118",
+      "test_predictions_sha256": "f6073909ef9ccac9191cd6159520ba09eefdb21202c192214e8d1fb403eff4d0",
+      "checkpoint_sha256": "5f1b7ac1b152af37d3b9b12e376683aa096f79e8df39b68d0a7b484ac8cbf3db"
+    },
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/shuffled_w0.01": {
+      "test_metrics_sha256": "dca9ffb6a95e54c9c960cbdcf5ae3b1db822ac6440996cf25be752dc67ba5a11",
+      "test_predictions_sha256": "4eee166531f89f8522b9cb847b3775feb257dc598fedc6e05eb1c5d7cef801b9",
+      "checkpoint_sha256": "f67252442173d1022feaa6cc671dccf96321d4757b169e52cf23383e61d5b5d3"
+    },
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.01/text_w0.1": {
+      "test_metrics_sha256": "3135407b02052e46ece44107ed9ef0fc5638ea0a89efc8015e007f07008ff8b8",
+      "test_predictions_sha256": "4ebfcff6edb358b7ec58d6ca1bdf56e42f64ee84ce3bd3278f93bbada0784a4b",
+      "checkpoint_sha256": "b79b34e1c986fce51cd33fcb66df9ebc437b156cc2dca337cdf9cb7ff55c1350"
+    },
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/none_w0": {
+      "test_metrics_sha256": "f4192cd8c15fd9812c02517e88d1d176ceb8eeccef78efda9892580887c610b8",
+      "test_predictions_sha256": "a2214727ab81dca891c391d46a74e94f26da447301bc953d4ee35cd4cdc2e100",
+      "checkpoint_sha256": "3b863d600fcc0ea6ab83cea16f980c2bbb16a086c87e1b22934a06d5ee2a6697"
+    },
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/text_w0.01": {
+      "test_metrics_sha256": "c9b120d159ce93bae47cd31f7e958d82d56eb311e735048615b04801a0fa9223",
+      "test_predictions_sha256": "d6c5bd65538fd7270412b638d1864bdff874f9019247d142a5d78348e8c947de",
+      "checkpoint_sha256": "eee982dd2f58f95440c5c5a58efbff31f12c0f148899d2f64fbb51b494a68319"
+    },
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/llm_w0.01": {
+      "test_metrics_sha256": "89e69d94e7ad58536aff40801ea6a09a8666f71d9e15760932f440688b74bf45",
+      "test_predictions_sha256": "03967df6aa1eb4fd5335bada16cf98951448b65ee2db869c155e8f302b7d1f57",
+      "checkpoint_sha256": "c03d5f8d5f6271287d2b291d786ae5d84fea6047e2f273e075ddcdccc18729d7"
+    },
+    "/Users/parjanyapandey/Programming/Masters/Data Mining/dupgt-cdr/outputs/amazon2023/llm_transfer/validation_grid_v2_seed2020/overlap_0.10/shuffled_w0.01": {
+      "test_metrics_sha256": "b1d55c2840a6705141c1fb409359b50e893038d92b74827913dd99d77cb4c9ca",
+      "test_predictions_sha256": "e3ca27fe2d98bf62dea1585c5af1a51e222c6ed94385f5760e9cb1bd8daccc43",
+      "checkpoint_sha256": "96f558047e295b589f4cde8831159ec6ec0623e074f65c8ca8701c4097b11e7a"
+    }
+  },
+  "files": {
+    "final_selection.json": "b2f47959df6d6e0ad656bcaa7695dcdddee2eff5034c7658674946625a70e99f",
+    "final_evaluation_plan.json": "b7eca7b0735fb3063729b054f89690235458589f486ffecbd718bbdd8110ec87",
+    "evaluation_complete.json": "52fa1111435a8ef717c96a50c58b272a5cd8ea2afeb15d69608bb11c231fc974",
+    "pilot_result_summary.json": "27aefc952a045464daab514a36bf83359d39bbc5469149c0d77fe9a2947b287b",
+    "validation_results.csv": "6f5a8907b26eb4ea4b83c16c55668762ab7b41f2f24a14bf10d77451a877bc9e",
+    "final_matched_results.csv": "386642ad4c4c92b9423f3b97d6308b52088e2515848a1180a9e7ecb92f5141ed",
+    "final_selected_family_results.csv": "37bfbdba47911b0933000cd8792a20e5d582519ab2ad8fe322bd0df2f7f9d15e",
+    "final_rmse_changes.png": "7562ea6e14d54c4b1a759da4447df277fd32ec97fe5f0c3dcc498a167752aa68"
+  },
+  "notebook_sha256": "3c1ec7f68ad04907cefa7327caf848504b284b34cec8e698f54560e995d09bf8",
+  "test_rows_sha256": "b287101e2f44c6b7e7d2fcd5459832efa74be128bb1d3340f35ab526b14b0e99",
+  "selection_sha256": "b2f47959df6d6e0ad656bcaa7695dcdddee2eff5034c7658674946625a70e99f"
+}

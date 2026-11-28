@@ -1,0 +1,9 @@
+{
+  "audit_manifest_sha256": "05e901d923f60528d6e93d4d4b2b314c8efa7d090691ff520664ea5714b716a9",
+  "models": {
+    "dupgt-qwen35-9b": {
+      "generation.json": "0bde89ae69c8a7140a75a678d4d3b436188f50d0d8d3bc8a3772efcfeac5a387",
+      "responses.jsonl": "8afb3f65d8a3afea4b0e5d245793bb3d91c242d984aac57a3c5ac882d78704d8"
+    }
+  }
+}

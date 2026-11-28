@@ -1,0 +1,93 @@
+{
+  "schema": 2,
+  "label": "Amazon 2023 Books to Movies: full, small-factor initialization",
+  "data_config_sha256": "4900af236b0b40d898909cbba2d7fb281296350ac06ee62ee77396b12151476f",
+  "dataset": "Amazon Reviews 2023 5-core",
+  "direction": "Books -> Movies & TV",
+  "scope": "full user pool",
+  "raw": {
+    "source_ratings": 9488297,
+    "target_ratings": 7441129,
+    "source_users": 776370,
+    "target_users": 657203,
+    "shared_users": 127188
+  },
+  "cohort": {
+    "shared_users": 127188,
+    "source_only_users": 649182,
+    "target_only_users": 530015,
+    "all_users": 1306385,
+    "source_items": 495063,
+    "target_items": 197943
+  },
+  "splits": {
+    "source_train": {
+      "ratings": 9488297,
+      "users": 776370,
+      "items": 495063
+    },
+    "target_train": {
+      "ratings": 6797056,
+      "users": 619046,
+      "items": 197943
+    },
+    "meta_train": {
+      "ratings": 1497886,
+      "users": 89031,
+      "items": 176658
+    },
+    "validation": {
+      "ratings": 210455,
+      "users": 12719,
+      "items": 82782
+    },
+    "test": {
+      "ratings": 433618,
+      "users": 25438,
+      "items": 118971
+    }
+  },
+  "user_split_counts": {
+    "shared_train": 89031,
+    "validation": 12719,
+    "test": 25438
+  },
+  "evaluation_filter": {
+    "validation_cold_item_rows_excluded": 0,
+    "test_cold_item_rows_excluded": 0,
+    "reason": "Isolate user cold start; an unseen target item has no trained ID embedding"
+  },
+  "duplicates_removed": {
+    "source": 0,
+    "target": 0
+  },
+  "source_polarity": {
+    "high_threshold": "ratings 4-5",
+    "low_threshold": "ratings 1-3",
+    "shared_with_empty_high": 266,
+    "shared_with_empty_low": 53465
+  },
+  "protocol": "User-disjoint target cold start, 70/10/20 by default. Source histories of held-out target users are allowed. This is not a chronological deployment simulation.",
+  "history_policy": "Last 20 high and last 20 low source items in archive file order, post-padding with 0; all source ratings retained for source pretraining",
+  "integrity": {
+    "disjoint_target_user_splits": true,
+    "heldout_target_ratings_used_for_training": false,
+    "disjoint_domain_item_ids": true,
+    "zero_reserved_for_padding": true,
+    "evaluation_target_items_seen_in_training": true,
+    "histories_use_source_ratings_only": true
+  },
+  "benchmark_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+  "raw_file_identity": {
+    "source": {
+      "path": "/Users/parjanyapandey/Documents/Codex/2026-09-11/also-come-with-one-page-writeup/data/amazon_2023_5core/Books.csv",
+      "size": 550245256,
+      "mtime_ns": 1790279394584357000
+    },
+    "target": {
+      "path": "/Users/parjanyapandey/Documents/Codex/2026-09-11/also-come-with-one-page-writeup/data/amazon_2023_5core/Movies_and_TV.csv.gz",
+      "size": 111047519,
+      "mtime_ns": 1790279445428787743
+    }
+  }
+}

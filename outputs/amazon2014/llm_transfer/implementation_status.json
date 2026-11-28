@@ -1,0 +1,219 @@
+{
+  "recorded_at_utc": "2026-11-18T16:35:35.787919+00:00",
+  "status": "clean_metadata_and_requests_ready_fresh_teacher_validation_pending",
+  "provider": "lm-studio-local",
+  "target_model": "dupgt-qwen35-9b",
+  "monetary_budget": 0,
+  "hardware": {
+    "chip": "Apple M1 Pro",
+    "memory_gib": 16,
+    "disk_free_gib": 18.03
+  },
+  "completed": [
+    "metadata/request preparation with whitelist and checksums",
+    "local LM Studio adapter and cached response import",
+    "TF-IDF and matched shuffled-label controls",
+    "pairwise auxiliary objective with frozen factors",
+    "validation-only bridge runs and explicit final selection/evaluation",
+    "three real single-seed baseline validation runs"
+  ],
+  "checks": {
+    "focused_unittests_passed": 32,
+    "archived_baseline_tests_passed": 16,
+    "legacy_zero_weight_cpu_bitwise_match": true,
+    "saved_baseline_predictions_checked": 8,
+    "saved_baseline_max_prediction_difference": 0.0,
+    "verify_2014_passed": true,
+    "live_bonsai_synthetic_profiles_checked": 2,
+    "live_lmstudio_adapter_verified": true,
+    "matched_real_validation_audit_completed": true,
+    "metadata_notebook_executed": true,
+    "metadata_record_integrity_verified": true,
+    "both_release_factor_checkpoints_verified_during_request_preparation": true
+  },
+  "blockers": [
+    "Fresh teacher-quality validation is still required. The earlier audit with weaker metadata produced only abstentions; cleaned input availability does not establish personalised preferences."
+  ],
+  "real_teacher_requests_generated": 0,
+  "real_llm_training_runs": 0,
+  "teacher_plumbing_evidence": "31 offline tests; previous real teacher audit was negative. Cleaned 2014/2023 inputs now have 200 verified request profiles each, with no new labels or augmented training.",
+  "conclusion": "Limited bridge supervision reduces validation performance in this single-seed baseline study. No LLM improvement has been measured.",
+  "remaining_experiments": [
+    "Fresh small validation-only teacher audit with cleaned descriptions and shuffled profiles",
+    "200-profile generation only if teacher evidence is usable",
+    "Matching 2023 no-teacher/text/LLM/shuffled bridge comparisons at fixed real supervision",
+    "Confirmation seed where feasible",
+    "Validation-based final selection before locked test evaluation"
+  ],
+  "dataset_sha256": "0c3d7ec4b68aff71642cd165603beb8a3b87d54341f25af600c620e6f6212a60",
+  "factor_checkpoint_sha256": "6495a66d2976c5fb1a7a7677607466abc6acca84d00406b390d1f2412cd8fd63",
+  "runs": [
+    {
+      "run_dir": "outputs/amazon2014/llm_transfer/baseline_f001_s2020",
+      "users": 261,
+      "real_ratings": 6104,
+      "overlap_fraction": 0.01,
+      "validation": {
+        "mae": 0.8232450422226286,
+        "rmse": 1.0906096729347137,
+        "n_ratings": 87463
+      },
+      "factor_sha256": "d1134a4e0371749bd579d4f20e5b188839a618ae855e153a4d7311398f4a78a1",
+      "factors_unchanged": true,
+      "artifact_manifest_sha256": "7bfc3cc0c6953897aa21f609ffd6ce17425d653554443592d3855ec8efcbab06",
+      "test_evaluated": false
+    },
+    {
+      "run_dir": "outputs/amazon2014/llm_transfer/baseline_f010_s2020",
+      "users": 2617,
+      "real_ratings": 55765,
+      "overlap_fraction": 0.1,
+      "validation": {
+        "mae": 0.7932055955352252,
+        "rmse": 1.0534663570355167,
+        "n_ratings": 87463
+      },
+      "factor_sha256": "d1134a4e0371749bd579d4f20e5b188839a618ae855e153a4d7311398f4a78a1",
+      "factors_unchanged": true,
+      "artifact_manifest_sha256": "23c3503d0a0b26c45622a53d0a18e0f6eb23014d7a67500c604b5db9ae15d3a5",
+      "test_evaluated": false
+    },
+    {
+      "run_dir": "outputs/amazon2014/llm_transfer/baseline_f100_s2020",
+      "users": 26171,
+      "real_ratings": 541059,
+      "overlap_fraction": 1.0,
+      "validation": {
+        "mae": 0.7734695602769621,
+        "rmse": 1.024309305784702,
+        "n_ratings": 87463
+      },
+      "factor_sha256": "d1134a4e0371749bd579d4f20e5b188839a618ae855e153a4d7311398f4a78a1",
+      "factors_unchanged": true,
+      "artifact_manifest_sha256": "ff158254d4225984026be5e3069a57fdc038ce338d1e3e5708d4dd36d034d178",
+      "test_evaluated": false
+    }
+  ],
+  "comparison": "baseline_comparison/comparison.csv",
+  "changed_files": [
+    "src/dupgt_cdr/teacher.py",
+    "src/dupgt_cdr/experiments.py",
+    "src/dupgt_cdr/train.py",
+    "src/dupgt_cdr/settings.py",
+    "src/dupgt_cdr/cli.py",
+    "tests/test_llm_transfer.py",
+    "README.md",
+    ".gitignore"
+  ],
+  "current_source_sha256": {
+    "src/dupgt_cdr/metadata.py": "41e248b52e0ead1b0a2e3daa411dcafa488ecde7c31045447a31fd0e796cb128",
+    "src/dupgt_cdr/teacher.py": "d723f98fe3784f5f1ad227430b0ea61879a87b26462aa63117f58701e481fc13",
+    "src/dupgt_cdr/predict.py": "6234b6ab05156d0f69e752f476ca612b0c52cfaa5d9dbf55cc36f41edb344c1a",
+    "src/dupgt_cdr/__init__.py": "c932bc78361a28bafe1cc3f78773dcf20c11eefdf0c4230bf2c5395d03c7bb83",
+    "src/dupgt_cdr/runtime.py": "1d5080c2cd917e4964686df28ceae9bfce7dc7a25e600d95c4b04c6e7d171d28",
+    "src/dupgt_cdr/model.py": "e1d3d6c1e3c5c3c06334d3e215fdfe8e2b098065b1a0d2f3ca4fcb34f558d052",
+    "src/dupgt_cdr/teacher_audit.py": "b779abf8883a38a95c4dd4cff5ac269467b96685ff5165c4803960b27f3e9c22",
+    "src/dupgt_cdr/experiments.py": "a3b8667b5c6e4efa773cd5e952aa876f83caea019438de7e470cda4d81c45a62",
+    "src/dupgt_cdr/cli.py": "3eed267c451681c27f5716cd0c9a01252cd670dcb7f6a99f998075e390475e33",
+    "src/dupgt_cdr/common.py": "689e36d1f8a44c2a6339a675f499ba8f3218ba32b1d6ddd871dc379a2080df91",
+    "src/dupgt_cdr/train.py": "e958f99e4e150abb0b32458011e97748790c2aeef783c61642a4f6de1e79c561",
+    "src/dupgt_cdr/settings.py": "f3115eb2038807798e2b20158b2a473a3fae07e2b7b59a089246a4b65b9b5a4c",
+    "src/dupgt_cdr/upstream.py": "f99ac57f48d42353dcc753489e001e8b501e7639feef3190fc4ff64510759f6f",
+    "src/dupgt_cdr/evaluate.py": "eb18d64493894d894e9703b64dbad8182c69b3b8fe83859b72f3c82f90a51037",
+    "src/dupgt_cdr/__main__.py": "03e309e90664d6399795f3d628c07ddcd16d5c61fab1d90e9c6aa6a87c9c32e0",
+    "src/dupgt_cdr/data.py": "44234ec9a619d5538f44677e5b432ee72c46e7e6a5d4909bc82645c1e2f3a585"
+  },
+  "source_hash_note": "Current implementation hashes; the three baseline runs were launched during implementation, before later validation guards and chart/export additions. Their artifacts preserve their own input/configuration identities.",
+  "references": {
+    "metadata": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon/index_2014.html",
+    "model": "https://ollama.com/library/qwen3:4b",
+    "api": "https://docs.ollama.com/api/generate"
+  },
+  "notion_update": {
+    "page": "https://app.notion.com/p/40c0c4d82948808782dbc0f0e62ea229",
+    "change": "Implementation authorization and zero-budget local teacher preference",
+    "write_acknowledged": true,
+    "readback_verified": true,
+    "reason": "Confirmed authorization and zero-budget preference by fetching the existing DUPGT page."
+  },
+  "dependency_recheck": {
+    "checked_at_utc": "2026-11-18T15:41:27.926610+00:00",
+    "homebrew_download_host_reachable": true,
+    "note": "ghcr.io returned HTTP headers. Ollama remains absent; retry installation and metadata downloads."
+  },
+  "selected_local_runtime": "LM Studio",
+  "local_runtime_manifest": "qwen35_runtime.json",
+  "local_runtime_verified": true,
+  "resolved_blockers": [
+    {
+      "dependency": "local runner and Qwen3 weights",
+      "resolution": "LM Studio 0.4.28+2 and official Qwen3-4B Q4_K_M installed; checksum and structured local response verified."
+    }
+  ],
+  "model_repository": "https://huggingface.co/lmstudio-community/Qwen3.5-9B-GGUF",
+  "model_sha256": "cd76ec205963b3b33350093e6904d9de16c4e666fd104e1f632d25c7f15f2a13",
+  "teacher_comparison": {
+    "status": "complete",
+    "models": [
+      "dupgt-bonsai2-27b",
+      "dupgt-qwen35-9b"
+    ],
+    "audit_users_requested": 8,
+    "requests_per_model_maximum": 16,
+    "budget": "local inference only; no API charges",
+    "retention": "User requested keeping the better model after audit and deleting the other model weights; preserve audit outputs.",
+    "audit_dir": "outputs/amazon2014/llm_transfer/teacher_audit",
+    "actual_users": 8,
+    "pairs_per_mode": 22,
+    "qwen_responses_valid": 16,
+    "selected_model": "dupgt-qwen35-9b",
+    "removed_model": "dupgt-bonsai2-27b",
+    "basis": "Operational choice: both abstained on all 22 real-profile pairs; Qwen is faster, smaller and completed every request.",
+    "comparison": "teacher_audit/comparison.json",
+    "selection": "teacher_audit/model_selection.json",
+    "original_profile_decisive_pairs_per_model": 0
+  },
+  "metadata": {
+    "2014": {
+      "directory": "data/metadata/amazon2014/clean",
+      "book_items": 5908,
+      "warm_movie_items": 23188,
+      "eligible_source_only_users": 76015,
+      "eligible_validation_users": 679,
+      "teacher_directory": "data/teacher/amazon2014/pilot",
+      "prepared_profiles": 200,
+      "potential_pairs": 1000,
+      "prompts_within_context": 200,
+      "new_llm_labels": 0,
+      "dataset_sha256": "0c3d7ec4b68aff71642cd165603beb8a3b87d54341f25af600c620e6f6212a60",
+      "factor_checkpoint_sha256": "6495a66d2976c5fb1a7a7677607466abc6acca84d00406b390d1f2412cd8fd63",
+      "benchmark_unchanged": true
+    },
+    "2023": {
+      "directory": "data/metadata/amazon2023/clean",
+      "book_items": 477781,
+      "warm_movie_items": 96969,
+      "eligible_source_only_users": 648443,
+      "eligible_validation_users": 12706,
+      "teacher_directory": "data/teacher/amazon2023/pilot",
+      "prepared_profiles": 200,
+      "potential_pairs": 1000,
+      "prompts_within_context": 200,
+      "new_llm_labels": 0,
+      "dataset_sha256": "9480da9fe8d79e23dff8a4a8314cc5e349621fdd4fd290111e13e1316e3e6901",
+      "factor_checkpoint_sha256": "e3a5ccec55f37aea8e4ec4f4b53ab5183b707d0730b73c96113e22d20d343f87",
+      "benchmark_unchanged": true
+    }
+  },
+  "next_step": "Run a new, separately recorded validation teacher check on the cleaned 2023 inputs, without using final test outcomes.",
+  "updated_at_utc": "2026-11-18T18:28:30.435837+00:00",
+  "disk_free_gib": 17.86,
+  "prepared_training_teacher_requests_per_release": 200,
+  "focus_order": [
+    "2023 operational LLM-assisted DUPGT pipeline and matched controls",
+    "Paper-protocol alignment after the pipeline works",
+    "2014 LLM extension if time permits"
+  ],
+  "prompt_version": "book-movie-pairs-v2",
+  "active_2023_status": "outputs/amazon2023/llm_transfer/implementation_status.json"
+}

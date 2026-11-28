@@ -1,0 +1,102 @@
+{
+  "status": "completed",
+  "trained_models": 14,
+  "locked_test_evaluations": 9,
+  "teacher_profiles": 200,
+  "accepted_llm_pairs": 970,
+  "matched_pairs": 927,
+  "test_ratings": 433618,
+  "transfer_seeds": [
+    2020
+  ],
+  "primary_auxiliary_weight": 0.01,
+  "cases": [
+    {
+      "overlap_fraction": 0.01,
+      "rows": [
+        {
+          "method": "none",
+          "weight": 0.0,
+          "mae": 0.8130808880845943,
+          "rmse": 1.1112416000205485,
+          "n_ratings": 433618,
+          "delta_rmse_vs_baseline": 0.0,
+          "delta_mae_vs_baseline": 0.0
+        },
+        {
+          "method": "text",
+          "weight": 0.01,
+          "mae": 0.8129372715044665,
+          "rmse": 1.1106535186505222,
+          "n_ratings": 433618,
+          "delta_rmse_vs_baseline": -0.0005880813700263054,
+          "delta_mae_vs_baseline": -0.00014361658012784773
+        },
+        {
+          "method": "llm",
+          "weight": 0.01,
+          "mae": 0.8128260912875207,
+          "rmse": 1.1106464159332345,
+          "n_ratings": 433618,
+          "delta_rmse_vs_baseline": -0.0005951840873139602,
+          "delta_mae_vs_baseline": -0.0002547967970736309
+        },
+        {
+          "method": "shuffled",
+          "weight": 0.01,
+          "mae": 0.8128275570997845,
+          "rmse": 1.1106407936517295,
+          "n_ratings": 433618,
+          "delta_rmse_vs_baseline": -0.0006008063688189846,
+          "delta_mae_vs_baseline": -0.00025333098480984084
+        }
+      ]
+    },
+    {
+      "overlap_fraction": 0.1,
+      "rows": [
+        {
+          "method": "none",
+          "weight": 0.0,
+          "mae": 0.7505123109087772,
+          "rmse": 1.0309522337943846,
+          "n_ratings": 433618,
+          "delta_rmse_vs_baseline": 0.0,
+          "delta_mae_vs_baseline": 0.0
+        },
+        {
+          "method": "text",
+          "weight": 0.01,
+          "mae": 0.7477426021892192,
+          "rmse": 1.0304412997818617,
+          "n_ratings": 433618,
+          "delta_rmse_vs_baseline": -0.0005109340125228901,
+          "delta_mae_vs_baseline": -0.0027697087195580616
+        },
+        {
+          "method": "llm",
+          "weight": 0.01,
+          "mae": 0.7511116722305327,
+          "rmse": 1.0307301027101208,
+          "n_ratings": 433618,
+          "delta_rmse_vs_baseline": -0.00022213108426383243,
+          "delta_mae_vs_baseline": 0.0005993613217554206
+        },
+        {
+          "method": "shuffled",
+          "weight": 0.01,
+          "mae": 0.7510184054055695,
+          "rmse": 1.0307384294464395,
+          "n_ratings": 433618,
+          "delta_rmse_vs_baseline": -0.0002138043479451568,
+          "delta_mae_vs_baseline": 0.0005060944967922865
+        }
+      ]
+    }
+  ],
+  "llm_specific_improvement_demonstrated": false,
+  "interpretation": "RMSE changes are tiny and nearly match the shuffled-label control; this single-seed pilot does not establish a personalised LLM benefit.",
+  "selection_sha256": "b2f47959df6d6e0ad656bcaa7695dcdddee2eff5034c7658674946625a70e99f",
+  "final_evaluation_plan": "final_evaluation_plan.json",
+  "notebook": "notebooks/dupgt_2023_llm_results.ipynb"
+}

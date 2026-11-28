@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "selected_checkpoint": {
+    "epoch": 15,
+    "validation": {
+      "mae": 0.7248319650595709,
+      "rmse": 1.0123890758921688,
+      "n_ratings": 210455
+    }
+  },
+  "raw": {
+    "mae": 0.7248319650595709,
+    "rmse": 1.0123890758921688,
+    "n_ratings": 210455
+  },
+  "clipped_to_1_5": {
+    "mae": 0.7204356746304721,
+    "rmse": 1.0101105524689977,
+    "n_ratings": 210455
+  },
+  "movie_mean": {
+    "mae": 0.7505646222798233,
+    "rmse": 1.0346387480075139,
+    "n_ratings": 210455
+  },
+  "factor_sha256_after": "fbfeb46473dc56507b9f485ffd1fc7f05ccd047d1e5b481e53b3c4fbd40d435d",
+  "factors_unchanged": true,
+  "pseudo_comparisons_processed": 566400,
+  "pseudo_exposures_per_pair": 284.62311557788945,
+  "elapsed_seconds": 762.6140941249905,
+  "test_evaluated": false
+}
